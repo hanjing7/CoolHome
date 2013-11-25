@@ -145,7 +145,7 @@
 			$info=mysql_fetch_array($sql);
 			if($info==false)
 			{
-			  echo " Please   先添加Creation Category 型!";
+			  echo " Please   先Add Creation Category 型!";
 			}
 			else
 			{

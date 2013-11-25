@@ -3,5 +3,5 @@
   $content=$_POST['content'];
   include("conn/conn.php");
   mysql_query("update tb_gonggao set title='$title',content='$content' where id='".$_POST['id']."'",$conn);
-  echo "<script>alert('Announcement 修改成功!');history.back();</script>";
+  echo "<script>alert('Announcement Update 成功!');history.back();</script>";
 ?>

@@ -2,23 +2,26 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>No标题文档</title>
-<link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" href="css/adminstyle.css" type="text/css" media="screen">
 <style type="text/css">
-<!--
-body {
-	margin-top: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
--->
+
 </style></head>
 <body>
-<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="1003" height="90" background="images/banner.gif">&nbsp;</td>
-  </tr>
+<table width="1200" border="0" align="center" cellpadding="0" cellspacing="0">
+    <header>
+    	<div class="main">
+            <h1><a href="index.html">wisesolutions</a></h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="company.html">company</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a class="active" href="clients.html">clients</a></li>
+                    <li><a href="contacts.html">contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 </table>
 </body>
 </html>

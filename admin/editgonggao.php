@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>编辑Announcement </title>
+<title>Edit Announcement </title>
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <style type="text/css">
 <!--
@@ -39,7 +39,7 @@
 <body topmargin="0" leftmargin="0" bottommargin="0">
 <table width="750" border="0" align="center" cellspacing="0">
   <tr>
-    <td height="20" bgcolor="#FFCF60"><div align="center" class="style1">查看修改Announcement </div></td>
+    <td height="20" bgcolor="#FFCF60"><div align="center" class="style1">查看Update Announcement </div></td>
   </tr>
   <tr>
     <td bgcolor="#666666"><table width="750" border="0" align="center" cellpadding="0" cellspacing="1">

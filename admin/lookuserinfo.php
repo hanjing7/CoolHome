@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>User 信息管理</title>
+<title>User Information Management </title>
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <style type="text/css">
 <!--

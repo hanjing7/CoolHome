@@ -5,5 +5,5 @@ $content=$_POST['content'];
 $time1=$_POST['time1'];
 
 mysql_query("update tb_leaveword set title='$title',content='$content',time='$time1' where id=".$_GET['id']."",$conn);
-echo "<script>alert('User 留言修改成功!');history.back();</script>";
+echo "<script>alert('User  MessageUpdate 成功!');history.back();</script>";
 ?>

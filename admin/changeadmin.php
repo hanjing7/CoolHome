@@ -69,25 +69,25 @@
   <table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
     <form name="form1" method="post" action="savechangeadmin.php" onSubmit="return chkinput(this)">
 	<tr>
-      <td height="20" bgcolor="#FFCF60"><div align="center" class="style1">更改管理员信息</div></td>
+      <td height="20" bgcolor="#FFCF60"><div align="center" class="style1">更改 Management 员信息</div></td>
     </tr>
     <tr>
       <td bgcolor="#666666"><table width="750" border="0" align="center" cellpadding="0" cellspacing="1">
         
 		<tr>
-          <td width="99" height="25" bgcolor="#FFFFFF"><div align="center">原管理员名：</div></td>
+          <td width="99" height="25" bgcolor="#FFFFFF"><div align="center">原 Management 员名：</div></td>
           <td width="152" height="25" bgcolor="#FFFFFF"><div align="left"><input type="text" name="n0" class="inputcss" size="20"></div></td>
-          <td width="96" height="25" bgcolor="#FFFFFF"><div align="center">新管理员名：</div></td>
+          <td width="96" height="25" bgcolor="#FFFFFF"><div align="center">新 Management 员名：</div></td>
           <td width="139" height="25" bgcolor="#FFFFFF"><div align="left"><input type="text" name="n1" class="inputcss" size="20"></div></td>
-          <td width="127" height="25" bgcolor="#FFFFFF"><div align="center">确认新管理员名：</div></td>
+          <td width="127" height="25" bgcolor="#FFFFFF"><div align="center">确认新 Management 员名：</div></td>
           <td width="130" bgcolor="#FFFFFF"><div align="left"><input type="text" name="n2" class="inputcss" size="20"></div></td>
         </tr>
         <tr>
-          <td height="25" bgcolor="#FFFFFF"><div align="center">原管理员 Password ：</div></td>
+          <td height="25" bgcolor="#FFFFFF"><div align="center">原 Management 员 Password ：</div></td>
           <td bgcolor="#FFFFFF"><div align="left"><input type="password" name="p0" class="inputcss" size="20"></div></td>
-          <td bgcolor="#FFFFFF"><div align="center">新管理员 Password ：</div></td>
+          <td bgcolor="#FFFFFF"><div align="center">新 Management 员 Password ：</div></td>
           <td bgcolor="#FFFFFF"><div align="left"><input type="password" name="p1" class="inputcss" size="20"></div></td>
-          <td bgcolor="#FFFFFF"><div align="center">确认新管理员 Password ：</div></td>
+          <td bgcolor="#FFFFFF"><div align="center">确认新 Management 员 Password ：</div></td>
           <td bgcolor="#FFFFFF"><div align="left"><input type="password" name="p2" class="inputcss" size="20"></div></td>
         </tr>
 		

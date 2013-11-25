@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>User 管理</title>
+<title>User  Management </title>
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <style type="text/css">
 <!--
@@ -31,7 +31,7 @@
 <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
 
   <tr>
-    <td height="20" bgcolor="#FFCF60"><div align="center" class="style1">User 管理</div></td>
+    <td height="20" bgcolor="#FFCF60"><div align="center" class="style1">User  Management </div></td>
   </tr>
   <tr>
     <td  bgcolor="#666666"><table width="600" border="0" align="center" cellpadding="0" cellspacing="1">

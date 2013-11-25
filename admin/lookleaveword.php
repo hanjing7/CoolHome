@@ -1,7 +1,7 @@
 
 <html>
 <head>
-<title>User 留言管理</title>
+<title>User  Message Management </title>
 <link  rel="stylesheet" type="text/css" href="css/font.css">
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 </head>
@@ -15,7 +15,7 @@
 	   $total=$info['total'];
 	   if($total==0)
 	   {
-	     echo "Our Site Temperarily NoUser 留言!";
+	     echo "Our Site Temperarily NoUser  Message!";
 	   }
 	   else
 	   {
@@ -24,14 +24,14 @@
 <table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
 <form name="form1" method="post" action="deleteleaveword.php">
   <tr bgcolor="#FFCF60"> 
-    <td height="20" colspan="2"><div align="center"><font color="#FFFFFF">User 留言管理</font></div></td>
+    <td height="20" colspan="2"><div align="center"><font color="#FFFFFF">User  Message Management </font></div></td>
   </tr>
   <tr> 
     <td height="40" colspan="2" bgcolor="#333333"><table width="750"  border="0" align="center" cellpadding="0" cellspacing="1">
         <tr> 
-          <td width="357" height="20" bgcolor="#FFFFFF"><div align="center">留言主题</div></td>
-          <td width="80" bgcolor="#FFFFFF"><div align="center">留言者</div></td>
-          <td width="156" bgcolor="#FFFFFF"><div align="center">留言时间</div></td>
+          <td width="357" height="20" bgcolor="#FFFFFF"><div align="center"> Message主题</div></td>
+          <td width="80" bgcolor="#FFFFFF"><div align="center"> Message者</div></td>
+          <td width="156" bgcolor="#FFFFFF"><div align="center"> Message时间</div></td>
           <td width="93" bgcolor="#FFFFFF"><div align="center">操作</div></td>
           <td width="58" bgcolor="#FFFFFF"><div align="center">删除</div></td>
         </tr>
@@ -84,7 +84,7 @@
   </tr>
   <tr> 
     <td width="652" height="20" bgcolor="#FFFFFF"><div align="left">
-	&nbsp;Our Site  Totally    User 留言&nbsp;<?php
+	&nbsp;Our Site  Totally    User  Message&nbsp;<?php
 		   echo $total;
 		  ?>&nbsp;条&nbsp; Each    Page  Show &nbsp;<?php echo $pagesize;?>&nbsp;条&nbsp; The &nbsp;<?php echo $page;?>&nbsp; Page  /Total&nbsp;<?php echo $pagecount; ?>&nbsp; Page  
         <?php

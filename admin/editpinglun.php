@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>评论编辑</title>
+<title>Comment Edit </title>
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <style type="text/css">
 <!--
@@ -19,7 +19,7 @@
 	   $total=$info['total'];
 	   if($total==0)
 	   {
-	     echo "Our Site Temperarily NoUser 发表评论!";
+	     echo "Our Site Temperarily NoUser 发表Comment !";
 	   }
 	   else
 	   {
@@ -36,15 +36,15 @@
   
  <form name="form2" method="post" action="deletepingjia.php"> 
   <tr bgcolor="#FFCF60">
-    <td height="20" colspan="2"><div align="center" class="style1">User 评论编辑</div></td>
+    <td height="20" colspan="2"><div align="center" class="style1">User Comment Edit </div></td>
   </tr>
   <tr>
     <td height="40" colspan="2" bgcolor="#666666"><table width="750" height="45" border="0" align="center" cellpadding="0" cellspacing="1">
       <tr>
-        <td width="294" height="22" bgcolor="#FFFFFF"><div align="center">评论主题</div></td>
+        <td width="294" height="22" bgcolor="#FFFFFF"><div align="center">Comment 主题</div></td>
         <td width="93" bgcolor="#FFFFFF"><div align="center">Creation Name</div></td>
-        <td width="100" bgcolor="#FFFFFF"><div align="center">评论者</div></td>
-        <td width="110" bgcolor="#FFFFFF"><div align="center">评论时间</div></td>
+        <td width="100" bgcolor="#FFFFFF"><div align="center">Comment 者</div></td>
+        <td width="110" bgcolor="#FFFFFF"><div align="center">Comment 时间</div></td>
         <td width="87" bgcolor="#FFFFFF"><div align="center">操作</div></td>
         <td width="59" bgcolor="#FFFFFF"><div align="center">删除</div></td>
       </tr>
@@ -102,7 +102,7 @@
   <tr>
     <td width="657" height="20">
 	<div align="left">
-	&nbsp;Our Site  Totally    用评论&nbsp;<?php
+	&nbsp;Our Site  Totally    用Comment &nbsp;<?php
 		   echo $total;
 		  ?>&nbsp;条&nbsp; Each    Page  Show &nbsp;<?php echo $pagesize;?>&nbsp;条&nbsp; The &nbsp;<?php echo $page;?>&nbsp; Page  /Total&nbsp;<?php echo $pagecount; ?>&nbsp; Page  
         <?php

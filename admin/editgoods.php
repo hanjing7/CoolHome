@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>编辑Creation</title>
+<title>Edit Creation</title>
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <style type="text/css">
 <!--
@@ -31,7 +31,7 @@
     <td height="75" bgcolor="#666666"><table width="750" height="86" border="0" cellpadding="0" cellspacing="1">
       
 	  <tr bgcolor="#FFCF60">
-        <td height="20" colspan="10"><div align="center" class="style1">Creation信息编辑</div></td>
+        <td height="20" colspan="10"><div align="center" class="style1">Creation信息Edit </div></td>
       </tr>
       <tr>
         <td width="59" height="28" bgcolor="#FFFFFF"><div align="center">复选</div></td>

@@ -70,5 +70,5 @@ else
 $jianjie=$_POST['jianjie'];
 $addtime=$nian."-".$yue."-".$ri;
 mysql_query("insert into tb_shangpin(mingcheng,jianjie,addtime,dengji,xinghao,tupian,typeid,shichangjia,huiyuanjia,pinpai,tuijian,shuliang,cishu)values('$mingcheng','$jianjie','$addtime','$dengji','$xinghao','$uploadfile','$typeid','$shichangjia','$huiyuanjia','$pinpai','$tuijian','$shuliang','0')",$conn);
-echo "<script>alert('Creation".$mingcheng."添加成功!');window.location.href='addgoods.php';</script>";
+echo "<script>alert('Creation".$mingcheng."Add 成功!');window.location.href='addgoods.php';</script>";
 ?>

@@ -4,5 +4,5 @@
  $content=$_POST['content'];
  $time=date("Y-m-j");
  mysql_query("insert into tb_gonggao (title,content,time) values ('$title','$content','$time')",$conn);
- echo "<script>alert('Announcement 添加成功!');history.back();</script>";
+ echo "<script>alert('Announcement Add 成功!');history.back();</script>";
 ?>

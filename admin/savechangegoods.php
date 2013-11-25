@@ -60,5 +60,5 @@ $jianjie=$_POST['jianjie'];
 $addtime=$nian."-".$yue."-".$ri;
 
 mysql_query("update tb_shangpin set mingcheng='$mingcheng',jianjie='$jianjie',addtime='$addtime',dengji='$dengji',xinghao='$xinghao',tupian='$uploadfile',typeid='$typeid',shichangjia='$shichangjia',huiyuanjia='$huiyuanjia',pinpai='$pinpai',tuijian='$tuijian',shuliang='$shuliang' where id=".$_GET['id']."",$conn);
-echo "<script>alert('Creation".$mingcheng."修改成功!');history.back();;</script>";
+echo "<script>alert('Creation".$mingcheng."Update 成功!');history.back();;</script>";
 ?>

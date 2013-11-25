@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>添加Creation</title>
+<title>Add Creation</title>
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <style type="text/css">
 <!--
@@ -13,7 +13,7 @@
 <body topmargin="0" leftmargin="0" bottommargin="0">
 <table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td height="20" bgcolor="#FFCF60"><div align="center" class="style1">添加Creation</div></td>
+    <td height="20" bgcolor="#FFCF60"><div align="center" class="style1">Add Creation</div></td>
   </tr>
   <tr>
     <td height="253" bgcolor="#666666"><table width="720" border="0" cellpadding="0" cellspacing="1">
@@ -139,7 +139,7 @@
 			$info=mysql_fetch_array($sql);
 			if($info==false)
 			{
-			  echo " Please   先添加Creation Category 型!";
+			  echo " Please   先Add Creation Category 型!";
 			}
 			else
 			{
@@ -205,7 +205,7 @@
         </div></td>
       </tr>
       <tr>
-        <td height="25" colspan="2" bgcolor="#FFFFFF"><div align="center"><input name="submit" type="submit" class="buttoncss" id="submit" value="添加">
+        <td height="25" colspan="2" bgcolor="#FFFFFF"><div align="center"><input name="submit" type="submit" class="buttoncss" id="submit" value="Add ">
         &nbsp;&nbsp;<input type="reset" value="重写" class="buttoncss"></div></td>
       </tr>
 	  </form>

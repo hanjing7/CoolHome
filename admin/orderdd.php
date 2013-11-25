@@ -38,7 +38,7 @@
         <td width="100" bgcolor="#FFFFFF"><div align="center"><span class="style3">已收货</span>
           <input name="ysh" type="checkbox" value="已收货" >
         </div></td>
-        <td width="101" bgcolor="#FFFFFF"><div align="center"><input type="submit" value="修改" class="buttoncss"></div></td>
+        <td width="101" bgcolor="#FFFFFF"><div align="center"><input type="submit" value="Update " class="buttoncss"></div></td>
 	  </tr>
 	  </form>
     </table></td>
@@ -131,7 +131,7 @@
         <td height="25" bgcolor="#FFFFFF"><div align="left"><?php echo $info['zfff'];?></div></td>
       </tr>
 	  <tr>
-        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">简单留言：</div></td>
+        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">简单 Message：</div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="left"><?php echo $info['leaveword'];?></div></td>
       </tr>
     </table></td>

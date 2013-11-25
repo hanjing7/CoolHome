@@ -8,5 +8,5 @@ if($info!=false){
 exit;
 }
 mysql_query("insert into tb_type(typename) values ('$leibie')",$conn);
-echo"<script>alert('新 Category 别添加成功!');window.location.href='addleibie.php';</script>";
+echo"<script>alert('新 Category 别Add 成功!');window.location.href='addleibie.php';</script>";
 ?>

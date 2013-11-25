@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>Announcement 管理</title>
+<title>Announcement  Management </title>
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <style type="text/css">
 <!--
@@ -47,7 +47,7 @@
 <form name="form1" method="post" action="deletegonggao.php">
 <table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td height="20" bgcolor="#FFCF60"><div align="center" class="style1">Announcement 管理</div></td>
+    <td height="20" bgcolor="#FFCF60"><div align="center" class="style1">Announcement  Management </div></td>
   </tr>
   <tr>
     <td height="50" bgcolor="#666666"><table width="750" height="25" border="0" align="center" cellpadding="0" cellspacing="1">
@@ -65,7 +65,7 @@
 	  <tr>
         <td height="25" bgcolor="#FFFFFF"><div align="center"><input type="checkbox" name=<?php echo $info1['id'];?> value=<?php echo $info1['id'];?>></div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="left"><?php echo $info1['title'];?></div></td>
-	    <td height="25" bgcolor="#FFFFFF"><div align="center"><a href="editgonggao.php?id=<?php echo $info1['id'];?>">查看编辑</a></div></td>
+	    <td height="25" bgcolor="#FFFFFF"><div align="center"><a href="editgonggao.php?id=<?php echo $info1['id'];?>">查看Edit </a></div></td>
 	  </tr>
 	  <?php
 	       }

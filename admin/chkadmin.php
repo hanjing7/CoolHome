@@ -16,7 +16,7 @@
      $info=mysql_fetch_array($sql);
      if($info==false)
        {
-          echo "<script language='javascript'>alert('Not Exist 此管理员！');history.back();</script>";
+          echo "<script language='javascript'>alert('Not Exist 此 Management 员！');history.back();</script>";
           exit;
        }
       else

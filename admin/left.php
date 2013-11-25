@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>电子商务平台网后台管理</title>
-<link rel="stylesheet" type="text/css" href="css/font.css">
+<title>CoolHome Backstage  Management </title>
+<link rel="stylesheet" type="text/css" href="css/adminstyle.css">
 </head>
 <script language="javascript">
   function openspgl(){
@@ -48,54 +48,79 @@
   }
 </script>
 <body topmargin="0" leftmargin="0" bottommargin="0">
-<table width="212" border="0" cellpadding="0" cellspacing="0" background="left_bg.gif">
+<article class="grid_3">
+<table width="252" border="0" cellpadding="0" cellspacing="0" background="left_bg.gif">
   <tr>
+  <h3 class="p0">Conditions</h3>
+  
+  
+						<ul class="list-2">
+                        	<li><a href="#">At vero eos ccusamus</a></li>
+                            <li><a href="#">Odio digsis ducimus</a></li>
+								<ul class="list-3">
+									<li><a href="#">Blanditiis aesentiutatum</a></li>
+									<li><a href="#">Deleniti atque corrupti</a></li>
+									<li><a href="#">Rolores et qs molestias</a></li>
+								</ul>
+                            <li><a href="#">Blanditiis aesentiutatum</a></li>
+                            <li><a href="#">Deleniti atque corrupti</a></li>
+                            <li><a href="#">Rolores et qs molestias</a></li>
+                            <li><a href="#">Sint occaecatiupiditate</a></li>
+                            <li><a href="#">Provident silique</a></li>
+                            <li><a href="#">Qui eseruntollitia animi</a></li>
+                            <li><a href="#">Laborum etolorum</a></li>
+                            <li><a href="#">Et harum quim</a></li>
+                            <li><a href="#">Est et expeditdistinctio</a></li>
+                            <li><a href="#">Nam libero tpore</a></li>
+                            <li><a href="#">Cum soluta nis est</a></li>
+                            <li><a href="#">Eligendi optio mque nihil</a></li> 
+                        </ul>
     <td height="425" valign="top" background="images/left_bg.gif"><div align="center">
       <table width="212" border="0" cellspacing="0" cellpadding="0">
         <tr>
           <td><table width="212" height="20" border="0" cellpadding="0" cellspacing="0">
             <tr>
-              <td width="212" height="32" background="images/default_09.gif" onClick="javascript:openspgl()"><div align="center"><a href="#"><img id="d1" border="0"src="images/point1.gif" width="10" height="10">&nbsp;&nbsp;Creation管理</a></div></td>
+              <td width="212" height="32" background="images/default_09.gif" onClick="javascript:openspgl()"><div align="center"><a href="#"><img id="d1" border="0"src="images/point1.gif" width="10" height="10">&nbsp;&nbsp;Creation Management </a></div></td>
             </tr>
           </table>
             <table width="212" border="0" cellpadding="0" cellspacing="0" id="spgl" style="display:">
               <tr>
-                <td height="20" background="images/default_10.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  <a href="addgoods.php" target="main">添加Creation</a></td>
+                <td height="20" background="images/default_10.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  <a href="addgoods.php" target="main">Add Creation</a></td>
               </tr>
               <tr>
-                <td height="22" background="images/default_10.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  <a href="editgoods.php" target="main">修改Creation</a></td>
+                <td height="22" background="images/default_10.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  <a href="editgoods.php" target="main">Update Creation</a></td>
               </tr>
               <tr>
-                <td height="22" background="images/default_10.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  <a href="showleibie.php" target="main">Creation Category 别管理</a></td>
+                <td height="22" background="images/default_10.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  <a href="showleibie.php" target="main">Creation Category 别 Management </a></td>
               </tr>
               <tr>
-                <td height="26" background="images/default_12.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  <a href="addleibie.php" target="main">添加Creation Category 别</a></td>
+                <td height="26" background="images/default_12.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  <a href="addleibie.php" target="main">Add Creation Category 别</a></td>
               </tr>
             </table>
             <table width="212" height="20" border="0" cellpadding="0" cellspacing="0">
               <tr>
-                <td height="32" background="images/default_09.gif" onClick="javascript:openyhgl()"><div align="center"><a href="#"><img id="d2" border="0"src="images/point1.gif" width="10" height="10">&nbsp;&nbsp;User 管理</a></div></td>
+                <td height="32" background="images/default_09.gif" onClick="javascript:openyhgl()"><div align="center"><a href="#"><img id="d2" border="0"src="images/point1.gif" width="10" height="10">&nbsp;&nbsp;User  Management </a></div></td>
               </tr>
             </table>
             <table width="212" border="0" cellpadding="0" cellspacing="0" id="yhgl" style="display:">
               <tr>
-                <td height="22" background="images/default_10.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="edituser.php" target="main">User 信息管理</a></td>
+                <td height="22" background="images/default_10.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="edituser.php" target="main">User Information Management </a></td>
               </tr>
               <tr>
-                <td height="22" background="images/default_10.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="lookleaveword.php"  target="main">User 留言管理</a></td>
+                <td height="22" background="images/default_10.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="lookleaveword.php"  target="main">User  Message Management </a></td>
               </tr>
               <tr>
-                <td height="26" background="images/default_12.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="changeadmin.php"  target="main">更改管理员信息</a></td>
+                <td height="26" background="images/default_12.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="changeadmin.php"  target="main">更改 Management 员信息</a></td>
               </tr>
             </table>
             <table width="212" height="20" border="0" cellpadding="0" cellspacing="0">
               <tr>
-                <td height="32" align="center" background="images/default_09.gif" onClick="javascript:openddgl()"><a href="#"><img id="d3" border="0"src="images/point1.gif" width="10" height="10">&nbsp;&nbsp;Order 管理</a></td>
+                <td height="32" align="center" background="images/default_09.gif" onClick="javascript:openddgl()"><a href="#"><img id="d3" border="0"src="images/point1.gif" width="10" height="10">&nbsp;&nbsp;Order  Management </a></td>
               </tr>
             </table>
             <table width="212" border="0" cellpadding="0" cellspacing="0" id="ddgl" style="display:">
               <tr>
-                <td height="22" background="images/default_10.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="lookdd.php" target="main">编辑Order </a></td>
+                <td height="22" background="images/default_10.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="lookdd.php" target="main">Edit Order </a></td>
               </tr>
               <tr>
                 <td height="26" background="images/default_12.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="finddd.php" target="main">Query Order </a></td>
@@ -103,19 +128,19 @@
             </table>
             <table width="212" height="20" border="0" cellpadding="0" cellspacing="0">
               <tr>
-                <td height="32" background="images/default_09.gif" onClick="javascript:opengggl()"><div align="center"><a href="#"><img id="d4" border="0"src="images/point1.gif" width="10" height="10">&nbsp;&nbsp;信息管理</a></div></td>
+                <td height="32" background="images/default_09.gif" onClick="javascript:opengggl()"><div align="center"><a href="#"><img id="d4" border="0"src="images/point1.gif" width="10" height="10">&nbsp;&nbsp;Information Management </a></div></td>
               </tr>
             </table>
             <table width="212" border="0" cellpadding="0" cellspacing="0" id="gggl" style="display:">
               <tr>
-                <td height="22" background="images/default_10.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="admingonggao.php " target="main">Announcement 管理</a></td>
+                <td height="22" background="images/default_10.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="admingonggao.php " target="main">Announcement  Management </a></td>
               </tr>
               <tr background="images/default_10.gif">
                 <td height="22" background="images/default_10.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                
-                  <a href="addgonggao.php " target="main">添加Announcement </a></td>
+                  <a href="addgonggao.php " target="main">Add Announcement </a></td>
               </tr>
               <tr>
-                <td height="26" background="images/default_12.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="editpinglun.php " target="main">评论管理</a></td>
+                <td height="26" background="images/default_12.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="editpinglun.php " target="main">Comment  Management </a></td>
               </tr>
 			<tr><td height="100" background="images/left_bottom.gif">&nbsp;</td>
 			</tr>
@@ -129,5 +154,6 @@
       </div></td>
   </tr>
 </table>
+</article>
 </body>
 </html>
