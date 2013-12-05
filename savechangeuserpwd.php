@@ -28,7 +28,7 @@ class chkchange
 		 else
 		 {
 		   mysql_query("update tb_user set pwd='".md5($this->p2)."' ,pwd1='$this->p2' where name='$this->name'",$conn);
-		   echo "<script>alert(' Password 修改成功!');history.back();</script>";
+		   echo "<script>alert(' Password 修改successfully!');history.back();</script>";
 		   exit;
 		 }
 	   }

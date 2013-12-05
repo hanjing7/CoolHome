@@ -1,7 +1,7 @@
 <?php
  session_start();
  if($_SESSION['username']==""){
-    echo "<script>alert(' Please   先登录，后购物!');history.back();</script>";
+    echo "<script>alert(' Please Login First!');history.back();</script>";
 	exit;
   }
 ?>
@@ -41,11 +41,11 @@
                 <tr>
                   <td width="125" height="25" bgcolor="#FFFFFF"><div align="center">Creation Name</div></td>
                   <td width="52" bgcolor="#FFFFFF"><div align="center"> Amount </div></td>
-                  <td width="64" bgcolor="#FFFFFF"><div align="center">市场 Price  </div></td>
+                  <td width="64" bgcolor="#FFFFFF"><div align="center">Market   Price  </div></td>
                   <td width="64" bgcolor="#FFFFFF"><div align="center"> Premium  Price  </div></td>
                   <td width="51" bgcolor="#FFFFFF"><div align="center"> Discount </div></td>
-                  <td width="66" bgcolor="#FFFFFF"><div align="center">小计</div></td>
-                  <td width="71" bgcolor="#FFFFFF"><div align="center">操作</div></td>
+                  <td width="66" bgcolor="#FFFFFF"><div align="center">Subtotal </div></td>
+                  <td width="71" bgcolor="#FFFFFF"><div align="center">Operation </div></td>
                 </tr>
                 <?php
 			    $total=0;
@@ -80,7 +80,7 @@
                   <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo $info['huiyuanjia'];?>Dollar</div></td>
                   <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo @(ceil(($info['huiyuanjia']/$info['shichangjia'])*100))."%";?></div></td>
                   <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo $info['huiyuanjia']*$num."Dollar";?></div></td>
-                  <td height="25" bgcolor="#FFFFFF"><div align="center"><a href="removegwc.php?id=<?php echo $info['id']?>">移除</a></div></td>
+                  <td height="25" bgcolor="#FFFFFF"><div align="center"><a href="removegwc.php?id=<?php echo $info['id']?>">Remove</a></div></td>
                 </tr>
                 <?php
 			      }
@@ -91,11 +91,11 @@
                       <table width="500" height="25" border="0" align="center" cellpadding="0" cellspacing="0">
                         <tr>
                           <td width="125"><div align="center">
-                              <input name="submit2" type="submit" class="buttoncss" value="更改Creation Amount ">
+                              <input name="submit2" type="submit" class="buttoncss" value="Edit Creation Amount ">
                           </div></td>
-                          <td width="125"><div align="center"><a href="gouwu2.php">去收银台</a></div></td>
-                          <td width="125"><div align="center"><a href="gouwu1.php?qk=yes">清空Collection </a></div></td>
-                          <td width="125"><div align="left">总计：<?php echo $total;?></div></td>
+                          <td width="125"><div align="center"><a href="gouwu2.php"> Checkout</a></div></td>
+                          <td width="125"><div align="center"><a href="gouwu1.php?qk=yes"> Empty Collection </a></div></td>
+                          <td width="125"><div align="left">Total :<?php echo $total;?></div></td>
                         </tr>
                       </table>
                   </div></td>

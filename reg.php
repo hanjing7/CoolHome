@@ -42,13 +42,13 @@
 	 }
    if(form.email.value=="")
 	{
-	 alert(" Please    type in   电子邮箱地址!");
+	 alert(" Please    type in   Email Address !");
 	 form.email.select();
 	 return(false);
 	 }
 	if(form.email.value.indexOf('@')<0)
 	{
-	 alert(" Please    type in   正确‘s 电子邮箱地址!");
+	 alert(" Please    type in   正确‘s Email Address !");
 	 form.email.select();
 	 return(false);
 	 }
@@ -66,7 +66,7 @@
 	 }
   if(form.sfzh.value=="")
 	{
-	 alert(" Please    type in   身份证Number !");
+	 alert(" Please    type in   IdentificationNumber !");
 	 form.sfzh.select();
 	 return(false);
 	 }
@@ -104,69 +104,69 @@
               <td  bgcolor="#555555"><table width="557" border="0" align="center" cellpadding="0" cellspacing="0">
                   <form name="form1" method="post" action="savereg.php" onSubmit="return chkinput(this)">
                     <tr>
-                      <td width="100" height="20" bgcolor="#FFFFFF"><div align="center">&nbsp;&nbsp;User 昵称：</div></td>
+                      <td width="100" height="20" bgcolor="#FFFFFF"><div align="center">&nbsp;&nbsp;User 昵称:</div></td>
                       <td width="397" bgcolor="#FFFFFF"><div align="left">
                           <input type="text" name="usernc" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                           <span style="color: #FF0000">&nbsp;*</span>&nbsp;
-                          <input name="button2" type="button" class="buttoncss" onclick="chknc(form1.usernc.value)" value="查看昵称是否已用">
+                          <input name="button2" type="button" class="buttoncss" onclick="chknc(form1.usernc.value)" value="View 昵称是否已用">
                       </div></td>
                     </tr>
                     <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center"> Register  Password ：</div></td>
+                      <td height="20" bgcolor="#FFFFFF"><div align="center"> Register  Password :</div></td>
                       <td height="20" bgcolor="#FFFFFF"><div align="left">
                           <input type="password" name="p1" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                           <span style="color: #FF0000">*</span></div></td>
                     </tr>
                     <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center">Re-type Password ：</div></td>
+                      <td height="20" bgcolor="#FFFFFF"><div align="center">Re-type Password :</div></td>
                       <td height="20" bgcolor="#FFFFFF"><div align="left">
                           <input type="password" name="p2" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                           <span style="color: #FF0000">*</span></div></td>
                     </tr>
                     <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center">E-mail：</div></td>
+                      <td height="20" bgcolor="#FFFFFF"><div align="center">E-mail:</div></td>
                       <td height="20" bgcolor="#FFFFFF"><div align="left">
                           <input type="text" name="email" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                           <span style="color: #FF0000">*</span></div></td>
                     </tr>
                     <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center">QQ&nbsp;Number 码：</div></td>
+                      <td height="20" bgcolor="#FFFFFF"><div align="center">QQ&nbsp;Number 码:</div></td>
                       <td height="20" bgcolor="#FFFFFF"><div align="left">
                           <input type="text" name="qq" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                       </div></td>
                     </tr>
                     <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center">邮政编码：</div></td>
+                      <td height="20" bgcolor="#FFFFFF"><div align="center">邮政编码:</div></td>
                       <td height="20" bgcolor="#FFFFFF"><div align="left">
                           <input type="text" name="yb" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                       </div></td>
                     </tr>
                     <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center">Contact 电话：</div></td>
+                      <td height="20" bgcolor="#FFFFFF"><div align="center">Contact 电话:</div></td>
                       <td height="20" bgcolor="#FFFFFF"><div align="left">
                           <input type="text" name="tel" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                           <span style="color: #FF0000">(手机Number )*</span></div></td>
                     </tr>
                     <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center">Full Name ：</div></td>
+                      <td height="20" bgcolor="#FFFFFF"><div align="center">Full Name :</div></td>
                       <td height="20" bgcolor="#FFFFFF"><div align="left">
                           <input type="text" name="truename" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                           <span style="color: #FF0000">*</span> </div></td>
                     </tr>
                     <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center">身份证Number ：</div></td>
+                      <td height="20" bgcolor="#FFFFFF"><div align="center">IdentificationNumber :</div></td>
                       <td height="20" bgcolor="#FFFFFF"><div align="left">
                           <input type="text" name="sfzh" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                           <span style="color: #FF0000">*</span></div></td>
                     </tr>
                     <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center">Address ：</div></td>
+                      <td height="20" bgcolor="#FFFFFF"><div align="center">Address :</div></td>
                       <td height="20" bgcolor="#FFFFFF"><div align="left">
                           <input type="text" name="dizhi" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                           <span style="color: #FF0000">*</span></div></td>
                     </tr>
                     <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center"> Password Hint：</div></td>
+                      <td height="20" bgcolor="#FFFFFF"><div align="center"> Password Hint:</div></td>
                       <td height="20" bgcolor="#FFFFFF"><div align="left">
                           <select name="ts1" class="inputcss">
                             <option selected value=1> Please   选择问题</option>
@@ -181,7 +181,7 @@
                       <span style="color: #FF0000">*</span></div></td>
                     </tr>
                     <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center">Security Answer：</div></td>
+                      <td height="20" bgcolor="#FFFFFF"><div align="center">Security Answer:</div></td>
                       <td height="20" bgcolor="#FFFFFF"><div align="left">
                           <input type="text" name="tsda" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                           <span style="color: #FF0000">*</span></div></td>
@@ -190,7 +190,7 @@
                       <td height="20" colspan="2" bgcolor="#FFFFFF"><div align="center">
                           <input name="submit2" type="submit" class="buttoncss" value=" Login  ">
 &nbsp;&nbsp;
-                      <input name="reset" type="reset" class="buttoncss" value="重写">
+                      <input name="reset" type="reset" class="buttoncss" value="Reset ">
                       </div></td>
                     </tr>
                   </form>
@@ -199,7 +199,7 @@
           </table>
             <table width="557" height="25" border="0" align="center" cellpadding="0" cellspacing="0">
               <tr>
-                <td width="547"><div align="center" style="color: #FF0000">注意：带*为必添内容!</div></td>
+                <td width="547"><div align="center" style="color: #FF0000">注意:带*为必添Content !</div></td>
               </tr>
           </table></td>
       </tr>

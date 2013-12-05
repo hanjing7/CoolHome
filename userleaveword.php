@@ -13,7 +13,7 @@
     </table>
       <table width="550" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
-          <td><div align="left">&nbsp;&nbsp;当前User &nbsp;<span style="color: #0000FF">》&nbsp;</span><?php echo $_SESSION['username'];?>&nbsp;<span style="color: #0000FF">》</span><a href="usercenter.php">修改个人信息</a>&nbsp;<span style="color: #0000FF">》</span><a href="userleaveword.php">User 留言</a>&nbsp;<span style="color: #0000FF">》</span><a href="changeuserpwd.php">修改 Password </a>&nbsp;<span style="color: #0000FF">》</span><a href="logout.php">注销离开&nbsp;</a></div></td>
+          <td><div align="left">&nbsp;&nbsp;Current User &nbsp;<span style="color: #0000FF">》&nbsp;</span><?php echo $_SESSION['username'];?>&nbsp;<span style="color: #0000FF">》</span><a href="usercenter.php">修改个人 INFO</a>&nbsp;<span style="color: #0000FF">》</span><a href="userleaveword.php">User Message</a>&nbsp;<span style="color: #0000FF">》</span><a href="changeuserpwd.php">修改 Password </a>&nbsp;<span style="color: #0000FF">》</span><a href="logout.php">注销离开&nbsp;</a></div></td>
         </tr>
       </table>
       <table width="500" height="10" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -23,7 +23,7 @@
       </table>
       <table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
-          <td height="20" bgcolor="#FFEDBF"><div align="center" style="color: #990000">User 留言</div></td>
+          <td height="20" bgcolor="#8A87CC"><div align="center" style="color: #990000">User Message</div></td>
         </tr>
         <tr>
           <td height="150" bgcolor="#555555"><table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -32,13 +32,13 @@
 			  {
 			    if(form.title.value=="")
 				{
-				   alert(" Please    type in   留言主题!");
+				   alert(" Please    type in   MessageTopic!");
 				   form.title.select();
 				   return(false);
 				}
 			   if(form.content.value=="")
 				{
-				   alert(" Please    type in   留言内容!");
+				   alert(" Please    type in   MessageContent !");
 				   form.content.select();
 				   return(false);
 				}
@@ -48,13 +48,13 @@
 			</script>
               <form name="form2" method="post" action="saveuserleaveword.php" onSubmit="return chkinput1(this)">
                 <tr>
-                  <td width="102" height="25" bgcolor="#FFFFFF"><div align="center">留言主题：</div></td>
+                  <td width="102" height="25" bgcolor="#FFFFFF"><div align="center">MessageTopic:</div></td>
                   <td width="395" bgcolor="#FFFFFF"><div align="left">
                       <input type="text" name="title" size="30" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                   </div></td>
                 </tr>
                 <tr>
-                  <td height="100" bgcolor="#FFFFFF"><div align="center">留言内容：</div></td>
+                  <td height="100" bgcolor="#FFFFFF"><div align="center">MessageContent :</div></td>
                   <td height="100" bgcolor="#FFFFFF"><div align="left">
                       <textarea name="content" rows="8" cols="60" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'"></textarea>
                   </div></td>
@@ -63,7 +63,7 @@
                   <td height="25" colspan="2" bgcolor="#FFFFFF"><div align="center">
                       <input name="submit2" type="submit" class="buttoncss" value=" Login  ">
 &nbsp;&nbsp;
-                <input name="reset" type="reset" class="buttoncss" value="重写">
+                <input name="reset" type="reset" class="buttoncss" value="Reset ">
                   </div></td>
                 </tr>
               </form>
@@ -75,4 +75,4 @@
 <?php
  include("bottom.php");
 ?>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

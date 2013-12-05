@@ -1,7 +1,7 @@
 
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title> Find  Password </title>
 <link rel="stylesheet" type="text/css" href="css/font.css">
 </head>
@@ -23,11 +23,11 @@
    }
  </script>
   <form name="form2" method="post" action="showpwd.php" onSubmit="return chkinput(this)">
-  <tr bgcolor="#FFEDBF">
+  <tr bgcolor="#8A87CC">
     <td height="25" colspan="2"><div align="center"> Find  Password </div></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="67" height="25"><div align="center">&nbsp; Password Hint：</div></td>
+    <td width="67" height="25"><div align="center">&nbsp; Password Hint:</div></td>
     <td width="133"><div align="left">
 	<?php
 	  $nc=$_POST['nc'];
@@ -47,13 +47,13 @@
 	</div></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td height="25"><div align="center">&nbsp;Security Answer：</div></td>
+    <td height="25"><div align="center">&nbsp;Security Answer:</div></td>
     <td height="25"><div align="left"><input type="text" name="da" class="inputcss" size="20">
 	  <input type="hidden" name="nc" value="<?php echo $nc;?>">
 	</div></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td height="25" colspan="2"><div align="center"><input type="submit" value="确定" class="buttoncss"></div></td>
+    <td height="25" colspan="2"><div align="center"><input type="submit" value="Comfirm" class="buttoncss"></div></td>
   </tr>
   </form>
 </table>

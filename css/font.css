@@ -1,5 +1,5 @@
 A:link {
-	COLOR: #006699; TEXT-DECORATION: none
+	COLOR: #E8F4FF; TEXT-DECORATION: none
 }
 A:visited {
 	COLOR: #006699; TEXT-DECORATION: none
@@ -8,18 +8,19 @@ A:active {
 	COLOR: #006699; TEXT-DECORATION: none
 }
 A:hover {
-	COLOR: #000000
+	COLOR: #ffffff
 }
+.shortcut {color: E8F4FF}
 BODY {
 	background-image: url(../images/bg.gif);
 	margin-top: 0px;
 }
 TD,TH {
-	FONT-SIZE:12px; COLOR: #006699;
+	FONT-SIZE:12px; COLOR: #000;
 }
 .buttoncss {
-    font-family: "Tahoma", "ËÎÌו";
-    font-size: 9pt; color: #003399;
+    font-family: "Arial";
+    font-size: 11pt; color: #003399;
     border: 1px #003399 solid;
     color:006699;
     BORDER-BOTTOM: #93bee2 1px solid; 
@@ -31,17 +32,17 @@ TD,TH {
     font-style: normal ;
 }
 .inputcss {  
-    font-size: 9pt; 
+    font-size: 12pt; 
     color: #003399; 
-    font-family: "ËÎÌו"; 
+    font-family: "Times New Roman"; 
     font-style: normal; 	
     border-color: #93BEE2 #93BEE2 #93BEE2 #93BEE2 ; 
     border: 1px #93BEE2 solid; 
 }
 .inputcssnull {  
-    font-size: 9pt; 
+    font-size: 12pt; 
     color: #003399; 
-    font-family: "ËÎÌו"; 
+    font-family: "Times New Roman"; 
     font-style: normal; 	
     border: 0px #93BEE2 solid; 
 }
@@ -67,3 +68,9 @@ TD,TH {
    SCROLLBAR-DARKSHADOW-COLOR: #69BC2C
 
  }
+ 
+.bottom a {color:#fff}
+.bottom .indent {padding:37px 60px}
+
+#list{margin-left:auto;font-family: "Arial"; font-size:14px;font-weight: bold;}
+#content{margin-left:auto;font-family: "Times New Roman"; font-size:12px;font-weight: normal; color:#000}

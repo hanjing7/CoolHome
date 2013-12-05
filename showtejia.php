@@ -68,37 +68,37 @@
 			 }
 			?>
           </div></td>
-          <td width="93" height="20"><div align="center" style="color: #000000">Creation Name£º</div></td>
+          <td width="93" height="20"><div align="center" style="color: #000000">Creation Name:</div></td>
           <td colspan="5"><div align="left"> <a href="lookinfo.php?id=<?php echo $info1['id'];?>"><?php echo $info1['mingcheng'];?></a></div></td>
         </tr>
         <tr>
-          <td width="93" height="20"><div align="center" style="color: #000000">Creation Tag £º</div></td>
+          <td width="93" height="20"><div align="center" style="color: #000000">Creation Tag :</div></td>
           <td width="101" height="20"><div align="left"><?php echo $info1['pinpai'];?></div></td>
-          <td width="62"><div align="center" style="color: #000000">Creation Model   £º</div></td>
+          <td width="62"><div align="center" style="color: #000000">Creation Model   :</div></td>
           <td colspan="3"><div align="left"><?php echo $info1['xinghao'];?></div></td>
         </tr>
         <tr>
-          <td width="93" height="20"><div align="center" style="color: #000000">Creation Description £º</div></td>
+          <td width="93" height="20"><div align="center" style="color: #000000">Creation Description :</div></td>
           <td height="20" colspan="5"><div align="left"><?php echo $info1['jianjie'];?></div></td>
         </tr>
         <tr>
-          <td height="20"><div align="center" style="color: #000000"> Market  Date  £º</div></td>
+          <td height="20"><div align="center" style="color: #000000"> Market  Date  :</div></td>
           <td height="20"><div align="left"><?php echo $info1['addtime'];?></div></td>
-          <td height="20"><div align="center" style="color: #000000"> Left  Amount £º</div></td>
+          <td height="20"><div align="center" style="color: #000000"> Left  Amount :</div></td>
           <td width="69" height="20"><div align="left"><?php echo $info1['shuliang']-$info1['cishu'];?></div></td>
-          <td width="63"><div align="center" style="color: #000000">Creation Level £º</div></td>
+          <td width="63"><div align="center" style="color: #000000">Creation Level :</div></td>
           <td width="73"><div align="left"><?php echo $info1['dengji'];?></div></td>
         </tr>
         <tr>
-          <td height="20"><div align="center" style="color: #000000"> Common   Price  £º</div></td>
+          <td height="20"><div align="center" style="color: #000000"> Common   Price  :</div></td>
           <td height="20"><div align="left"><?php echo $info1['shichangjia'];?>Dollar</div></td>
-          <td height="20"><div align="center" style="color: #000000"> Premium  Price  £º</div></td>
+          <td height="20"><div align="center" style="color: #000000"> Premium  Price  :</div></td>
           <td height="20"><div align="left"><?php echo $info1['huiyuanjia'];?>Dollar</div></td>
-          <td height="20"><div align="center" style="color: #000000"> Discount £º</div></td>
+          <td height="20"><div align="center" style="color: #000000"> Discount :</div></td>
           <td height="20"><div align="left"><?php echo (ceil(($info1['huiyuanjia']/$info1['shichangjia'])*100))."%";?></div></td>
         </tr>
         <tr>
-          <td height="20" colspan="6" width="461"><div align="center">&nbsp;&nbsp;&nbsp;&nbsp;<a href="addgouwuche.php?id=<?php echo $info1['id'];?>"><img src="images/goumai_btn.gif" width="60" height="18" border="0" style=" cursor:hand"></a></div></td>
+          <td height="20" colspan="6" width="461"><div align="center">&nbsp;&nbsp;&nbsp;&nbsp;<a href="addgouwuche.php?id=<?php echo $info1['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0" style=" cursor:hand"></a></div></td>
         </tr>
         <tr>
           <td height="10" colspan="7" background="images/line1.gif"></td>
@@ -119,7 +119,7 @@
 		  if($page>=2)
 		  {
 		  ?>
-        <a href="showtejia.php?page=1" title="Home Page  "><font face="webdings"> 9 </font></a> <a href="showtejia.php?id=<?php echo $id;?>&page=<?php echo $page-1;?>" title="Ç°Ò» Page  "><font face="webdings"> 7 </font></a>
+        <a href="showtejia.php?page=1" title="Home Page  "><font face="webdings"> 9 </font></a> <a href="showtejia.php?id=<?php echo $id;?>&page=<?php echo $page-1;?>" title="Prev Page  "><font face="webdings"> 7 </font></a>
         <?php
 		  }
 		   if($pagecount<=4){
@@ -133,7 +133,7 @@
 		  ?>
         <a href="showtejia.php?page=<?php echo $i;?>"><?php echo $i;?></a>
         <?php }?>
-        <a href="showtejia.php?page=<?php echo $page-1;?>" title="Next Page  "><font face="webdings"> 8 </font></a> <a href="showtejia.php?id=<?php echo $id;?>&page=<?php echo $pagecount;?>" title="Î² Page  "><font face="webdings"> : </font></a>
+        <a href="showtejia.php?page=<?php echo $page-1;?>" title="Next Page  "><font face="webdings"> 8 </font></a> <a href="showtejia.php?id=<?php echo $id;?>&page=<?php echo $pagecount;?>" title="End Page  "><font face="webdings"> : </font></a>
         <?php }?>
           </div></td>
         </tr>

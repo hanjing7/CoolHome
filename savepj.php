@@ -9,5 +9,5 @@ $sql=mysql_query("select * from tb_user where name='".$_SESSION['username']."'",
 $info=mysql_fetch_array($sql);
 $userid=$info['id'];
 mysql_query("insert into tb_pingjia (userid,spid,title,content,time) values ('$userid','$spid','$title','$content','$time') ",$conn);
-echo "<script>alert('评论发表成功!');history.back();</script>";
+echo "<script>alert('Comment Post successfully!');history.back();</script>";
 ?>

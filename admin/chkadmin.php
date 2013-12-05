@@ -16,13 +16,13 @@
      $info=mysql_fetch_array($sql);
      if($info==false)
        {
-          echo "<script language='javascript'>alert('Not Exist ´Ë Management Ô±£¡');history.back();</script>";
+          echo "<script language='javascript'>alert('Administrator does not exist£¡');history.back();</script>";
           exit;
        }
       else
        {
           if($info['pwd']==$this->pwd){
-               header("location:default.php");
+               header("location:default1.php");
             }
           else
            {

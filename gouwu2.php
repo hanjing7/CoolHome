@@ -9,33 +9,33 @@
     <td width="557" align="center" valign="top" bgcolor="#FFFFFF">       <script language="javascript">
 		   function chkinput(form){
 			   if(form.name.value==""){
-				  alert(" Please    type in   收货人Full Name !");
+				  alert(" Please    type in   Receiver Full Name !");
 				  form.name.select();
 				  return(false);
 				}
 				if(form.dz.value==""){
-				  alert(" Please    type in   收货人地址!");
+				  alert(" Please    type in   Receiver Address !");
 				  form.dz.select();
 				  return(false);
 				}
 				if(form.yb.value==""){
-				  alert(" Please    type in   收货人邮编!");
+				  alert(" Please    type in   Receiver 邮编!");
 				  form.yb.select();
 				  return(false);
 				}
 				if(form.tel.value==""){
-				  alert(" Please    type in   收货人Contact 电话!");
+				  alert(" Please    type in   Receiver Contact 电话!");
 				  form.tel.select();
 				  return(false);
 				}
 				if(form.email.value==""){
-				  alert(" Please    type in   收货人E-mail地址!");
+				  alert(" Please    type in   Receiver E-mailAddress !");
 				  form.email.select();
 				  return(false);
 				
 				}
 				if(form.email.value.indexOf("@")<0){
-				    alert("收货人E-mail地址格式 type in   Error!");
+				    alert("Receiver E-mailAddress 格式 type in   Error!");
 				    form.email.select();
 				    return(false);
 				 }
@@ -49,18 +49,18 @@
       </table>
       <table width="530" border="0" align="center" cellpadding="1" cellspacing="0" bordercolor="#FFFFFF" bgcolor="#FCC223">
       <tr>
-        <td height="25" bgcolor="#FEDD9A"><div align="center" style="color: #720206">收货人信息</div></td>
+        <td height="25" bgcolor="#FEDD9A"><div align="center" style="color: #720206">Receiver  INFO</div></td>
       </tr>
       <tr>
         <td height="295"><table width="530" height="293" border="0" align="center" cellpadding="0" cellspacing="1">
 
             <form name="form1" method="post" action="savedd.php" onSubmit="return chkinput(this)">
               <tr>
-                <td width="100" height="25" bgcolor="#FFFFFF"><div align="center">收货人Full Name ：</div></td>
+                <td width="100" height="25" bgcolor="#FFFFFF"><div align="center">Receiver Full Name :</div></td>
                 <td width="183" bgcolor="#FFFFFF"><div align="left">
                     <input type="text" name="name2" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                 </div></td>
-                <td width="86" bgcolor="#FFFFFF"><div align="center">性别：</div></td>
+                <td width="86" bgcolor="#FFFFFF"><div align="center">性别:</div></td>
                 <td width="176" bgcolor="#FFFFFF"><div align="left">
                     <select name="sex">
                       <option selected value="男">男</option>
@@ -69,31 +69,31 @@
                 </div></td>
               </tr>
               <tr>
-                <td height="25" bgcolor="#FFFFFF"><div align="center">邮政编码：</div></td>
+                <td height="25" bgcolor="#FFFFFF"><div align="center">邮政编码:</div></td>
                 <td height="25" colspan="3" bgcolor="#FFFFFF"><div align="left">
                     <input type="text" name="yb" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                 </div></td>
               </tr>
               <tr>
-                <td height="25" bgcolor="#FFFFFF"><div align="center">Contact 电话：</div></td>
+                <td height="25" bgcolor="#FFFFFF"><div align="center">Contact 电话:</div></td>
                 <td height="25" colspan="3" bgcolor="#FFFFFF"><div align="left">
                     <input type="text" name="tel" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                 </div></td>
               </tr>
               <tr>
-                <td height="25" bgcolor="#FFFFFF"><div align="center">电子邮箱：</div></td>
+                <td height="25" bgcolor="#FFFFFF"><div align="center">Email :</div></td>
                 <td height="25" colspan="3" bgcolor="#FFFFFF"><div align="left">
                     <input type="text" name="email" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                 </div></td>
               </tr>
               <tr>
-                <td height="25" bgcolor="#FFFFFF"><div align="center">详细地址：</div></td>
+                <td height="25" bgcolor="#FFFFFF"><div align="center">详细Address :</div></td>
                 <td height="25" colspan="3" bgcolor="#FFFFFF"><div align="left">
                     <input name="dz" type="text" class="inputcss" id="dz" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'" size="50">
                 </div></td>
               </tr>
               <tr>
-                <td height="25" bgcolor="#FFFFFF"><div align="center">送货方式：</div></td>
+                <td height="25" bgcolor="#FFFFFF"><div align="center">DELIVERY:</div></td>
                 <td height="25" colspan="3" bgcolor="#FFFFFF"><div align="left">
                     <select name="shff" id="shff">
                       <option selected value="普通平邮">普通平邮</option>
@@ -105,7 +105,7 @@
                 </div></td>
               </tr>
               <tr>
-                <td height="25" bgcolor="#FFFFFF"><div align="center">支付方式：</div></td>
+                <td height="25" bgcolor="#FFFFFF"><div align="center">PAYMENT METHOD:</div></td>
                 <td height="25" colspan="3" bgcolor="#FFFFFF"><div align="left">
                     <select name="zfff" id="zfff">
                       <option selected value="建设银行汇款">建设银行汇款</option>
@@ -116,7 +116,7 @@
                 </div></td>
               </tr>
               <tr>
-                <td height="86" bgcolor="#FFFFFF"><div align="center">简单留言：</div></td>
+                <td height="86" bgcolor="#FFFFFF"><div align="center">简单Message:</div></td>
                 <td height="86" colspan="3" bgcolor="#FFFFFF"><div align="left">
                     <textarea name="ly" cols="70" rows="5" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'"></textarea>
                 </div></td>
@@ -145,4 +145,4 @@
 
   }
 ?>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

@@ -46,11 +46,6 @@
                     	<div class="indent-left2">
                             <h5>Navigation</h5>
                             <ul class="list-1">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="company.html">Company</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="clients.html">Clients</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
                             </ul>
                         </div>
                     </article>

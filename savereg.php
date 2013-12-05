@@ -38,6 +38,6 @@ if($info==true)
 	$producelist="";
 	session_register("quatity");
 	$quatity="";
-    echo "<script>alert('¹§Ï²£¬ Register ³É¹¦!');window.location='index.php';</script>";
+    echo "<script>alert('Congratulations! £¬ Register successfully!');window.location='index.php';</script>";
  }
 ?>

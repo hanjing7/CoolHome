@@ -2,7 +2,7 @@
 session_start();
 include("conn/conn.php");
 if($_SESSION['username']==""){
-  echo "<script>alert(' Please   先登录后购物!');history.back();</script>"; 
+  echo "<script>alert(' Please   先login后购物!');history.back();</script>"; 
   exit;
  }
 $id=strval($_GET['id']);

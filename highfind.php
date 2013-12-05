@@ -33,16 +33,16 @@
 	  </script>
         <form name="form1" method="post" action="findsp.php" onSubmit="return chkinput1(this)">
           <tr>
-            <td height="25" bgcolor="#FFEDBF"><div align="center" style="color: #6A0206">CreationAdvanced Search </div></td>
+            <td height="25" bgcolor="#8A87CC"><div align="center" style="color: #6A0206">CreationAdvanced Search </div></td>
           </tr>
           <tr>
-            <td height="50" bgcolor="#FFEDBF"><table width="400" height="80" border="0" cellpadding="0" cellspacing="1">
+            <td height="50" bgcolor="#8A87CC"><table width="400" height="80" border="0" cellpadding="0" cellspacing="1">
                 <tr>
                   <td width="68" height="25" bgcolor="#FFFFFF"><div align="center">¹Ø¼ü×Ö:</div></td>
                   <td width="207" bgcolor="#FFFFFF"><div align="left">
                       <input name="name" type="text" class="inputcss" id="name" size="25">
                   </div></td>
-                  <td width="51" bgcolor="#FFFFFF"><div align="center">Ä£ºý:</div></td>
+                  <td width="51" bgcolor="#FFFFFF"><div align="center">Ä:ý:</div></td>
                   <td width="69" bgcolor="#FFFFFF"><div align="center">
                       <input name="mh" type="checkbox" value="1" checked>
                   </div></td>

@@ -3,7 +3,7 @@ session_start();
 ?>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>CreationOrder </title>
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <style type="text/css">
@@ -32,24 +32,24 @@ session_start();
   <tr>
     <td height="306" bgcolor="#FFFFFF"><table width="600"  border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
-        <td height="20" bgcolor="#FFEDBF"><div align="center" class="style7">恭喜<?php echo $_SESSION['username'];?>，您已成功‘s  Login  了此Order !详细信息如下:</div></td>
+        <td height="20" bgcolor="#8A87CC"><div align="center" class="style7">Congratulations! <?php echo $_SESSION['username'];?>，you have login successfully! Detailed Order INFO:</div></td>
       </tr>
       <tr>
-        <td height="20" bgcolor="#FFFFFF"><div align="left"><span class="style5">&nbsp;Order Number ：</span><?php echo $dingdanhao;?></div></td>
+        <td height="20" bgcolor="#FFFFFF"><div align="left"><span class="style5">&nbsp;Order Number :</span><?php echo $dingdanhao;?></div></td>
       </tr>
       <tr>
-        <td height="20" bgcolor="#FFFFFF"><div align="left" class="style5">&nbsp;Creation列表(如下)：</div></td>
+        <td height="20" bgcolor="#FFFFFF"><div align="left" class="style5">&nbsp;Creation list:</div></td>
       </tr>
     </table>
       <table width="500" height="60" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
           <td bgcolor="#666666"><table width="500" border="0" align="center" cellpadding="0" cellspacing="1">
-              <tr bgcolor="#FFEDBF">
+              <tr bgcolor="#8A87CC">
                 <td width="153" height="20"><div align="center" class="style7">Creation Name</div></td>
-                <td width="80"><div align="center" class="style7">市场 Price  </div></td>
+                <td width="80"><div align="center" class="style7">Market   Price  </div></td>
                 <td width="80"><div align="center" class="style7"> Premium  Price  </div></td>
                 <td width="80"><div align="center" class="style7"> Amount </div></td>
-                <td width="101"><div align="center" class="style7">小计</div></td>
+                <td width="101"><div align="center" class="style7">Subtotal </div></td>
               </tr>
               <?php
 	  $total=0;
@@ -72,28 +72,28 @@ session_start();
 	 ?>
               <tr bgcolor="#FFFFFF">
                 <td height="20" colspan="5">
-                  <div align="right"><span class="style5">总计费用:</span><?php echo $total;?> </div></td>
+                  <div align="right"><span class="style5">Total Cost:</span><?php echo $total;?> </div></td>
               </tr>
           </table></td>
         </tr>
       </table>
       <table width="480" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr bgcolor="#FFFFFF">
-          <td width="81" height="20" align="center"><div align="left" class="style6">&nbsp;下单人：</div></td>
+          <td width="81" height="20" align="center"><div align="left" class="style6">&nbsp;ORDERER:</div></td>
           <td colspan="3"><div align="left"><?php echo $_SESSION['username'];?></div></td>
         </tr>
         <tr bgcolor="#FFFFFF">
-          <td height="20" align="center"><div align="left" class="style6">&nbsp;收货人：</div></td>
+          <td height="20" align="center"><div align="left" class="style6">&nbsp;Receiver :</div></td>
           <td height="20" colspan="3"><div align="left"><?php echo $info['shouhuoren'];?></div></td>
         </tr>
         <tr bgcolor="#FFFFFF">
-          <td height="20" align="center"><div align="left" class="style6">&nbsp;收货人地址：</div></td>
+          <td height="20" align="center"><div align="left" class="style6">&nbsp;Receiver Address :</div></td>
           <td height="20" colspan="3"><div align="left"><?php echo $info['dizhi'];?></div></td>
         </tr>
         <tr bgcolor="#FFFFFF">
-          <td height="20" align="center"><div align="left" class="style6">&nbsp;邮&nbsp;&nbsp;编：</div></td>
+          <td height="20" align="center"><div align="left" class="style6">&nbsp;ZIP:</div></td>
           <td width="145" height="20"><div align="left"><?php echo $info['youbian'];?></div></td>
-          <td width="66"><div align="left" class="style6">&nbsp;电&nbsp;&nbsp;话：</div></td>
+          <td width="66"><div align="left" class="style6">&nbsp;PHONE:</div></td>
           <td width="158"><div align="left"><?php echo $info['tel'];?></div></td>
         </tr>
         <tr bgcolor="#FFFFFF">
@@ -103,20 +103,20 @@ session_start();
           <td height="20">&nbsp;</td>
         </tr>
         <tr bgcolor="#FFFFFF">
-          <td height="20" align="center"><div align="left" class="style6">&nbsp;送货方式：</div></td>
+          <td height="20" align="center"><div align="left" class="style6">&nbsp;DELIVERY:</div></td>
           <td height="20"><div align="left"><?php echo $info['shff'];?></div></td>
-          <td height="20"><div align="left" class="style6">&nbsp;支付方式：</div></td>
+          <td height="20"><div align="left" class="style6">&nbsp;PAYMENT METHOD:</div></td>
           <td height="20"><div align="left"><?php echo $info['zfff'];?></div></td>
         </tr>
         <tr bgcolor="#FFFFFF">
-          <td height="20" colspan="4"><div align="left" class="style6">&nbsp; Please   您在一周内按您‘s 支付方式进行汇款,汇款时注明您‘s Order Number !汇款后 Please   及时通知I 们</div></td>
+          <td height="20" colspan="4"><div align="left" class="style6">&nbsp; Please ensure the payment information you input is valid, so we can make delivery on time</div></td>
         </tr>
         <tr bgcolor="#FFFFFF">
           <td height="20">&nbsp;</td>
           <td height="20"><div align="center">
-              <input name="button" type="button" class="buttoncss" onClick="window.close()" value="关闭窗口">
+              <input name="button" type="button" class="buttoncss" onClick="window.close()" value="Close Window">
           </div></td>
-          <td height="20"><div align="center" class="style6">创建时间：</div></td>
+          <td height="20"><div align="center" class="style6">Creating Time:</div></td>
           <td height="20"><div align="left"><?php echo $info['time'];?></div></td>
         </tr>
       </table>

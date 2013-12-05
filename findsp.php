@@ -53,14 +53,14 @@
 		 else{
 	?>
       <table width="530" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
-        <tr bgcolor="#FFEDBF">
+        <tr bgcolor="#8A87CC">
           <td width="92" height="25"><div align="center" style="color: #990000"> Name</div></td>
           <td width="83"><div align="center" style="color: #990000"> Tag </div></td>
-          <td width="62"><div align="center" style="color: #990000">市场 Price  </div></td>
+          <td width="62"><div align="center" style="color: #990000">Market   Price  </div></td>
           <td width="62"><div align="center" style="color: #990000"> Premium  Price  </div></td>
-          <td width="161"><div align="center" style="color: #990000"> Market 时间</div></td>
+          <td width="161"><div align="center" style="color: #990000"> Market Time </div></td>
           <td width="48"><div align="center" style="color: #FFFFFF"><span class="style1"></span></div></td>
-          <td width="42"><div align="center" style="color: #990000">操作</div></td>
+          <td width="42"><div align="center" style="color: #990000">Operation </div></td>
         </tr>
         <?php
 		 do{
@@ -71,7 +71,7 @@
           <td height="25"><div align="center"><?php echo $info['shichangjia'];?></div></td>
           <td height="25"><div align="center"><?php echo $info['huiyuanjia'];?></div></td>
           <td height="25"><div align="center"><?php echo $info['addtime'];?></div></td>
-          <td height="25"><div align="center"><a href="lookinfo.php?id=<?php echo $info['id'];?>">查看</a></div></td>
+          <td height="25"><div align="center"><a href="lookinfo.php?id=<?php echo $info['id'];?>">View </a></div></td>
           <td height="25"><div align="center"><a href="addgouwuche.php?id=<?php echo $info['id'];?>">购物</a></div></td>
         </tr>
         <?php

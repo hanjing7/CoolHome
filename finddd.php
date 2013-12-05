@@ -1,29 +1,29 @@
 <?php
  include("top.php");
 ?>
-<table width="766" height="438" border="0" align="center" cellpadding="0" cellspacing="0">
+<table width="1200" height="438" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="229" valign="top" bgcolor="#F4F4F4"><?php include("left.php");?>    
-    <td width="561" align="center" valign="top" bgcolor="#FFFFFF"><table width="550" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
+   
+    <td width="761" align="center" valign="top" bgcolor="#FFFFFF"><table width="550" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
         <td>&nbsp;</td>
       </tr>
     </table>
-      <table width="530" border="0" align="center" cellpadding="0" cellspacing="0">
+      <table width="730" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
-          <td height="25" bgcolor="#FFEDBF"><div align="center" style="color: #6A0202">Order Query </div></td>
+          <td height="25" bgcolor="#8A87CC"><div align="center" id="list">Order Query </div></td>
         </tr>
         <tr>
           <td height="50" bgcolor="#555555"><table width="550" height="50" border="0" align="center" cellpadding="0" cellspacing="1">
               <tr>
                 <td bgcolor="#FFFFFF">
-                  <table width="550" height="50" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <table width="750" height="50" border="0" align="center" cellpadding="0" cellspacing="0">
                     <script language="javascript">
 			     function chkinput3(form)
 				 {
 				   if((form.username.value=="")&&(form.ddh.value==""))
 				    {
-				      alert(" Please    type in   下Order 人或Order Number ");
+				      alert(" Please type in Order Person or Order Number ");
 					  form.username.select();
 					  return(false);
 				    }
@@ -33,19 +33,16 @@
 			   </script>
                     <form name="form3" method="post" action="finddd.php" onSubmit="return chkinput3( this)">
                       <tr>
-                        <td height="25"><div align="center">下Order 人Full Name :
+                        <td height="25"><div align="center">Full Name of Orderer:
                                 <input name="username" type="text" class="inputcss" id="username" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'" size="25">
                       Order Number :
                       <input type="text" name="ddh" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
-                        </div></td>
+						<input type="hidden" value="show_find" name="show_find">
+                            <input name="submit2" type="submit" class="buttoncss" value="SEARCH">	
+					   </div>
+						</td>
                       </tr>
-                      <tr>
-                        <td height="25">
-                          <div align="center">
-                            <input type="hidden" value="show_find" name="show_find">
-                            <input name="submit2" type="submit" class="buttoncss" value="查 找">
-                        </div></td>
-                      </tr>
+                     
                     </form>
                 </table></td>
               </tr>
@@ -82,20 +79,20 @@
 		   else
 		   {
 	  ?>
-      <table width="525" border="0" align="center" cellpadding="0" cellspacing="0">
+      <table width="725" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
-          <td height="25" bgcolor="#FFEDBF"><div align="center" style="color: #6E0202">Query 结果</div></td>
+          <td height="25" bgcolor="#8A87CC"><div align="center" id="list">Query Result</div></td>
         </tr>
         <tr>
-          <td height="50" bgcolor="#555555"><table width="550" height="50" border="0" align="center" cellpadding="0" cellspacing="1">
+          <td height="50" bgcolor="#555555"><table width="700" height="50" border="0" align="center" cellpadding="0" cellspacing="1">
               <tr>
-                <td width="77" height="25" bgcolor="#FFFFFF"><div align="center">Order Number </div></td>
-                <td width="77" bgcolor="#FFFFFF"><div align="center">下单User </div></td>
-                <td width="77" bgcolor="#FFFFFF"><div align="center">订货人</div></td>
-                <td width="77" bgcolor="#FFFFFF"><div align="center">金额总计</div></td>
-                <td width="77" bgcolor="#FFFFFF"><div align="center">付款方式</div></td>
-                <td width="77" bgcolor="#FFFFFF"><div align="center">收款方式</div></td>
-                <td width="77" bgcolor="#FFFFFF"><div align="center">Order 状态</div></td>
+                <td width="197" height="25" bgcolor="#FFFFFF"><div align="center">Order Number </div></td>
+                <td width="77" bgcolor="#FFFFFF"><div align="center">Receiver </div></td>
+                <td width="77" bgcolor="#FFFFFF"><div align="center">Orderer</div></td>
+                <td width="77" bgcolor="#FFFFFF"><div align="center">Total </div></td>
+                <td width="97" bgcolor="#FFFFFF"><div align="center">Payment Method</div></td>
+                <td width="77" bgcolor="#FFFFFF"><div align="center">Delivery</div></td>
+                <td width="177" bgcolor="#FFFFFF"><div align="center">Order Status</div></td>
               </tr>
               <?php
 			

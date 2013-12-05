@@ -51,15 +51,15 @@
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000">市场 Price  ：</font><font color="FF6501"><?php echo $info['shichangjia'];?></font></td>
+                                <td><font color="#000000">Market   Price  :</font><font color="FF6501"><?php echo $info['shichangjia'];?></font></td>
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000"> Premium  Price  ：</font><font color="FF6501"><?php echo $info['huiyuanjia'];?></font></td>
+                                <td><font color="#000000"> Premium  Price  :</font><font color="FF6501"><?php echo $info['huiyuanjia'];?></font></td>
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000"> Left  Amount ：</font><font color="13589B">                                  <?php 
+                                <td><font color="#000000"> Left  Amount :</font><font color="13589B">                                  <?php 
 				  if($info['shuliang']>0)
 				  {
 				     echo $info['shuliang'];
@@ -72,7 +72,7 @@
 </font></td>
                               </tr>
                               <tr>
-                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/xiangxi_btn.gif" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/goumai_btn.gif" width="60" height="18" border="0"></a>                                 </td>
+                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a>                                 </td>
                               </tr>
                             </table>
                             <?php
@@ -105,15 +105,15 @@
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000">市场 Price  ：</font><font color="FF6501"><?php echo $info['shichangjia'];?></font></td>
+                                <td><font color="#000000">Market   Price  :</font><font color="FF6501"><?php echo $info['shichangjia'];?></font></td>
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000"> Premium  Price  ：</font><font color="FF6501"><?php echo $info['huiyuanjia'];?></font></td>
+                                <td><font color="#000000"> Premium  Price  :</font><font color="FF6501"><?php echo $info['huiyuanjia'];?></font></td>
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000"> Left  Amount ：</font><font color="13589B">
+                                <td><font color="#000000"> Left  Amount :</font><font color="13589B">
                                   <?php 
 				  if($info['shuliang']>0)
 				  {
@@ -127,7 +127,7 @@
                                 </font></td>
                               </tr>
                               <tr>
-                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/xiangxi_btn.gif" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/goumai_btn.gif" width="60" height="18" border="0"></a> </td>
+                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a> </td>
                               </tr>
                             </table>
                             <?php
@@ -178,15 +178,15 @@
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000">市场 Price  ：</font><font color="FF6501"><?php echo $info['shichangjia'];?></font></td>
+                                <td><font color="#000000">Market   Price  :</font><font color="FF6501"><?php echo $info['shichangjia'];?></font></td>
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000"> Premium  Price  ：</font><font color="FF6501"><?php echo $info['huiyuanjia'];?></font></td>
+                                <td><font color="#000000"> Premium  Price  :</font><font color="FF6501"><?php echo $info['huiyuanjia'];?></font></td>
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000"> Left  Amount ：</font><font color="13589B">
+                                <td><font color="#000000"> Left  Amount :</font><font color="13589B">
                                   <?php 
 				  if($info['shuliang']>0)
 				  {
@@ -200,7 +200,7 @@
                                 </font></td>
                               </tr>
                               <tr>
-                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/xiangxi_btn.gif" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/goumai_btn.gif" width="60" height="18" border="0"></a> </td>
+                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a> </td>
                               </tr>
                             </table>
                             <?php
@@ -234,15 +234,15 @@
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000">市场 Price  ：</font><font color="FF6501"><?php echo $info['shichangjia'];?></font></td>
+                                <td><font color="#000000">Market   Price  :</font><font color="FF6501"><?php echo $info['shichangjia'];?></font></td>
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000"> Premium  Price  ：</font><font color="FF6501"><?php echo $info['huiyuanjia'];?></font></td>
+                                <td><font color="#000000"> Premium  Price  :</font><font color="FF6501"><?php echo $info['huiyuanjia'];?></font></td>
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000"> Left  Amount ：</font><font color="13589B">
+                                <td><font color="#000000"> Left  Amount :</font><font color="13589B">
                                   <?php 
 				  if($info['shuliang']>0)
 				  {
@@ -256,7 +256,7 @@
                                 </font></td>
                               </tr>
                               <tr>
-                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/xiangxi_btn.gif" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/goumai_btn.gif" width="60" height="18" border="0"></a> </td>
+                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a> </td>
                               </tr>
                             </table>
                             <?php
@@ -307,15 +307,15 @@
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000">市场 Price  ：</font><font color="FF6501"><?php echo $info['shichangjia'];?></font></td>
+                                <td><font color="#000000">Market   Price  :</font><font color="FF6501"><?php echo $info['shichangjia'];?></font></td>
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000"> Premium  Price  ：</font><font color="FF6501"><?php echo $info['huiyuanjia'];?></font></td>
+                                <td><font color="#000000"> Premium  Price  :</font><font color="FF6501"><?php echo $info['huiyuanjia'];?></font></td>
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000"> Left  Amount ：</font><font color="13589B">
+                                <td><font color="#000000"> Left  Amount :</font><font color="13589B">
                                   <?php 
 				  if($info['shuliang']>0)
 				  {
@@ -329,7 +329,7 @@
                                 </font></td>
                               </tr>
                               <tr>
-                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/xiangxi_btn.gif" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/goumai_btn.gif" width="60" height="18" border="0"></a> </td>
+                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a> </td>
                               </tr>
                             </table>
                             <?php
@@ -361,15 +361,15 @@
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000">市场 Price  ：</font><font color="FF6501"><?php echo $info['shichangjia'];?></font></td>
+                                <td><font color="#000000">Market   Price  :</font><font color="FF6501"><?php echo $info['shichangjia'];?></font></td>
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000"> Premium  Price  ：</font><font color="FF6501"><?php echo $info['huiyuanjia'];?></font></td>
+                                <td><font color="#000000"> Premium  Price  :</font><font color="FF6501"><?php echo $info['huiyuanjia'];?></font></td>
                               </tr>
                               <tr>
                                 <td height="16">&nbsp;</td>
-                                <td><font color="#000000"> Left  Amount ：</font><font color="13589B">
+                                <td><font color="#000000"> Left  Amount :</font><font color="13589B">
                                   <?php 
 				  if($info['shuliang']>0)
 				  {
@@ -383,7 +383,7 @@
                                 </font></td>
                               </tr>
                               <tr>
-                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/xiangxi_btn.gif" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/goumai_btn.gif" width="60" height="18" border="0"></a> </td>
+                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a> </td>
                               </tr>
                             </table>
                             <?php
@@ -408,7 +408,7 @@
 ?></td>
   </tr>
 </table>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <map name="Map2">
   <area shape="rect" coords="504,27,543,43" href="showtuijian.php">
 </map>

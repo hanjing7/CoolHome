@@ -1,12 +1,14 @@
 <?php
  include("top.php");
 ?>
+<table width = "800">
 <table width="766" height="438" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="209" height="438" valign="top" bgcolor="#F0F0F0"><?php include("left.php");?></td>
-    <td width="581" align="center" valign="top" bgcolor="#FFFFFF"><table width="557" border="0" align="center" cellpadding="0" cellspacing="0">
+    <td width="581" align="center" valign="top" bgcolor="#FFFFFF">
+	<table width="557" border="0" align="center" cellpadding="0" cellspacing="0">
+		<td width="10" rowspan=""5></td>
         <tr>
-          <td width="557" height="46" background="images/gg.gif"><div align="center" style="color: #FFFFFF"></div></td>
+          <td width="557" height="56" background="images/gg.gif"><div align="center" style="color: #FFFFFF"></div></td>
         </tr>
         <tr>
           <td height="150"><table width="530"  border="0" align="center" cellpadding="0" cellspacing="1">
@@ -19,13 +21,14 @@
 		   
 		   ?>
               <tr>
-                <td width="68" height="25" bgcolor="#FFFFFF"><div align="center">Announcement Ö÷Ìâ£º</div></td>
+                <td width="68" height="25" bgcolor="#FFFFFF"><div id="list">__Announcement __Topicï¼š</div></td>
+				<td width="10" rowspan=""5></td>
                 <td width="252" bgcolor="#FFFFFF"><div align="left"><?php echo unhtml($info['title']);?></div></td>
-                <td width="63" bgcolor="#FFFFFF"><div align="center">·¢²¼Ê±¼ä£º</div></td>
+                <td width="63" bgcolor="#FFFFFF"><div align="center">Release Time ï¼š</div></td>
                 <td width="112" bgcolor="#FFFFFF"><div align="left"><?php echo $info['time'];?></div></td>
               </tr>
               <tr>
-                <td height="125" bgcolor="#FFFFFF"><div align="center">Announcement ÄÚÈÝ£º</div></td>
+                <td height="125" bgcolor="#FFFFFF"><div align="center">Announcement Content ï¼š</div></td>
                 <td height="125" colspan="3" bgcolor="#FFFFFF"><div align="left"><?php echo unhtml($info['content']);?></div></td>
               </tr>
           </table></td>
@@ -33,7 +36,7 @@
       </table>
       <table width="530" height="25" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
-          <td><div align="right"><a href="showgonggao.php">¼ÌÐø²é¿´</a></div></td>
+          <td><div align="right"><a href="showgonggao.php">Keep Viewing </a></div></td>
         </tr>
       </table></td>
   </tr>

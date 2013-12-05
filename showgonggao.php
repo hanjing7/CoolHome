@@ -3,10 +3,9 @@
 ?>
 <table width="766" height="438" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="209"  height="438" valign="top" bgcolor="#F0F0F0"><?php include("left.php");?></td>
-    <td width="557" align="center" valign="top" bgcolor="#FFFFFF">      <table width="557" border="0" align="center" cellpadding="0" cellspacing="0">
+    <td width="766" align="center" valign="top" bgcolor="#FFFFFF">      <table width="557" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
-          <td width="557" height="46" background="images/gg.gif"><div align="left"></div></td>
+          <td width="766" height="46" background="images/gg.gif"><div align="left"></div></td>
         </tr>
       </table>
       <?php
@@ -22,9 +21,9 @@
 	   ?>
       <table width="530" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr bgcolor="#EEEEEE">
-          <td width="296" height="20"><div align="center">Announcement 主题</div></td>
-          <td width="136"><div align="center">发布时间</div></td>
-          <td width="68"><div align="center">查看内容</div></td>
+          <td width="296" height="20"><div align="center">Announcement Topic</div></td>
+          <td width="136"><div align="center">Release Time </div></td>
+          <td width="68"><div align="center">View Content </div></td>
         </tr>
         <?php
  
@@ -55,7 +54,7 @@
         <tr>
           <td height="20"><div align="left">-<?php echo $info1['title'];?></div></td>
           <td height="20"><div align="center"><?php echo $info1['time'];?></div></td>
-          <td height="20"><div align="center"><a href="showgg.php?id=<?php echo $info1['id'];?>">查看</a></div></td>
+          <td height="20"><div align="center"><a href="showgg.php?id=<?php echo $info1['id'];?>">View </a></div></td>
         </tr>
         <?php
 	    }
@@ -67,7 +66,7 @@
                   <?php
 		   echo $total;
 		  ?>
-&nbsp;条&nbsp; Each    Page  Show &nbsp;<?php echo $pagesize;?>&nbsp;条&nbsp; The &nbsp;<?php echo $page;?>&nbsp; Page  /Total&nbsp;<?php echo $pagecount; ?>&nbsp; Page  
+&nbsp;&nbsp; Each    Page  Show &nbsp;<?php echo $pagesize;?>&nbsp;&nbsp; The &nbsp;<?php echo $page;?>&nbsp; Page  /Total&nbsp;<?php echo $pagecount; ?>&nbsp; Page  
         <?php
 		  if($page>=2)
 		  {

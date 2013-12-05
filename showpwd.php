@@ -1,7 +1,7 @@
 
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title> Find  Password </title>
 <link rel="stylesheet" type="text/css" href="css/font.css">
 </head>
@@ -21,19 +21,19 @@
 ?>
 <body topmargin="0" leftmargin="0" bottommargin="0">
 <table width="200" height="100" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr bgcolor="#FFEDBF">
+  <tr bgcolor="#8A87CC">
     <td height="25" colspan="2"><div align="center"> Find  Password </div></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="76" height="25"><div align="center">昵称：</div></td>
+    <td width="76" height="25"><div align="center">昵称:</div></td>
     <td width="124"><div align="left"><?php echo $nc;?></div></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td height="25"><div align="center"> Password ：</div></td>
+    <td height="25"><div align="center"> Password :</div></td>
     <td height="25"><div align="left"><?php echo $info['pwd1'];?></div></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td height="25" colspan="2"><div align="center"><input name="submit" type="button" id="submit" onClick="window.close()"  value="确定">
+    <td height="25" colspan="2"><div align="center"><input name="submit" type="button" id="submit" onClick="window.close()"  value="Comfirm">
     </div></td>
   </tr>
 </table>

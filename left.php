@@ -44,19 +44,19 @@
                                       <td height="10" colspan="3">&nbsp;</td>
                                     </tr>
                                     <tr>
-                                      <td width="50" height="20"><div align="right">User ：</div></td>
+                                      <td width="50" height="20"><div align="right">User :</div></td>
                                       <td height="20" colspan="2"><div align="left">
                                           <input type="text" name="username" size="19" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                                       </div></td>
                                     </tr>
                                     <tr>
-                                      <td height="20"><div align="right"> Password ：</div></td>
+                                      <td height="20"><div align="right"> Password :</div></td>
                                       <td colspan="2"><div align="left">
                                           <input type="password" name="userpwd" size="19" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                                       </div></td>
                                     </tr>
                                     <tr>
-                                      <td height="20"><div align="right"> Verification ：</div></td>
+                                      <td height="20"><div align="right"> Verification :</div></td>
                                       <td width="66" height="20"><div align="left">
                                           <input type="text" name="yz" size="10" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                                       </div></td>
@@ -72,7 +72,7 @@
                                     <tr>
                                       <td height="20" colspan="3">                                        <div align="right">
                                           <input type="hidden" value="<?php echo $num;?>" name="num">
-                                          <input name="submit" type="submit" class="buttoncss" value="提 交">
+                                          <input name="submit" type="submit" class="buttoncss" value="Submit ">
 <a href="agreereg.php"> Register </a>&nbsp;<a href="javascript:openfindpwd()"> Find  Password </a>&nbsp;</div></td>
                                     </tr>
                                   </form>
@@ -159,7 +159,7 @@
 								 if($info==false){
 								?>
                     <tr>
-                      <td height="20" align="center">Our Site Temperarily No友情链接!</td>
+                      <td height="20" align="center">Our Site Temperarily No External Link!</td>
                     </tr>
                     <?php
 								 }

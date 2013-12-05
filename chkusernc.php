@@ -32,14 +32,14 @@
 		}
 		else
 		{
-		   echo "恭喜, This 昵称没被占用!";
+		   echo "Congratulations! , This 昵称没被占用!";
 		} 
 	  }
 	?>
 	</div></td>
   </tr>
   <tr>
-    <td height="50"><div align="center"><input type="button" value="确定" class="buttoncss" onClick="window.close()"></div></td>
+    <td height="50"><div align="center"><input type="button" value="Comfirm" class="buttoncss" onClick="window.close()"></div></td>
   </tr>
 </table>
 </body>
