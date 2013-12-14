@@ -12,7 +12,7 @@
   {
     if(form.usernc.value=="")
 	{
-	 alert(" Please    type in   êÇ³Æ!");
+	 alert(" Please    type in   username!");
 	 form.usernc.select();
 	 return(false);
 	}
@@ -30,13 +30,13 @@
 	 }	
 	if(form.p1.value.length<6)
 	 {
-	 alert(" Register  Password ³¤¶ÈÓ¦´óÓÚ6!");
+	 alert(" Register Password is too short. Minimum 6 characters!");
 	 form.p1.select();
 	 return(false);
 	 }	
 	if(form.p1.value!=form.p2.value)
 	 {
-	 alert(" Password ÓëÖØ¸´ Password Not Í¬!");
+	 alert(" Password don't match!");
 	 form.p1.select();
 	 return(false);
 	 }
@@ -48,13 +48,13 @@
 	 }
 	if(form.email.value.indexOf('@')<0)
 	{
-	 alert(" Please    type in   ÕýÈ·¡®s Email Address !");
+	 alert(" Please    type in   a valid email address !");
 	 form.email.select();
 	 return(false);
 	 }
    if(form.tel.value=="")
 	{
-	 alert(" Please    type in   Contact µç»°!");
+	 alert(" Please    type in   Contact Number!");
 	 form.tel.select();
 	 return(false);
 	 }
@@ -64,36 +64,36 @@
 	 form.truename.select();
 	 return(false);
 	 }
-  if(form.sfzh.value=="")
-	{
-	 alert(" Please    type in   IdentificationNumber !");
-	 form.sfzh.select();
-	 return(false);
-	 }
+//  if(form.sfzh.value=="")
+//	{
+//	 alert(" Please    type in   IdentificationNumber !");
+//	 form.sfzh.select();
+//	 return(false);
+//	 }
   if(form.dizhi.value=="")
 	{
 	 alert(" Please    type in   Address !");
 	 form.dizhi.select();
 	 return(false);
 	 }
-  if(form.tsda.value=="")
-	{
-	 alert(" Please   Êä Password Security Answer!");
-	 form.tsda.select();
-	 return(false);
-	 }
-   if((form.ts1.value==1)&&(form.ts2.value==""))	
-     {
-	 alert(" Please   Ñ¡Ôñ»ò type in    Password Security Answer!");
-	 form.ts2.select();
-	 return(false);
-	 }
+//  if(form.tsda.value=="")
+//	{
+//	 alert(" Please     type Password Security Answer!");
+//	 form.tsda.select();
+//	 return(false);
+//	 }
+//   if((form.ts1.value==1)&&(form.ts2.value==""))
+//     {
+//	 alert(" Please   retype type in    Password Security Answer!");
+//	 form.ts2.select();
+//	 return(false);
+//	 }
    return(true);
   }
 </script>
 <table width="766" height="350" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="229" height="350" align="center" valign="top" bgcolor="#F0F0F0"><?php include("left.php");?></td>
+
     <td width="561" align="center" valign="top" bgcolor="#FFFFFF"><table width="557"  height="15" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
         <td width="500"><table width="557" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -104,11 +104,11 @@
               <td  bgcolor="#555555"><table width="557" border="0" align="center" cellpadding="0" cellspacing="0">
                   <form name="form1" method="post" action="savereg.php" onSubmit="return chkinput(this)">
                     <tr>
-                      <td width="100" height="20" bgcolor="#FFFFFF"><div align="center">&nbsp;&nbsp;User êÇ³Æ:</div></td>
+                      <td width="100" height="20" bgcolor="#FFFFFF"><div align="center">&nbsp;&nbsp;User Name:</div></td>
                       <td width="397" bgcolor="#FFFFFF"><div align="left">
                           <input type="text" name="usernc" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                           <span style="color: #FF0000">&nbsp;*</span>&nbsp;
-                          <input name="button2" type="button" class="buttoncss" onclick="chknc(form1.usernc.value)" value="View êÇ³ÆÊÇ·ñÒÑÓÃ">
+
                       </div></td>
                     </tr>
                     <tr>
@@ -129,23 +129,23 @@
                           <input type="text" name="email" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                           <span style="color: #FF0000">*</span></div></td>
                     </tr>
+<!--                    <tr>-->
+<!--                      <td height="20" bgcolor="#FFFFFF"><div align="center">QQ&nbsp;Number:</div></td>-->
+<!--                      <td height="20" bgcolor="#FFFFFF"><div align="left">-->
+<!--                          <input type="text" name="qq" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">-->
+<!--                      </div></td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                      <td height="20" bgcolor="#FFFFFF"><div align="center">yb:</div></td>-->
+<!--                      <td height="20" bgcolor="#FFFFFF"><div align="left">-->
+<!--                          <input type="text" name="yb" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">-->
+<!--                      </div></td>-->
+<!--                    </tr>-->
                     <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center">QQ&nbsp;Number Âë:</div></td>
-                      <td height="20" bgcolor="#FFFFFF"><div align="left">
-                          <input type="text" name="qq" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
-                      </div></td>
-                    </tr>
-                    <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center">ÓÊÕþ±àÂë:</div></td>
-                      <td height="20" bgcolor="#FFFFFF"><div align="left">
-                          <input type="text" name="yb" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
-                      </div></td>
-                    </tr>
-                    <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center">Contact µç»°:</div></td>
+                      <td height="20" bgcolor="#FFFFFF"><div align="center">Contact Number:</div></td>
                       <td height="20" bgcolor="#FFFFFF"><div align="left">
                           <input type="text" name="tel" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
-                          <span style="color: #FF0000">(ÊÖ»úNumber )*</span></div></td>
+                          <span style="color: #FF0000">(Telephone Number )*</span></div></td>
                     </tr>
                     <tr>
                       <td height="20" bgcolor="#FFFFFF"><div align="center">Full Name :</div></td>
@@ -153,44 +153,44 @@
                           <input type="text" name="truename" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                           <span style="color: #FF0000">*</span> </div></td>
                     </tr>
-                    <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center">IdentificationNumber :</div></td>
-                      <td height="20" bgcolor="#FFFFFF"><div align="left">
-                          <input type="text" name="sfzh" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
-                          <span style="color: #FF0000">*</span></div></td>
-                    </tr>
+<!--                    <tr>-->
+<!--                      <td height="20" bgcolor="#FFFFFF"><div align="center">IdentificationNumber :</div></td>-->
+<!--                      <td height="20" bgcolor="#FFFFFF"><div align="left">-->
+<!--                          <input type="text" name="sfzh" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">-->
+<!--                          <span style="color: #FF0000">*</span></div></td>-->
+<!--                    </tr>-->
                     <tr>
                       <td height="20" bgcolor="#FFFFFF"><div align="center">Address :</div></td>
                       <td height="20" bgcolor="#FFFFFF"><div align="left">
                           <input type="text" name="dizhi" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
                           <span style="color: #FF0000">*</span></div></td>
                     </tr>
-                    <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center"> Password Hint:</div></td>
-                      <td height="20" bgcolor="#FFFFFF"><div align="left">
-                          <select name="ts1" class="inputcss">
-                            <option selected value=1> Please   Ñ¡ÔñÎÊÌâ</option>
-                            <option value="Äú¡®s ÉúÈÕ">Äú¡®s ÉúÈÕ</option>
-                            <option value="Äã¡®s °®ºÃ">Äã¡®s °®ºÃ</option>
-                            <option value="ÄúÄ¸Ç×¡®s Ãû×Ö">ÄúÄ¸Ç×¡®s Ãû×Ö</option>
-                            <option value="Äú¸¸Ç×¡®s Ãû×Ö">Äú¸¸Ç×¡®s Ãû×Ö</option>
-                            <option value="Äú×îÏNot ¶¡®s »¨">Äú×îÏNot ¶¡®s »¨</option>
-                          </select>
-&nbsp;&nbsp;ÆäËû:&nbsp;&nbsp;
-                      <input type="text" name="ts2" class="inputcss" size="15" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
-                      <span style="color: #FF0000">*</span></div></td>
-                    </tr>
-                    <tr>
-                      <td height="20" bgcolor="#FFFFFF"><div align="center">Security Answer:</div></td>
-                      <td height="20" bgcolor="#FFFFFF"><div align="left">
-                          <input type="text" name="tsda" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">
-                          <span style="color: #FF0000">*</span></div></td>
-                    </tr>
+<!--                    <tr>-->
+<!--                      <td height="20" bgcolor="#FFFFFF"><div align="center"> Password Hint:</div></td>-->
+<!--                      <td height="20" bgcolor="#FFFFFF"><div align="left">-->
+<!--                          <select name="ts1" class="inputcss">-->
+<!--                            <option selected value=1> Please   </option>-->
+<!--                            <option value="ï¿½ï¿½s ï¿½ï¿½ï¿½ï¿½">ï¿½ï¿½s ï¿½ï¿½ï¿½ï¿½</option>-->
+<!--                            <option value="ï¿½ã¡®s ï¿½ï¿½ï¿½ï¿½">ï¿½ã¡®s ï¿½ï¿½ï¿½ï¿½</option>-->
+<!--                            <option value="ï¿½ï¿½Ä¸ï¿½×¡ï¿½s ï¿½ï¿½ï¿½ï¿½">ï¿½ï¿½Ä¸ï¿½×¡ï¿½s ï¿½ï¿½ï¿½ï¿½</option>-->
+<!--                            <option value="ï¿½ï¿½ï¿½×¡ï¿½s ï¿½ï¿½ï¿½ï¿½">ï¿½ï¿½ï¿½×¡ï¿½s ï¿½ï¿½ï¿½ï¿½</option>-->
+<!--                            <option value="ï¿½ï¿½ï¿½ï¿½ï¿½Not ï¿½ï¿½ï¿½s ï¿½ï¿½">ï¿½ï¿½ï¿½ï¿½ï¿½Not ï¿½ï¿½ï¿½s ï¿½ï¿½</option>-->
+<!--                          </select>-->
+<!--&nbsp;&nbsp;ï¿½ï¿½ï¿½ï¿½:&nbsp;&nbsp;-->
+<!--                      <input type="text" name="ts2" class="inputcss" size="15" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">-->
+<!--                      <span style="color: #FF0000">*</span></div></td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                      <td height="20" bgcolor="#FFFFFF"><div align="center">Security Answer:</div></td>-->
+<!--                      <td height="20" bgcolor="#FFFFFF"><div align="left">-->
+<!--                          <input type="text" name="tsda" size="25" class="inputcss" style="background-color:#e8f4ff " onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'">-->
+<!--                          <span style="color: #FF0000">*</span></div></td>-->
+<!--                    </tr>-->
                     <tr>
                       <td height="20" colspan="2" bgcolor="#FFFFFF"><div align="center">
                           <input name="submit2" type="submit" class="buttoncss" value=" Login  ">
 &nbsp;&nbsp;
-                      <input name="reset" type="reset" class="buttoncss" value="Reset ">
+                        <input name="reset" type="reset" class="buttoncss" value="Reset ">
                       </div></td>
                     </tr>
                   </form>
@@ -199,7 +199,7 @@
           </table>
             <table width="557" height="25" border="0" align="center" cellpadding="0" cellspacing="0">
               <tr>
-                <td width="547"><div align="center" style="color: #FF0000">×¢Òâ:´ø*Îª±ØÌíContent !</div></td>
+                <td width="547"><div align="center" style="color: #FF0000">Required Content</div>
               </tr>
           </table></td>
       </tr>

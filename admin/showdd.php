@@ -15,7 +15,7 @@ div{display:none}
 <?php
   include("conn/conn.php");
   $id=$_GET['id'];
-  $sql=mysql_query("select * from tb_dingdan where id='".$id."'",$conn);
+  $sql=mysql_query("select * from tb_order where id='".$id."'",$conn);
   $info=mysql_fetch_array($sql);
   $spc=$info['spc'];
   $slc=$info['slc'];
@@ -36,11 +36,11 @@ div{display:none}
   }     
   </script>     
   <object   ID='WebBrowser1'   WIDTH=0   HEIGHT=0   CLASSID='CLSID:8856F961-340A-11D0-A96B-00C04FD705A2'></object>
-	<input type="button" value="´òÓ¡Ô¤ÀÀ" class="buttoncss" onClick="prn()">&nbsp;
-	<input type="button" value="´òÓ¡" class="buttoncss" onClick="window.print()"></div></td>
+	<input type="button" value="ï¿½ï¿½Ó¡Ô¤ï¿½ï¿½" class="buttoncss" onClick="prn()">&nbsp;
+	<input type="button" value="ï¿½ï¿½Ó¡" class="buttoncss" onClick="window.print()"></div></td>
   </tr>
   <tr>
-    <td height="20" colspan="2">CreationÁÐ±í(ÈçÏÂ):</td>
+    <td height="20" colspan="2">Creationï¿½Ð±ï¿½(ï¿½ï¿½ï¿½ï¿½):</td>
   </tr>
 </table>
 <table width="500" height="60" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -48,16 +48,16 @@ div{display:none}
     <td bgcolor="#666666"><table width="500" border="0" align="center" cellpadding="0" cellspacing="1">
       <tr bgcolor="#FFCF60">
         <td width="153" height="20">Creation Name</td>
-        <td width="80">ÊÐ³¡ Price  </td>
+        <td width="80">ï¿½Ð³ï¿½ Price  </td>
         <td width="80"> Premium  Price  </td>
         <td width="80"> Amount </td>
-        <td width="101">Ð¡¼Æ</td>
+        <td width="101">Ð¡ï¿½ï¿½</td>
       </tr>
 	  <?php
 	  $total=0;
 	  for($i=0;$i<count($arraysp)-1;$i++){
  		if($arraysp['$i']!=""){
-	     $sql1=mysql_query("select * from tb_shangpin where id='".$arraysp['$i']."'",$conn);
+	     $sql1=mysql_query("select * from tb_product where id='".$arraysp['$i']."'",$conn);
 	     $info1=mysql_fetch_array($sql1);
 		 $total=$total+=$arraysl['$i']*$info1['huiyuanjia'];
 	  ?>
@@ -74,7 +74,7 @@ div{display:none}
 	 ?>
       <tr bgcolor="#FFFFFF">
         <td height="20" colspan="5">
-          ×Ü¼Æ·ÑÓÃ:<?php echo $total;?>
+          ï¿½Ü¼Æ·ï¿½ï¿½ï¿½:<?php echo $total;?>
           </td>
         </tr>
     </table></td>
@@ -86,17 +86,17 @@ div{display:none}
     <td colspan="3"><?php echo $info['xiadanren'];?></td>
   </tr>
   <tr>
-    <td height="20">ÊÕ»õÈË:</td>
+    <td height="20">ï¿½Õ»ï¿½ï¿½ï¿½:</td>
     <td height="20" colspan="3"><?php echo $info['shouhuoren'];?></td>
   </tr>
   <tr>
-    <td height="20">ÊÕ»õÈËµØÖ·:</td>
+    <td height="20">ï¿½Õ»ï¿½ï¿½Ëµï¿½Ö·:</td>
     <td height="20" colspan="3"><?php echo $info['dizhi'];?></td>
   </tr>
   <tr>
-    <td height="20">ÓÊ&nbsp;&nbsp;±à:</td>
+    <td height="20">ï¿½ï¿½&nbsp;&nbsp;ï¿½ï¿½:</td>
     <td width="145" height="20"><?php echo $info['youbian'];?></td>
-    <td width="66">µç&nbsp;&nbsp;»°:</td>
+    <td width="66">ï¿½ï¿½&nbsp;&nbsp;ï¿½ï¿½:</td>
     <td width="158"><?php echo $info['tel'];?></td>
   </tr>
   <tr>
@@ -106,18 +106,18 @@ div{display:none}
     <td height="20">&nbsp;</td>
   </tr>
   <tr>
-    <td height="20">ËÍ»õ·½Ê½:</td>
+    <td height="20">ï¿½Í»ï¿½ï¿½ï¿½Ê½:</td>
     <td height="20"><?php echo $info['shff'];?></td>
-    <td height="20">Ö§¸¶·½Ê½:</td>
+    <td height="20">Ö§ï¿½ï¿½ï¿½ï¿½Ê½:</td>
     <td height="20"><?php echo $info['zfff'];?></td>
   </tr>
   <tr>
-    <td height="20" colspan="4"><span class="style3"> Please   ÄúÔÚÒ»ÖÜÄÚ°´Äú¡®s Ö§¸¶·½Ê½½øÐÐ»ã¿î,»ã¿îÊ±×¢Ã÷Äú¡®s Order Number !»ã¿îºó Please   ¼°Ê±Í¨ÖªI ÃÇ</span></td>
+    <td height="20" colspan="4"><span class="style3"> Please   ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ú°ï¿½ï¿½ï¿½s Ö§ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½,ï¿½ï¿½ï¿½Ê±×¢ï¿½ï¿½ï¿½ï¿½s Order Number !ï¿½ï¿½ï¿½ï¿½ Please   ï¿½ï¿½Ê±Í¨ÖªI ï¿½ï¿½</span></td>
   </tr>
   <tr>
     <td height="20">&nbsp;</td>
-    <td height="20"><div align="center"><input type="button" onClick="window.close()" value="¹Ø±Õ´°¿Ú" class="buttoncss"></div></td>
-    <td height="20">´´½¨Ê±¼ä:</td>
+    <td height="20"><div align="center"><input type="button" onClick="window.close()" value="ï¿½Ø±Õ´ï¿½ï¿½ï¿½" class="buttoncss"></div></td>
+    <td height="20">ï¿½ï¿½ï¿½ï¿½Time:</td>
     <td height="20"><?php echo $info['time'];?></td>
   </tr>
 </table>

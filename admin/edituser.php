@@ -62,7 +62,7 @@
 	   <tr>
           <td width="224" height="20" bgcolor="#FFFFFF"><div align="center">User 昵称</div></td>
           <td width="93" bgcolor="#FFFFFF"><div align="center">User Status</div></td>
-          <td width="79" bgcolor="#FFFFFF"><div align="center">删除</div></td>
+          <td width="79" bgcolor="#FFFFFF"><div align="center">Delete</div></td>
           <td width="75" bgcolor="#FFFFFF"><div align="center">View 信息</div></td>
  
         </tr>
@@ -129,7 +129,7 @@
         <?php }?>
 	
 	</div></td>
-    <td width="92"><div align="center"><input type="submit" value="删除选项" class="buttoncss">
+    <td width="92"><div align="center"><input type="submit" value="DeleteOption" class="buttoncss">
     </div></td>
   </tr>
 

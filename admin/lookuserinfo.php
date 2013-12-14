@@ -60,7 +60,7 @@ $info=mysql_fetch_array($sql);
         <td colspan="3" bgcolor="#FFFFFF"><div align="left"><?php echo $info['qq'];?></div></td>
       </tr>
 	  <tr>
-        <td height="20" bgcolor="#FFFFFF"><div align="center"> Register Ê±¼ä:</div></td>
+        <td height="20" bgcolor="#FFFFFF"><div align="center"> Register Time:</div></td>
         <td colspan="3" bgcolor="#FFFFFF"><div align="left"><?php echo $info['regtime'];?></div></td>
       </tr>
 	  <tr>

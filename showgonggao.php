@@ -9,7 +9,7 @@
         </tr>
       </table>
       <?php
-	   $sql=mysql_query("select count(*) as total from tb_gonggao",$conn);
+	   $sql=mysql_query("select count(*) as total from tb_posts",$conn);
 	   $info=mysql_fetch_array($sql);
 	   $total=$info['total'];
 	   if($total==0)
@@ -47,7 +47,7 @@
 			
 			}
 			 
-             $sql1=mysql_query("select * from tb_gonggao order by time desc limit ".($page-1)*$pagesize.",$pagesize ",$conn);
+             $sql1=mysql_query("select * from tb_posts order by time desc limit ".($page-1)*$pagesize.",$pagesize ",$conn);
              while($info1=mysql_fetch_array($sql1))
 		     {
 		  ?>

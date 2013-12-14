@@ -29,11 +29,11 @@
   <tr> 
     <td height="40" colspan="2" bgcolor="#333333"><table width="750"  border="0" align="center" cellpadding="0" cellspacing="1">
         <tr> 
-          <td width="357" height="20" bgcolor="#FFFFFF"><div align="center"> Message主题</div></td>
-          <td width="80" bgcolor="#FFFFFF"><div align="center"> Message者</div></td>
-          <td width="156" bgcolor="#FFFFFF"><div align="center"> Message时间</div></td>
-          <td width="93" bgcolor="#FFFFFF"><div align="center">操作</div></td>
-          <td width="58" bgcolor="#FFFFFF"><div align="center">删除</div></td>
+          <td width="357" height="20" bgcolor="#FFFFFF"><div align="center"> MessageTopic</div></td>
+          <td width="80" bgcolor="#FFFFFF"><div align="center"> Messager</div></td>
+          <td width="156" bgcolor="#FFFFFF"><div align="center"> MessageTime</div></td>
+          <td width="93" bgcolor="#FFFFFF"><div align="center">Operation</div></td>
+          <td width="58" bgcolor="#FFFFFF"><div align="center">Delete</div></td>
         </tr>
 		 <?php
  
@@ -107,11 +107,11 @@
         <a href="lookleaveword.php?page=<?php echo $i;?>"><?php echo $i;?></a>
         <?php }?>
         <a href="lookleaveword.php?page=<?php echo $page-1;?>" title="Next Page  "><font face="webdings"> 8 </font></a> 
-		<a href="lookleaveword.php?id=<?php echo $id;?>&page=<?php echo $pagecount;?>" title="尾 Page  "><font face="webdings"> : </font></a>
+		<a href="lookleaveword.php?id=<?php echo $id;?>&page=<?php echo $pagecount;?>" title="End Page  "><font face="webdings"> : </font></a>
         <?php }?>
 	
 	</div></td>
-    <td width="98" bgcolor="#FFFFFF"><div align="center"><input type="submit" value="删除选项" class="buttoncss"></div></td>
+    <td width="98" bgcolor="#FFFFFF"><div align="center"><input type="submit" value="Delete选项" class="buttoncss"></div></td>
   </tr>
   </form>
 </table>

@@ -1,12 +1,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>´¦ÀíOrder </title>
+<title>ï¿½ï¿½ï¿½ï¿½Order </title>
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <?php
  include("conn/conn.php");
  $id=$_GET['id'];
- $sql=mysql_query("select * from tb_dingdan where id='".$id."'",$conn);
+ $sql=mysql_query("select * from tb_order where id='".$id."'",$conn);
  $info=mysql_fetch_array($sql);
 ?>
 <style type="text/css">
@@ -22,21 +22,21 @@
 <body topmargin="0" leftmargin="0" bottommargin="0">
 <table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td height="20" bgcolor="#FFCF60"><div align="center" class="style4">Execute´¦ÖÃ</div></td>
+    <td height="20" bgcolor="#FFCF60"><div align="center" class="style4">Executeï¿½ï¿½ï¿½ï¿½</div></td>
   </tr>
   <tr>
     <td bgcolor="#333333"><table width="750" border="0" align="center" cellpadding="0" cellspacing="1">
      <form name="form1" method="post" action="saveorder.php?id=<?php echo $info['id'];?>">
 	  <tr>
-        <td width="70" height="25" bgcolor="#FFFFFF"><div align="center" class="style3">Order ±àNumber :</div></td>
+        <td width="70" height="25" bgcolor="#FFFFFF"><div align="center" class="style3">Order ï¿½ï¿½Number :</div></td>
         <td width="271" bgcolor="#FFFFFF"><div align="left"><?php echo $info['dingdanhao'];?></div></td>
-        <td width="100" bgcolor="#FFFFFF"><div align="center"><span class="style3">ÒÑÊÕ¿î</span>
-          <input type="checkbox" value="ÒÑÊÕ¿î" name="ysk"></div></td>
-        <td width="101" bgcolor="#FFFFFF"><div align="center"><span class="style3">ÒÑ·¢»õ</span>
-          <input name="yfh" type="checkbox" value="ÒÑ·¢»õ"  >
+        <td width="100" bgcolor="#FFFFFF"><div align="center"><span class="style3">ï¿½ï¿½ï¿½Õ¿ï¿½</span>
+          <input type="checkbox" value="ï¿½ï¿½ï¿½Õ¿ï¿½" name="ysk"></div></td>
+        <td width="101" bgcolor="#FFFFFF"><div align="center"><span class="style3">ï¿½Ñ·ï¿½ï¿½ï¿½</span>
+          <input name="yfh" type="checkbox" value="ï¿½Ñ·ï¿½ï¿½ï¿½"  >
         </div></td>
-        <td width="100" bgcolor="#FFFFFF"><div align="center"><span class="style3">ÒÑÊÕ»õ</span>
-          <input name="ysh" type="checkbox" value="ÒÑÊÕ»õ" >
+        <td width="100" bgcolor="#FFFFFF"><div align="center"><span class="style3">ï¿½ï¿½ï¿½Õ»ï¿½</span>
+          <input name="ysh" type="checkbox" value="ï¿½ï¿½ï¿½Õ»ï¿½" >
         </div></td>
         <td width="101" bgcolor="#FFFFFF"><div align="center"><input type="submit" value="Update " class="buttoncss"></div></td>
 	  </tr>
@@ -47,7 +47,7 @@
 <table width="750" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="13"><div align="left">
-      <div align="center" class="style2">×¢:Ò»µ©CreationÈ·¶¨·¢»õ£¬ This Creation Amount ½«×Ô¶¯´Ó¿â´æÖÐÏàÓ¦¼õÉÙ£¬²¢ÇÒNot ¿É¸ü¸Ä£¡</div>
+      <div align="center" class="style2">×¢:Ò»ï¿½ï¿½CreationÈ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ This Creation Amount ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½Ó¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½Ù£ï¿½ï¿½ï¿½ï¿½ï¿½Not ï¿½É¸ï¿½Ä£ï¿½</div>
     </div></td>
   </tr>
 </table>
@@ -55,13 +55,13 @@
   <tr>
     <td bgcolor="#CCCCCC"><table width="750" border="0" align="center" cellpadding="0" cellspacing="1">
       <tr bgcolor="#FFCF60">
-        <td width="106" height="20"><div align="center" class="style4">ÉÌ Æ· Ãû ³Æ</div></td>
+        <td width="106" height="20"><div align="center" class="style4">ï¿½ï¿½ Æ· ï¿½ï¿½ ï¿½ï¿½</div></td>
         <td width="106"><div align="center" class="style4"> Amount </div></td>
-        <td width="106"><div align="center" class="style4">ÊÐ³¡ Price  </div></td>
+        <td width="106"><div align="center" class="style4">ï¿½Ð³ï¿½ Price  </div></td>
         <td width="106"><div align="center" class="style4"> Premium  Price  </div></td>
-        <td width="106" height="20"><div align="center" class="style4">³É½» Price  </div></td>
+        <td width="106" height="20"><div align="center" class="style4">ï¿½É½ï¿½ Price  </div></td>
         <td width="106"><div align="center" class="style4"> Discount </div></td>
-        <td><div align="center" class="style4">Ð¡ ¼Æ</div></td>
+        <td><div align="center" class="style4">Ð¡ ï¿½ï¿½</div></td>
       </tr>
 	 <?php
 	   $array=explode("@",$info['spc']);
@@ -71,13 +71,13 @@
 	    {
 		  if($array['$i']!="")
 		  {
-	       $sql1=mysql_query("select * from tb_shangpin where id='".$array['$i']."'",$conn);
+	       $sql1=mysql_query("select * from tb_product where id='".$array['$i']."'",$conn);
 		   $info1=mysql_fetch_array($sql1);
 		   $total=$total+$info1['huiyuanjia']*$arraysl['$i'];
 	 ?>
       <tr>
         <td height="25" bgcolor="#FFFFFF"><div align="left"> &nbsp;<?php echo $info1['mingcheng'];?></div></td>
-        <td height="25" bgcolor="#FFFFFF"><div align="center"><?php if($info1['shuliang']<0) echo "ÊÛÍê"; else echo $arraysl['$i'];?></div></td>
+        <td height="25" bgcolor="#FFFFFF"><div align="center"><?php if($info1['shuliang']<0) echo "ï¿½ï¿½ï¿½ï¿½"; else echo $arraysl['$i'];?></div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo $info1['shichangjia'];?></div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo $info1['huiyuanjia'];?></div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo $info1['huiyuanjia'];?></div></td>
@@ -93,45 +93,45 @@
 </table>
 <table width="750" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td><div align="right" class="style3">ºÏ¼Æ:<?php echo $total;?>&nbsp;Dollar&nbsp;</div></td>
+    <td><div align="right" class="style3">ï¿½Ï¼ï¿½:<?php echo $total;?>&nbsp;Dollar&nbsp;</div></td>
   </tr>
 </table>
 <table width="750" height="195" border="0" align="center" cellpadding="0" cellspacing="1">
   <tr>
     <td height="193" bgcolor="#333333"><table width="750" height="151" border="0" align="center" cellpadding="0" cellspacing="1">
       <tr bgcolor="#FFCF60">
-        <td height="20" colspan="2"><div align="center" class="style4">ÊÕ»õÈËÐÅÏ¢</div></td>
+        <td height="20" colspan="2"><div align="center" class="style4">ï¿½Õ»ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢</div></td>
       </tr>
       <tr>
-        <td width="120" height="25" bgcolor="#FFFFFF"><div align="center" class="style3">ÊÕ»õÈËFull Name :</div></td>
+        <td width="120" height="25" bgcolor="#FFFFFF"><div align="center" class="style3">ï¿½Õ»ï¿½ï¿½ï¿½Full Name :</div></td>
         <td width="627" bgcolor="#FFFFFF"><div align="left"><?php echo $info['shouhuoren'];?></div></td>
       </tr>
       <tr>
-        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">ÏêÏ¸µØÖ·:</div></td>
+        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">ï¿½ï¿½Ï¸ï¿½ï¿½Ö·:</div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="left"><?php echo $info['dizhi'];?></div></td>
       </tr>
       <tr>
-        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">ÓÊ¡¡¡¡±à:</div></td>
+        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">ï¿½Ê¡ï¿½ï¿½ï¿½ï¿½ï¿½:</div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="left"><?php echo $info['youbian'];?></div></td>
       </tr>
       <tr>
-        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">µç¡¡¡¡»°:</div></td>
+        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">ï¿½ç¡¡ï¿½ï¿½ï¿½ï¿½:</div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="left"><?php echo $info['tel'];?></div></td>
       </tr>
       <tr>
-        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">µç×ÓÓÊ items  :</div></td>
+        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ items  :</div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="left"><?php echo $info['email'];?></div></td>
       </tr>
       <tr>
-        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">ËÍ»õ·½Ê½:</div></td>
+        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">ï¿½Í»ï¿½ï¿½ï¿½Ê½:</div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="left"><?php echo $info['shff'];?></div></td>
       </tr>
       <tr>
-        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">Ö§¸¶·½Ê½:</div></td>
+        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">Ö§ï¿½ï¿½ï¿½ï¿½Ê½:</div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="left"><?php echo $info['zfff'];?></div></td>
       </tr>
 	  <tr>
-        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">¼òµ¥ Message:</div></td>
+        <td height="25" bgcolor="#FFFFFF"><div align="center" class="style3">ï¿½ï¿½ Message:</div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="left"><?php echo $info['leaveword'];?></div></td>
       </tr>
     </table></td>
@@ -139,7 +139,7 @@
 </table>
 <table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td height="20" align="center">      <input name="button" type="button" class="buttoncss" onClick="javascript:history.back();" value="·µ»Ø">    </td>
+    <td height="20" align="center">      <input name="button" type="button" class="buttoncss" onClick="javascript:history.back();" value="ï¿½ï¿½ï¿½ï¿½">    </td>
   </tr>
 </table>
 </body>

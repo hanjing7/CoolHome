@@ -3,7 +3,7 @@
 ?>
 <table width="766" height="438" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="229" height="438" align="center" valign="top" bgcolor="#F4F4F4"><?php include("left.php");?>	</td>
+
     <td width="561" align="center" valign="top" bgcolor="#FFFFFF"><table width="557" height="350" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
         <td width="557" height="46" background="images/user.gif"><div align="center" style="color: #FFFFFF"> Premium Agreement</div></td>

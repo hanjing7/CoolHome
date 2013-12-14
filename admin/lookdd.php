@@ -15,7 +15,7 @@
     include("conn/conn.php");
 ?>
  <?php
-	   $sql=mysql_query("select count(*) as total from tb_dingdan ",$conn);
+	   $sql=mysql_query("select count(*) as total from tb_order ",$conn);
 	   $info=mysql_fetch_array($sql);
 	   $total=$info['total'];
 	   if($total==0){
@@ -37,7 +37,7 @@
 			}else{
 			    $page=intval($_GET['page']);
 			}
-           $sql1=mysql_query("select * from tb_dingdan order by time desc limit ".($page-1)*$pagesize.",$pagesize",$conn);
+           $sql1=mysql_query("select * from tb_order order by time desc limit ".($page-1)*$pagesize.",$pagesize",$conn);
 		   $info1=mysql_fetch_array($sql1);
 ?>
 <form name="form1" method="post" action="deletedd.php">   
@@ -73,7 +73,7 @@
         <td height="21" bgcolor="#FFFFFF"><div align="center"><?php echo $info1['shff'];?></div></td>
         <td height="21" bgcolor="#FFFFFF"><div align="center"><?php echo $info1['zt'];?></div></td>
         <td height="21" bgcolor="#FFFFFF"><div align="center">
-		    <input name="button" type="button" class="buttoncss" id="button" onClick="javascript:window.open('showdd.php?id=<?php echo $info1['id'];?>','newframe','width=600,height=<?php echo $sum;?>,left=100,top=100,menubar=no,toolbar=no,location=no,scrollbars=no')" value="View ">
+		    <input name="button" type="button" class="buttoncss" id="button" onClick="javascript:window.open('showconfirmation.php?id=<?php echo $info1['id'];?>','newframe','width=600,height=<?php echo $sum;?>,left=100,top=100,menubar=no,toolbar=no,location=no,scrollbars=no')" value="View ">
 		    &nbsp;
 		    <input name="button2" type="button" class="buttoncss" id="button2" onClick="javascript:window.location='orderdd.php?id=<?php echo $info1['id'];?>';" value="Execute">       
             <input type="checkbox"  name=<?php echo $info1['id'];?> value=<?php echo $info1['id'];?>></div></td>

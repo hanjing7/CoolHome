@@ -1,4 +1,8 @@
 <?php include("Conn/conn.php");?>
+<?php
+include("top.php");
+?>
+
 <table width="209" border="0" cellspacing="0" cellpadding="0">
         <tr>
           <td height="153" background="images/dl.gif"><table width="209" border="0" cellspacing="0" cellpadding="0">
@@ -20,18 +24,18 @@
 								  alert(" Please type in Username!");
 								  form.username.select();
 								  return(false);
-								}		
+								}
 								if(form.userpwd.value==""){
 								  alert(" Please type in User Password !");
 								  form.userpwd.select();
 								  return(false);
-								}	
+								}
 								if(form.yz.value==""){
 								  alert(" Please type in Verification Code!");
 								  form.yz.select();
 								  return(false);
-								}	
-							   return(true);				 
+								}
+							   return(true);
 							 }
 						  </script>
                                   <script language="javascript">
@@ -73,7 +77,7 @@
                                       <td height="20" colspan="3">                                        <div align="right">
                                           <input type="hidden" value="<?php echo $num;?>" name="num">
                                           <input name="submit" type="submit" class="buttoncss" value="Submit ">
-<a href="agreereg.php"> Register </a>&nbsp;<a href="javascript:openfindpwd()"> Find  Password </a>&nbsp;</div></td>
+                                            <a href="agreereg.php"> Register </a>&nbsp;<a href="javascript:openfindpwd()"> Find  Password </a>&nbsp;</div></td>
                                     </tr>
                                   </form>
                               </table></td>
@@ -90,114 +94,9 @@
             </tr>
           </table></td>
         </tr>
-        <tr>
-          <td height="39"><img src="images/gonggao.gif" width="209" height="39" border="0" usemap="#Map"></td>
-        </tr>
-        <tr>
-          <td height="40" background="images/line3.gif"><table width="180"  border="0" align="center" cellpadding="0" cellspacing="0">
-            <tr>
-              <td><table width="180"  border="0" align="center" cellpadding="0" cellspacing="0">
-                  <tr>
-                    <td height="5"></td>
-                  </tr>
-                  <?php
-								 $sql=mysql_query("select * from tb_gonggao order by time desc limit 0,5",$conn);
-								 $info=mysql_fetch_array($sql);
-								 if($info==false){
-				  ?>
-                  <tr>
-                    <td height="20" align="center">Our Site Temporarily No Announcement !</td>
-                  </tr>
-                  <?php
-								 }
-								 else{
-								   do{
-				  ?>
-                  <tr>
-                    <td height="20"><div align="center">
-                      <table width="180"  border="0" align="center" cellpadding="0" cellspacing="0">
-                        <tr>
-                          <td width="16" height="5"><div align="center"><img src="images/xing.gif" width="9" height="9"></div></td>
-                          <td width="164" height="24"><div align="left"> <a href="showgg.php?id=<?php echo $info['id'];?>">
-                              <?php 
-								 echo substr($info['title'],0,24);
-								  if(strlen($info['title'])>24){
-									echo "...";
-								  } 
-							   ?>
-                          </a> </div></td>
-                        </tr>
-                      </table> 
-                      </div></td>
-                  </tr>
-                  <?php
-									 }
-								   while($info=mysql_fetch_array($sql));
-								 }
-								?>
-              </table></td>
-            </tr>
-          </table></td>
-        </tr>
-        <tr>
-          <td height="6" background="images/bline.gif"></td>
-        </tr>
-        <tr>
-          <td height="40" background="images/link.gif">&nbsp;</td>
-        </tr>
-        <tr>
-          <td valign="top" background="images/line3.gif">
-            <table width="180"  border="0" align="center" cellpadding="0" cellspacing="0">
-              <tr>
-                <td><table width="180"  border="0" align="center" cellpadding="0" cellspacing="0">
-                    <tr>
-                      <td height="5"></td>
-                    </tr>
-                    <?php
-								 $sql=mysql_query("select * from tb_links order by id desc limit 0,5",$conn);
-								 $info=mysql_fetch_array($sql);
-								 if($info==false){
-								?>
-                    <tr>
-                      <td height="20" align="center">Our Site Temperarily No External Link!</td>
-                    </tr>
-                    <?php
-								 }
-								 else{
-								   do{
-								?>
-                    <tr>
-                      <td height="20"><div align="center">
-                          <table width="180"  border="0" align="center" cellpadding="0" cellspacing="0">
-                            <tr>
-                              <td width="20" height="5"><div align="center"><img src="images/circle.gif" width="10" height="10"></div></td>
-                              <td width="160" height="24"><div align="left"> <a href="<?php echo $info['linkurl'];?>" target="_blank">
-                                  <?php 
-								 echo substr($info['linkname'],0,24);
-								  if(strlen($info['linkname'])>24){
-									echo "...";
-								  } 
-							   ?>
-                              </a> </div></td>
-                            </tr>
-                          </table>
-                      </div></td>
-                    </tr>
-                    <?php
-									 }
-								   while($info=mysql_fetch_array($sql));
-								 }
-								?>
-                </table></td>
-              </tr>
-            </table></td>
-        </tr>
-        <tr>
-          <td height="6" background="images/bline.gif"></td>
-        </tr>
+
+
       </table>
-      <p>&nbsp;</p>
-      <map name="Map">
-        <area shape="rect" coords="159,15,195,29" href="showgonggao.php">
-      </map>
-      
+
+
+

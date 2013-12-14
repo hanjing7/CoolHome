@@ -42,8 +42,8 @@
         <td width="60" bgcolor="#FFFFFF"><div align="center">市场 Price  </div></td>
         <td width="61" bgcolor="#FFFFFF"><div align="center"> Premium  Price  </div></td>
         <td width="60" bgcolor="#FFFFFF"><div align="center">卖出</div></td>
-        <td width="112" bgcolor="#FFFFFF"><div align="center">Add to 时间</div></td>
-        <td width="68" bgcolor="#FFFFFF"><div align="center">操作</div></td>
+        <td width="112" bgcolor="#FFFFFF"><div align="center">Add to Time</div></td>
+        <td width="68" bgcolor="#FFFFFF"><div align="center">Operation</div></td>
       </tr>
 	  <?php
 	  
@@ -122,7 +122,7 @@
 		  ?>
         <a href="editgoods.php?page=<?php echo $i;?>"><?php echo $i;?></a>
         <?php }?>
-        <a href="editgoods.php?page=<?php echo $page-1;?>" title="Next Page  "><font face="webdings"> 8 </font></a> <a href="editgoods.php?id=<?php echo $id;?>&page=<?php echo $pagecount;?>" title="尾 Page  "><font face="webdings"> : </font></a>
+        <a href="editgoods.php?page=<?php echo $page-1;?>" title="Next Page  "><font face="webdings"> 8 </font></a> <a href="editgoods.php?id=<?php echo $id;?>&page=<?php echo $pagecount;?>" title="End Page  "><font face="webdings"> : </font></a>
         <?php }?>
     </div></td>
   </tr>

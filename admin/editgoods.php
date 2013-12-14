@@ -15,7 +15,7 @@
 ?>
 <body topmargin="0" leftmargin="0" bottommargin="0">
 <?php
-	   $sql=mysql_query("select count(*) as total from tb_shangpin ",$conn);
+	   $sql=mysql_query("select count(*) as total from tb_product ",$conn);
 	   $info=mysql_fetch_array($sql);
 	   $total=$info['total'];
 	   if($total==0){
@@ -31,19 +31,19 @@
     <td height="75" bgcolor="#666666"><table width="750" height="86" border="0" cellpadding="0" cellspacing="1">
       
 	  <tr bgcolor="#FFCF60">
-        <td height="20" colspan="10"><div align="center" class="style1">CreationÐÅÏ¢Edit </div></td>
+        <td height="20" colspan="10"><div align="center" class="style1">Creationï¿½ï¿½Ï¢Edit </div></td>
       </tr>
       <tr>
-        <td width="59" height="28" bgcolor="#FFFFFF"><div align="center">¸´Ñ¡</div></td>
+        <td width="59" height="28" bgcolor="#FFFFFF"><div align="center">ï¿½ï¿½Ñ¡</div></td>
         <td width="102" bgcolor="#FFFFFF"><div align="center"> Name</div></td>
         <td width="86" bgcolor="#FFFFFF"><div align="center"> Tag </div></td>
         <td width="71" bgcolor="#FFFFFF"><div align="center"> Model   </div></td>
         <td width="60" bgcolor="#FFFFFF"><div align="center"> Left </div></td>
-        <td width="60" bgcolor="#FFFFFF"><div align="center">ÊÐ³¡ Price  </div></td>
+        <td width="60" bgcolor="#FFFFFF"><div align="center">ï¿½Ð³ï¿½ Price  </div></td>
         <td width="61" bgcolor="#FFFFFF"><div align="center"> Premium  Price  </div></td>
-        <td width="60" bgcolor="#FFFFFF"><div align="center">Âô³ö</div></td>
-        <td width="112" bgcolor="#FFFFFF"><div align="center">Add to Ê±¼ä</div></td>
-        <td width="68" bgcolor="#FFFFFF"><div align="center">²Ù×÷</div></td>
+        <td width="60" bgcolor="#FFFFFF"><div align="center">ï¿½ï¿½ï¿½ï¿½</div></td>
+        <td width="112" bgcolor="#FFFFFF"><div align="center">Add to Time</div></td>
+        <td width="68" bgcolor="#FFFFFF"><div align="center">Operation</div></td>
       </tr>
 	  <?php
 	  
@@ -66,7 +66,7 @@
 			
 			}
 			 
-           $sql1=mysql_query("select * from tb_shangpin order by addtime desc limit ".($page-1)*$pagesize.",$pagesize",$conn);
+           $sql1=mysql_query("select * from tb_product order by addtime desc limit ".($page-1)*$pagesize.",$pagesize",$conn);
 		   while($info1=mysql_fetch_array($sql1))
 		    {
 	  ?>
@@ -79,12 +79,12 @@
           <div align="center"><?php echo $info1['mingcheng'];?></div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo $info1['pinpai'];?></div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo $info1['xinghao'];?></div></td>
-        <td height="25" bgcolor="#FFFFFF"><div align="center"><?php if($info1['shuliang']<0) {echo "ÊÛÍê";}else {echo $info1['shuliang'];}?></div></td>
+        <td height="25" bgcolor="#FFFFFF"><div align="center"><?php if($info1['shuliang']<0) {echo "ï¿½ï¿½ï¿½ï¿½";}else {echo $info1['shuliang'];}?></div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo $info1['shichangjia'];?></div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo $info1['huiyuanjia'];?></div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo $info1['cishu'];?></div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo $info1['addtime'];?></div></td>
-        <td height="25" bgcolor="#FFFFFF"><div align="center"><a href="changegoods.php?id=<?php echo $info1['id'];?>">¸ü¸Ä</a></div></td>
+        <td height="25" bgcolor="#FFFFFF"><div align="center"><a href="changegoods.php?id=<?php echo $info1['id'];?>">ï¿½ï¿½ï¿½</a></div></td>
       </tr>
 	 <?php
 	    }
@@ -97,9 +97,9 @@
 <table width="750" height="25" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td width="165">
-	  <div align="left"><input name="submit" type="submit" class="buttoncss" id="submit" value="É¾³ýÑ¡Ôñ">
-	  &nbsp;<input type="reset" value="ÖØÐÂÑ¡Ôñ" class="buttoncss"></div></td>
-    <td width="585"><div align="right">&nbsp;Our Site  Totally    »õÎï
+	  <div align="left"><input name="submit" type="submit" class="buttoncss" id="submit" value="DeleteÑ¡ï¿½ï¿½">
+	  &nbsp;<input type="reset" value="ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½" class="buttoncss"></div></td>
+    <td width="585"><div align="right">&nbsp;Our Site  Totally    ï¿½ï¿½ï¿½ï¿½
         <?php
 		   echo $total;
 		  ?>

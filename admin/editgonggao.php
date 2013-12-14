@@ -13,7 +13,7 @@
 </head>
 <?php
  include("conn/conn.php");
- $sql=mysql_query("select * from tb_gonggao where id=".$_GET['id']."",$conn);      
+ $sql=mysql_query("select * from tb_posts where id=".$_GET['id']."",$conn);
  $info=mysql_fetch_array($sql);
 
 
@@ -23,13 +23,13 @@
    {
      if(form.title.value=="")
 	 {
-	   alert(" Please    type in   Announcement Ö÷Ìâ!");
+	   alert(" Please    type in   Announcement Topic!");
 	   form.title.select();
 	   return(false);
 	 }
      if(form.content.value=="")
 	 {
-	   alert(" Please    type in   Announcement ÄÚÈÝ!");
+	   alert(" Please    type in   Announcement ï¿½ï¿½ï¿½ï¿½!");
 	   form.content.select();
 	   return(false);
 	 }
@@ -46,16 +46,16 @@
        <form name="form1" method="post" action="saveeditgonggao.php" onSubmit="return chkinput(this)">
 	  
 	  <tr>
-        <td width="100" height="25" bgcolor="#FFFFFF"><div align="center">Announcement Ö÷Ìâ</div></td>
+        <td width="100" height="25" bgcolor="#FFFFFF"><div align="center">Announcement Topic</div></td>
         <td width="647" height="25" bgcolor="#FFFFFF"><div align="left"><input type="text" name="title" size="50" class="inputcss" value="<?php echo $info['title'];?>"></div></td>
       </tr>
       <tr>
-        <td bgcolor="#FFFFFF"><div align="center">Announcement ÄÚÈÝ:</div></td>
+        <td bgcolor="#FFFFFF"><div align="center">Announcement ï¿½ï¿½ï¿½ï¿½:</div></td>
         <td bgcolor="#FFFFFF"><div align="left"><textarea name="content" cols="60" rows="8" class="inputcss"><?php echo $info['content'];?></textarea>
         </div></td>
       </tr>
       <tr>
-        <td height="25" colspan="2" bgcolor="#FFFFFF"><div align="center"><input type="hidden" name="id" value="<?php echo $_GET['id'];?>"><input type="submit" value="¸ü¸Ä" class="buttoncss">&nbsp;&nbsp;<input type="reset" value="È¡Ïû¸ü¸Ä" class="buttoncss"></div></td>
+        <td height="25" colspan="2" bgcolor="#FFFFFF"><div align="center"><input type="hidden" name="id" value="<?php echo $_GET['id'];?>"><input type="submit" value="ï¿½ï¿½ï¿½" class="buttoncss">&nbsp;&nbsp;<input type="reset" value="È¡ï¿½ï¿½ï¿½ï¿½" class="buttoncss"></div></td>
       </tr>
 	  </form>
     </table></td>

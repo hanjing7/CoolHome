@@ -16,7 +16,7 @@
       </table>
       <table width="726" height="70" border="0" align="center" cellpadding="0" cellspacing="0">
         <?php
-	     $sql=mysql_query("select * from tb_shangpin order by addtime desc limit 0,4",$conn); 
+	     $sql=mysql_query("select * from tb_product order by addtime desc limit 0,4",$conn);
 		 $info=mysql_fetch_array($sql);
 		 if($info==false){
 		   echo "Our Site Temperarily No Latest  Product !";
@@ -67,7 +67,7 @@
           <td height="20"><div align="left"><?php echo (@ceil(($info['huiyuanjia']/$info['shichangjia'])*100))."%";?></div></td>
         </tr>
         <tr>
-          <td height="20" colspan="6" width="461"><div align="center">&nbsp;&nbsp;&nbsp;&nbsp;<a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0" style=" cursor:hand"></a></div></td>
+          <td height="20" colspan="6" width="461"><div align="center">&nbsp;&nbsp;&nbsp;&nbsp;<a href="additemtocollection.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0" style=" cursor:hand"></a></div></td>
         </tr>
         <tr>
           <td height="10" colspan="7" background="images/line1.gif"></td>

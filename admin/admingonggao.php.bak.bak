@@ -54,8 +54,8 @@
 	
       <tr>
         <td width="50" height="25" bgcolor="#FFFFFF"><div align="center">复选</div></td>
-        <td width="621" bgcolor="#FFFFFF"><div align="center">Announcement 主题</div></td>
-        <td width="75" bgcolor="#FFFFFF"><div align="center">操作</div></td>
+        <td width="621" bgcolor="#FFFFFF"><div align="center">Announcement Topic</div></td>
+        <td width="75" bgcolor="#FFFFFF"><div align="center">Operation</div></td>
       </tr>
 	    <?php
 	
@@ -76,7 +76,7 @@
 </table>
 <table width="750" height="25" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="203"><div align="left"><input type="submit" value="删除所选项" class="buttoncss">&nbsp;&nbsp;<input type="reset" value="取消删除" class="buttoncss"></div></td>
+    <td width="203"><div align="left"><input type="submit" value="Delete所选项" class="buttoncss">&nbsp;&nbsp;<input type="reset" value="取消Delete" class="buttoncss"></div></td>
     <td width="547"><div align="right">
 	
 	  Our Site  Totally    Announcement 
@@ -104,7 +104,7 @@
         <a href="admingonggao.php?id=<?php echo $id;?>&page=<?php echo $i;?>"><?php echo $i;?></a>
         <?php }?>
         <a href="admingonggao.php?id=<?php echo $id;?>&page=<?php echo $page-1;?>" title="Next Page  "><font face="webdings"> 8 </font></a>
-		 <a href="admingonggao.php?id=<?php echo $id;?>&page=<?php echo $pagecount;?>" title="尾 Page  "><font face="webdings"> : </font></a>
+		 <a href="admingonggao.php?id=<?php echo $id;?>&page=<?php echo $pagecount;?>" title="End Page  "><font face="webdings"> : </font></a>
         <?php }?>
 		</div></td>
   </tr>

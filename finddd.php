@@ -61,20 +61,20 @@
 		  $ddh=trim($_POST['ddh']);
 		  if($username=="")
 		   {
-		       $sql=mysql_query("select * from tb_dingdan where dingdanhao='".$ddh."'",$conn);
+		       $sql=mysql_query("select * from tb_order where dingdanhao='".$ddh."'",$conn);
 		   }
 		  elseif($ddh=="")
 		  {
-		      $sql=mysql_query("select * from tb_dingdan where xiadanren='".$username."'",$conn);
+		      $sql=mysql_query("select * from tb_order where xiadanren='".$username."'",$conn);
 		   }
 		  else
 		  {
-		      $sql=mysql_query("select * from tb_dingdan where xiadanren='".$username."'and dingdanhao='".$ddh."'",$conn);
+		      $sql=mysql_query("select * from tb_order where xiadanren='".$username."'and dingdanhao='".$ddh."'",$conn);
 		  }
 		  $info=mysql_fetch_array($sql);
 		  if($info==false)
 		   {
-		      echo "<div algin='center'>对Not 起,没有Search 到 This Order !</div>";    
+		      echo "<div algin='center'><b>Search Not Found</b></div>";
 		   }
 		   else
 		   {

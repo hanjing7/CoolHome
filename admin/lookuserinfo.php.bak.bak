@@ -27,15 +27,15 @@ $info=mysql_fetch_array($sql);
       <tr>
         <td width="99" height="20" bgcolor="#FFFFFF"><div align="center">User êÇ³Æ:</div></td>
         <td width="180" bgcolor="#FFFFFF"><div align="left"><?php echo $info['name'];?></div></td>
-        <td width="100" bgcolor="#FFFFFF"><div align="center">User ×´Ì¬:</div></td>
+        <td width="100" bgcolor="#FFFFFF"><div align="center">User Status:</div></td>
         <td width="266" bgcolor="#FFFFFF"><div align="left"><?php
 	 if($info['dongjie']==0)
 	  {
-	    echo "·Ç¶³½á×´Ì¬";
+	    echo "·Ç¶³½áStatus";
 	  }
 	  else
 	  { 
-	   echo "¶³½á×´Ì¬"; 
+	   echo "¶³½áStatus"; 
 	  }
 		?></div></td>
       </tr>

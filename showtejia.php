@@ -16,12 +16,12 @@
       </table>
       <?php
 	  
-       $sql=mysql_query("select count(*) as total from tb_shangpin where tejia=1 ",$conn);
+       $sql=mysql_query("select count(*) as total from tb_product where tejia=1 ",$conn);
 	   $info=mysql_fetch_array($sql);
 	   $total=$info['total'];
 	   if($total==0)
 	   {
-	     echo "Our Site Temperarily NoÌØ Price   Product !";
+	     echo "Our Site Temperarily Noï¿½ï¿½ Price   Product !";
 	   }
 	   else
 	   {
@@ -98,7 +98,7 @@
           <td height="20"><div align="left"><?php echo (ceil(($info1['huiyuanjia']/$info1['shichangjia'])*100))."%";?></div></td>
         </tr>
         <tr>
-          <td height="20" colspan="6" width="461"><div align="center">&nbsp;&nbsp;&nbsp;&nbsp;<a href="addgouwuche.php?id=<?php echo $info1['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0" style=" cursor:hand"></a></div></td>
+          <td height="20" colspan="6" width="461"><div align="center">&nbsp;&nbsp;&nbsp;&nbsp;<a href="additemtocollection.php?id=<?php echo $info1['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0" style=" cursor:hand"></a></div></td>
         </tr>
         <tr>
           <td height="10" colspan="7" background="images/line1.gif"></td>
@@ -110,7 +110,7 @@
       </table>
       <table width="550" height="25" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
-          <td><div align="right"> &nbsp;Our Site  Totally    ÌØ Price   Product &nbsp;
+          <td><div align="right"> &nbsp;Our Site  Totally    ï¿½ï¿½ Price   Product &nbsp;
                   <?php
 		   echo $total;
 		  ?>

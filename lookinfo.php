@@ -24,14 +24,14 @@
             <td bgcolor="#fff">
               <table width="800" border="0" align="center" cellpadding="0" cellspacing="1">
                 <?php
-		     $sql=mysql_query("select * from tb_shangpin where id=".$_GET['id']."",$conn); 
+		     $sql=mysql_query("select * from tb_product where id=".$_GET['id']."",$conn);
 			 $info=mysql_fetch_object($sql);
 		   ?>
                 <tr>
                   <td width="300" height="300" rowspan="5"  bgcolor="#FFFFFF"><div align="center">
                       <?php
 			    if($info->tupian==""){
-				  echo "Temperarily No Picture ";
+				  echo "Temporarily No Picture ";
 				}
 				else
 				{
@@ -75,7 +75,7 @@
         </table>
         <table width="530" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
           <tr>
-            <td><div align="right"><a href="addgouwuche.php?id=<?php echo $info->id;?>">Add to Collection </a>&nbsp;&nbsp;</div></td>
+            <td><div align="right"><a href="additemtocollection.php?id=<?php echo $info->id;?>">Add to Collection </a>&nbsp;&nbsp;</div></td>
           </tr>
         </table>
         <?php

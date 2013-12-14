@@ -11,7 +11,7 @@
  {
    if(form.nc.value=="")
    {
-    alert(" Please    type in   Your Name!");
+    alert(" Please    type in Email!");
 	form.nc.select();
 	return(false);
    
@@ -24,12 +24,12 @@
     <td height="30" bgcolor="#8A87CC"><div align="center"> Find  Password </div></td>
   </tr>
   <tr>
-    <td height="30" bgcolor="#FFFFFF"><div align="left">&nbsp;Your Name:
+    <td height="30" bgcolor="#FFFFFF"><div align="left">&nbsp;Your Email:
         <input type="text" name="nc" size="20" class="inputcss">
     </div></td>
   </tr>
   <tr>
-    <td height="35" bgcolor="#FFFFFF"><div align="center"><input name="submit" type="submit" class="buttoncss" id="submit" value="Comfirm"></div></td>
+    <td height="35" bgcolor="#FFFFFF"><div align="center"><input name="submit" type="submit" class="buttoncss" id="submit" value="Confirm"></div></td>
   </tr>
 </form>
 </table>

@@ -23,9 +23,9 @@ $info=mysql_fetch_array($sql);
   <tr>
     <td height="100" bgcolor="#000000"><table width="750" height="100" border="0" align="center" cellpadding="0" cellspacing="1">
         <tr> 
-          <td width="87" height="25" bgcolor="#FFFFFF"><div align="center"> Message主题:</div></td>
+          <td width="87" height="25" bgcolor="#FFFFFF"><div align="center"> MessageTopic:</div></td>
           <td width="392" height="25" bgcolor="#FFFFFF"><div align="left"><?php echo $info['title'];?></div></td>
-          <td width="83" bgcolor="#FFFFFF"><div align="center"> Message时间:</div></td>
+          <td width="83" bgcolor="#FFFFFF"><div align="center"> MessageTime:</div></td>
           <td width="183" bgcolor="#FFFFFF"><div align="center"><?php echo $info['time'];?></div></td>
         </tr>
         <tr> 

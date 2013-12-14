@@ -117,7 +117,7 @@ div{display:none}
   <tr>
     <td height="20">&nbsp;</td>
     <td height="20"><div align="center"><input type="button" onClick="window.close()" value="关闭窗口" class="buttoncss"></div></td>
-    <td height="20">创建时间:</td>
+    <td height="20">创建Time:</td>
     <td height="20"><?php echo $info['time'];?></td>
   </tr>
 </table>

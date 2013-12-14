@@ -14,7 +14,7 @@
 <body topmargin="0" leftmargin="0" bottommargin="0">
 <?php
        include("conn/conn.php");
-       $sql=mysql_query("select count(*) as total from tb_gonggao ",$conn);
+       $sql=mysql_query("select count(*) as total from tb_posts ",$conn);
 	   $info=mysql_fetch_array($sql);
 	   $total=$info['total'];
 	   if($total==0)
@@ -42,7 +42,7 @@
 			
 			}
 			 
-           $sql1=mysql_query("select * from tb_gonggao order by time desc limit ".($page-1)*$pagesize.",$pagesize",$conn);
+           $sql1=mysql_query("select * from tb_posts order by time desc limit ".($page-1)*$pagesize.",$pagesize",$conn);
 ?>
 <form name="form1" method="post" action="deletegonggao.php">
 <table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -53,9 +53,9 @@
     <td height="50" bgcolor="#666666"><table width="750" height="25" border="0" align="center" cellpadding="0" cellspacing="1">
 	
       <tr>
-        <td width="50" height="25" bgcolor="#FFFFFF"><div align="center">复选</div></td>
-        <td width="621" bgcolor="#FFFFFF"><div align="center">Announcement 主题</div></td>
-        <td width="75" bgcolor="#FFFFFF"><div align="center">操作</div></td>
+        <td width="50" height="25" bgcolor="#FFFFFF"><div align="center">锟斤拷选</div></td>
+        <td width="621" bgcolor="#FFFFFF"><div align="center">Announcement Topic</div></td>
+        <td width="75" bgcolor="#FFFFFF"><div align="center">Operation</div></td>
       </tr>
 	    <?php
 	
@@ -76,7 +76,7 @@
 </table>
 <table width="750" height="25" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="203"><div align="left"><input type="submit" value="删除所选项" class="buttoncss">&nbsp;&nbsp;<input type="reset" value="取消删除" class="buttoncss"></div></td>
+    <td width="203"><div align="left"><input type="submit" value="Delete锟斤拷Option" class="buttoncss">&nbsp;&nbsp;<input type="reset" value="取锟斤拷Delete" class="buttoncss"></div></td>
     <td width="547"><div align="right">
 	
 	  Our Site  Totally    Announcement 

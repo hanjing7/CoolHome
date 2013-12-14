@@ -23,7 +23,7 @@
    {
      if(form.title.value=="")
 	 {
-	   alert(" Please    type in   Announcement 主题!");
+	   alert(" Please    type in   Announcement Topic!");
 	   form.title.select();
 	   return(false);
 	 }
@@ -46,7 +46,7 @@
        <form name="form1" method="post" action="saveeditgonggao.php" onSubmit="return chkinput(this)">
 	  
 	  <tr>
-        <td width="100" height="25" bgcolor="#FFFFFF"><div align="center">Announcement 主题</div></td>
+        <td width="100" height="25" bgcolor="#FFFFFF"><div align="center">Announcement Topic</div></td>
         <td width="647" height="25" bgcolor="#FFFFFF"><div align="left"><input type="text" name="title" size="50" class="inputcss" value="<?php echo $info['title'];?>"></div></td>
       </tr>
       <tr>

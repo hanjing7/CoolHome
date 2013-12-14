@@ -18,13 +18,17 @@
                   <td width="557"  height="50"><img src="images/tuijian.gif" width="557" height="50" border="0" usemap="#Map2"></td>
                 </tr>
               </table>
+            <td><?php
+                //include("left.php");
+                ?></td>
+
                 <table width="550" border="00" align="center" cellpadding="0" cellspacing="0">
                   <tr>
                     <td width="555" height="110"><table width="530" height="110" border="0" align="center" cellpadding="0" cellspacing="0">
                         <tr>
                           <td width="265">
                <?php
-			  $sql=mysql_query("select * from tb_shangpin where tuijian=1 order by addtime desc limit 0,1");
+			  $sql=mysql_query("select * from tb_product where tuijian=1 order by addtime desc limit 0,1");
 			  $info=mysql_fetch_array($sql);
 			  if($info==false){
 			   echo "Our Site Temperarily No Recommended Creation!";
@@ -71,7 +75,7 @@
 </font></td>
                               </tr>
                               <tr>
-                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a>                                 </td>
+                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="additemtocollection.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a>                                 </td>
                               </tr>
                             </table>
                             <?php
@@ -80,7 +84,7 @@
                           </td>
                           <td width="265">
                             <?php
-			  $sql=mysql_query("select * from tb_shangpin where tuijian=1 order by addtime desc limit 1,1");
+			  $sql=mysql_query("select * from tb_product where tuijian=1 order by addtime desc limit 1,1");
 			  $info=mysql_fetch_array($sql);
 			  if($info==true)
 			  {
@@ -126,7 +130,7 @@
                                 </font></td>
                               </tr>
                               <tr>
-                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a> </td>
+                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="additemtocollection.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a> </td>
                               </tr>
                             </table>
                             <?php
@@ -151,10 +155,10 @@
                         <tr>
                           <td width="265">
                             <?php
-			  $sql=mysql_query("select * from tb_shangpin order by addtime desc limit 0,1");
+			  $sql=mysql_query("select * from tb_product order by addtime desc limit 0,1");
 			  $info=mysql_fetch_array($sql);
 			  if($info==false){
-			   echo "Our Site Temperarily NoRecommended  Product !";
+			   echo "Our Site Temporarily NoRecommended  Product !";
 			  }
 			  else{
 			  ?>
@@ -199,7 +203,7 @@
                                 </font></td>
                               </tr>
                               <tr>
-                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a> </td>
+                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="additemtocollection.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a> </td>
                               </tr>
                             </table>
                             <?php
@@ -208,7 +212,7 @@
                           </td>
                           <td width="265">
                             <?php
-			  $sql=mysql_query("select * from tb_shangpin order by addtime desc limit 1,1");
+			  $sql=mysql_query("select * from tb_product order by addtime desc limit 1,1");
 			  $info=mysql_fetch_array($sql);
 			  if($info==true)
 		
@@ -255,7 +259,7 @@
                                 </font></td>
                               </tr>
                               <tr>
-                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a> </td>
+                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="additemtocollection.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a> </td>
                               </tr>
                             </table>
                             <?php
@@ -280,7 +284,7 @@
                         <tr>
                           <td width="275">
                             <?php
-			  $sql=mysql_query("select * from tb_shangpin order by cishu desc limit 0,1");
+			  $sql=mysql_query("select * from tb_product order by cishu desc limit 0,1");
 			  $info=mysql_fetch_array($sql);
 			  if($info==false){
 			   echo "Our Site Temperarily NoRecommended  Product !";
@@ -328,7 +332,7 @@
                                 </font></td>
                               </tr>
                               <tr>
-                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a> </td>
+                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="additemtocollection.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a> </td>
                               </tr>
                             </table>
                             <?php
@@ -337,7 +341,7 @@
                           </td>
                           <td width="255">
                             <?php
-			  $sql=mysql_query("select * from tb_shangpin order by cishu desc limit 1,1 ");
+			  $sql=mysql_query("select * from tb_product order by cishu desc limit 1,1 ");
 			  $info=mysql_fetch_array($sql);
 			  if($info==true){
 			  ?>
@@ -382,7 +386,7 @@
                                 </font></td>
                               </tr>
                               <tr>
-                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="addgouwuche.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a> </td>
+                                <td height="30" colspan="2"><a href="lookinfo.php?id=<?php echo $info['id'];?>"><img src="images/detail.jpg" width="60" height="18" border="0"></a> <a href="additemtocollection.php?id=<?php echo $info['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0"></a> </td>
                               </tr>
                             </table>
                             <?php
@@ -409,7 +413,7 @@
 </table>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <map name="Map2">
-  <area shape="rect" coords="504,27,543,43" href="showtuijian.php">
+  <area shape="rect" coords="504,27,543,43" href="showrecommendation.php">
 </map>
 <map name="Map3">
   <area shape="rect" coords="503,24,545,42" href="shownew.php">

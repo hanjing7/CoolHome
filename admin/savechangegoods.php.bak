@@ -26,7 +26,7 @@ $shuliang=$_POST['shuliang'];
  }
 if($upfile!="")
 {
-$sql=mysql_query("select * from tb_shangpin where id=".$_GET['id']."",$conn);
+$sql=mysql_query("select * from tb_product where id=".$_GET['id']."",$conn);
 $info=mysql_fetch_array($sql);
 @unlink(substr($info['tupian'],6,(strlen($info['tupian'])-6)));
 }
@@ -59,6 +59,6 @@ $uploadfile="admin/".$uploadfile;
 $jianjie=$_POST['jianjie'];
 $addtime=$nian."-".$yue."-".$ri;
 
-mysql_query("update tb_shangpin set mingcheng='$mingcheng',jianjie='$jianjie',addtime='$addtime',dengji='$dengji',xinghao='$xinghao',tupian='$uploadfile',typeid='$typeid',shichangjia='$shichangjia',huiyuanjia='$huiyuanjia',pinpai='$pinpai',tuijian='$tuijian',shuliang='$shuliang' where id=".$_GET['id']."",$conn);
-echo "<script>alert('Creation".$mingcheng."Update ³É¹¦!');history.back();;</script>";
+mysql_query("update tb_product set mingcheng='$mingcheng',jianjie='$jianjie',addtime='$addtime',dengji='$dengji',xinghao='$xinghao',tupian='$uploadfile',typeid='$typeid',shichangjia='$shichangjia',huiyuanjia='$huiyuanjia',pinpai='$pinpai',tuijian='$tuijian',shuliang='$shuliang' where id=".$_GET['id']."",$conn);
+echo "<script>alert('Creation".$mingcheng."Update Successfully!');history.back();;</script>";
 ?>

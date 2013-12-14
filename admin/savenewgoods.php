@@ -3,12 +3,12 @@
 include("conn/conn.php");
 if(is_numeric($_POST['shichangjia'])==false || is_numeric($_POST['huiyuanjia'])==false)
  {
-   echo "<script>alert(' Price  只能为数字！');history.back();</script>";
+   echo "<script>alert(' Price  Can only be numbers锟斤拷');history.back();</script>";
    exit;
  }
 if(is_numeric($_POST['shuliang'])==false)
  {
-   echo "<script>alert(' Amount 只能为数字！');history.back();</script>";
+   echo "<script>alert(' Amount Can only be numbers锟斤拷');history.back();</script>";
    exit;
  }
 $mingcheng=$_POST['mingcheng'];
@@ -69,6 +69,6 @@ else
 
 $jianjie=$_POST['jianjie'];
 $addtime=$nian."-".$yue."-".$ri;
-mysql_query("insert into tb_shangpin(mingcheng,jianjie,addtime,dengji,xinghao,tupian,typeid,shichangjia,huiyuanjia,pinpai,tuijian,shuliang,cishu)values('$mingcheng','$jianjie','$addtime','$dengji','$xinghao','$uploadfile','$typeid','$shichangjia','$huiyuanjia','$pinpai','$tuijian','$shuliang','0')",$conn);
-echo "<script>alert('Creation".$mingcheng."Add 成功!');window.location.href='addgoods.php';</script>";
+mysql_query("insert into tb_product(mingcheng,jianjie,addtime,dengji,xinghao,tupian,typeid,shichangjia,huiyuanjia,pinpai,tuijian,shuliang,cishu)values('$mingcheng','$jianjie','$addtime','$dengji','$xinghao','$uploadfile','$typeid','$shichangjia','$huiyuanjia','$pinpai','$tuijian','$shuliang','0')",$conn);
+echo "<script>alert('Creation".$mingcheng."Add Successfully!');window.location.href='addgoods.php';</script>";
 ?>

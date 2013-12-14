@@ -15,7 +15,7 @@
               <?php
 		     
 		     $id=$_GET['id'];
-			 $sql=mysql_query("select * from tb_gonggao where id='".$id."'",$conn);
+			 $sql=mysql_query("select * from tb_posts where id='".$id."'",$conn);
 			 $info=mysql_fetch_array($sql);
 		     include("function.php");
 		   

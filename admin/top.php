@@ -13,11 +13,11 @@
             <h1><a href="index.html">wisesolutions</a></h1>
             <nav>
                 <ul class="menu">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="company.html">company</a></li>
-                    <li><a href="services.html">services</a></li>
-                    <li><a class="active" href="clients.html">clients</a></li>
-                    <li><a href="contacts.html">contacts</a></li>
+                    <li><a href="index.html"></a></li>
+                    <li><a href="company.html"></a></li>
+                    <li><a href="services.html"></a></li>
+                    <li><a class="active" href="clients.html"></a></li>
+                    <li><a href="contacts.html"></a></li>
                 </ul>
             </nav>
         </div>

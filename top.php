@@ -17,10 +17,13 @@
         <td align="right" bgcolor="#023BA6">
 		<table border="0" cellspacing="0" cellpadding="0">
             <tr>
-              <td><h4><a href=# onClick="this.style.behavior='url(#default#homepage)';
-			  this.setHomePage('http://share.axure.com/48N8RV/Home__Shop_.html');">Set Home Page  </a> | 
-			  <a href="javascript:window.external.addFavorite('http://www.mrbccd.com/','CoolHome');">Add to Favorite   
-			  </a><a href="contact_us.php">| Contact us</a>&nbsp;&nbsp;&nbsp;&nbsp;</h4></td>
+              <td id="username" style="color:white"><h4><?php
+                      if($_SESSION['username'])
+                      {
+                          $name = $_SESSION['username'];
+                          echo "Welcome $name";
+
+                      } ?></a>&nbsp;&nbsp;&nbsp;&nbsp;</h4></td>
             </tr>
             <tr>
               <td>&nbsp;</td>
@@ -40,10 +43,10 @@
               </form>
 			</table>
             <table height="120" align = "center"><tr>
-    <td  height="32" align="right"><h3><a href="index.php">Home</a>
-	| <a href="shownew.php"> Latest Creation</a> | <a href="showtuijian.php">Recommended Creation</a> | <a href="showhot.php">
+    <td  height="32" align="right"><h3><a href="login.php">Login </a> | <a href="index.php">Home</a>
+	| <a href="shownew.php"> Latest Creation</a> | <a href="showrecommendation.php">Recommended Creation</a> | <a href="showhot.php">
 	Popular Creation</a>&nbsp;|&nbsp;<!--<a href="showfenlei.php">Creation Category </a>&nbsp;|--><br/><br/>&nbsp;<a href="usercenter.php">User Center </a>
-	&nbsp;|&nbsp;<a href="finddd.php">Order Query </a>&nbsp;|&nbsp;<a href="gouwu1.php">My Collection &nbsp;</a></h3></td>
+	&nbsp;|&nbsp;<a href="finddd.php">Order Query </a>&nbsp;|&nbsp;<a href="mycollection.php">My Collection &nbsp;</a> | <a href="logout.php">Logout </a> </h3></td>
             </tr></table>
 </td>
       </tr>

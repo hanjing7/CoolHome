@@ -87,7 +87,7 @@
         <td width="618" bgcolor="#FFFFFF"><div align="left"><input type="text" name="mingcheng" size="25" class="inputcss"></div></td>
       </tr>
       <tr>
-        <td height="25" bgcolor="#FFFFFF"><div align="center"> Market Ê±¼ä:</div></td>
+        <td height="25" bgcolor="#FFFFFF"><div align="center"> Market Time:</div></td>
         <td height="25" bgcolor="#FFFFFF"><div align="left">
 <select name="nian" class="inputcss">
  <?php 

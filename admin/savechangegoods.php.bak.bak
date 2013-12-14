@@ -1,4 +1,4 @@
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <?php
 include("conn/conn.php");
 $mingcheng=$_POST['mingcheng'];

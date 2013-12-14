@@ -8,14 +8,10 @@ $id=$_GET['id'];
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <table width="766" height="438" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="209" height="438" valign="top" bgcolor="#FFFFFF"><div align="center">
-      <?php
-	   include("left.php");
-	?>
-      </div></td>
+
     <td width="581" valign="top" bgcolor="#FFFFFF"><table width="550" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
-        <td><div align="left"><a href="javascript:history.back();">·µ»Ø</a></div></td>
+        <td><div align="left"><a href="javascript:history.back();"> </a></div></td>
       </tr>
     </table>
       <table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -23,7 +19,7 @@ $id=$_GET['id'];
           <td height="25" colspan="4"><div align="center" style="color: #990000">CreationComment </div></td>
         </tr>
         <?php
-       $sql=mysql_query("select count(*) as total from tb_pingjia where spid='".$_GET['id']."'",$conn);
+       $sql=mysql_query("select count(*) as total from tb_comment where spid='".$_GET['id']."'",$conn);
 	   $info=mysql_fetch_array($sql);
 	   $total=$info['total'];
 	   if($total==0)
@@ -50,7 +46,7 @@ $id=$_GET['id'];
 			    $page=intval($_GET['page']);
 			
 			}
-             $sql1=mysql_query("select * from tb_pingjia where spid='".$_GET['id']."' order by time desc limit ".($page-1)*$pagesize.",$pagesize ",$conn);
+             $sql1=mysql_query("select * from tb_comment where spid='".$_GET['id']."' order by time desc limit ".($page-1)*$pagesize.",$pagesize ",$conn);
              while($info1=mysql_fetch_array($sql1))
 		     {
 		  ?>
@@ -59,7 +55,7 @@ $id=$_GET['id'];
           <td width="181"><div align="left">
               <?php 
 		     $spid=$info1['spid'];
-			 $sql2=mysql_query("select mingcheng from tb_shangpin where id=".$spid."",$conn);
+			 $sql2=mysql_query("select mingcheng from tb_product where id=".$spid."",$conn);
 			 $info2=mysql_fetch_array($sql2);
 			 echo $info2['mingcheng'];
 		  ?>
@@ -68,7 +64,7 @@ $id=$_GET['id'];
           <td width="229"><div align="left"><?php echo $info1['time'];?></div></td>
         </tr>
         <tr>
-          <td height="20"><div align="center">Comment Õß:</div></td>
+          <td height="20"><div align="center">Comment r:</div></td>
           <td height="20" colspan="3"><div align="left">
               <?php 
 		     $spid=$info1['userid'];

@@ -51,7 +51,7 @@
 <body topmargin="0" leftmargin="0" bottommargin="0">
 <table width="212" border="0" cellpadding="0" cellspacing="0" background="left_bg.gif">
   <tr>
-  <h3 class="p0">Management Panel</h3>
+  <h3 class="p0">Management</h3>
   <ul class="list-2">
   
         <li><a href="#" onClick="javascript:openspgl()">Creation Management</a></li>
@@ -65,7 +65,7 @@
 			<ul class="list-3" id="yhgl" style="display:">
 				<li><a href="edituser.php" target="main">User Information Management </a></li>
 				<li><a href="lookleaveword.php"  target="main">User Message Management </a></li>
-				<li>;<a href="changeadmin.php"  target="main">Change Administrator Info</a></li>
+				<li><a href="changeadmin.php"  target="main">Change Administrator Info</a></li>
 			</ul>
         <li><a href="#" onClick="javascript:openddgl()">Order  Management</a></li>
 			<ul class="list-3" id="ddgl" style="display:">

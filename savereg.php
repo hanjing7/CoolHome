@@ -26,18 +26,16 @@ $sql=mysql_query("select * from tb_user where name='".$name."'",$conn);
 $info=mysql_fetch_array($sql);
 if($info==true)
  {
-   echo "<script>alert(' This Í«≥∆“—æ≠Exist !');history.back();</script>";
+   echo "<script>alert(' This user already exist!');history.back();</script>";
    exit;
  }
  else
  {  
     mysql_query("insert into tb_user (name,pwd,dongjie,email,truename,sfzh,tel,qq,tishi,huida,dizhi,youbian,regtime,pwd1) values ('$name','$pwd','$dongjie','$email','$truename','$sfzh','$tel','$qq','$tishi','$huida','$dizhi','$youbian','$regtime','$pwd1')",$conn);
-	session_register("username");
+
 	$username=$name;
-        session_register("producelist");
 	$producelist="";
-	session_register("quatity");
 	$quatity="";
-    echo "<script>alert('Congratulations! £¨ Register successfully!');window.location='index.php';</script>";
+    echo "<script>alert('Congratulations! You were able to register successfully!');window.location='index.php';</script>";
  }
 ?>

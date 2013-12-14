@@ -14,12 +14,12 @@
 <body topmargin="0" leftmargin="0" bottommargin="0">
 <?php
        include("conn/conn.php");
-       $sql=mysql_query("select count(*) as total from tb_pingjia ",$conn);
+       $sql=mysql_query("select count(*) as total from tb_comment ",$conn);
 	   $info=mysql_fetch_array($sql);
 	   $total=$info['total'];
 	   if($total==0)
 	   {
-	     echo "Our Site Temperarily NoUser 发表Comment !";
+	     echo "Our Site Temperarily NoUser 锟斤拷锟斤拷Comment !";
 	   }
 	   else
 	   {
@@ -41,12 +41,12 @@
   <tr>
     <td height="40" colspan="2" bgcolor="#666666"><table width="750" height="45" border="0" align="center" cellpadding="0" cellspacing="1">
       <tr>
-        <td width="294" height="22" bgcolor="#FFFFFF"><div align="center">Comment 主题</div></td>
+        <td width="294" height="22" bgcolor="#FFFFFF"><div align="center">Comment Topic</div></td>
         <td width="93" bgcolor="#FFFFFF"><div align="center">Creation Name</div></td>
-        <td width="100" bgcolor="#FFFFFF"><div align="center">Comment 者</div></td>
-        <td width="110" bgcolor="#FFFFFF"><div align="center">Comment 时间</div></td>
-        <td width="87" bgcolor="#FFFFFF"><div align="center">操作</div></td>
-        <td width="59" bgcolor="#FFFFFF"><div align="center">删除</div></td>
+        <td width="100" bgcolor="#FFFFFF"><div align="center">Comment r</div></td>
+        <td width="110" bgcolor="#FFFFFF"><div align="center">Comment Time</div></td>
+        <td width="87" bgcolor="#FFFFFF"><div align="center">Operation</div></td>
+        <td width="59" bgcolor="#FFFFFF"><div align="center">Delete</div></td>
       </tr>
 	   <?php
 	     $pagesize=20;
@@ -68,7 +68,7 @@
 			
 			}
 			 
-             $sql1=mysql_query("select * from tb_pingjia  order by time desc limit ".($page-1)*$pagesize.",$pagesize ",$conn);
+             $sql1=mysql_query("select * from tb_comment  order by time desc limit ".($page-1)*$pagesize.",$pagesize ",$conn);
              while($info1=mysql_fetch_array($sql1))
 		     {
 	   
@@ -77,7 +77,7 @@
         <td height="20" bgcolor="#FFFFFF"><div align="left"><?php echo $info1['title'];?></div></td>
         <td height="20" bgcolor="#FFFFFF"><div align="center">
 		<?php
-		  $sql2=mysql_query("select * from tb_shangpin where id='".$info1['spid']."'",$conn);
+		  $sql2=mysql_query("select * from tb_product where id='".$info1['spid']."'",$conn);
 		  $info2=mysql_fetch_array($sql2);
 		  echo $info2['mingcheng'];
 		?></div></td>
@@ -102,7 +102,7 @@
   <tr>
     <td width="657" height="20">
 	<div align="left">
-	&nbsp;Our Site  Totally    用Comment &nbsp;<?php
+	&nbsp;Our Site  Totally    锟斤拷Comment &nbsp;<?php
 		   echo $total;
 		  ?>&nbsp;&nbsp; Each    Page  Show &nbsp;<?php echo $pagesize;?>&nbsp;&nbsp; The &nbsp;<?php echo $page;?>&nbsp; Page  /Total&nbsp;<?php echo $pagecount; ?>&nbsp; Page  
         <?php
@@ -130,7 +130,7 @@
 	
 	
 	</div></td>
-    <td width="93"><div align="center"><input type="submit" value="删除选项" class="buttoncss"></div></td>
+    <td width="93"><div align="center"><input type="submit" value="DeleteOption" class="buttoncss"></div></td>
   </tr>
   </form>
 </table>

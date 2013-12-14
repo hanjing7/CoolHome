@@ -10,7 +10,7 @@
 
 <table width="766" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="229" valign="top" bgcolor="#F0F0F0"><?php include("left.php");?></td>
+
     <td width="561" align="center" valign="top" bgcolor="#FFFFFF"><table width="550" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
         <td>&nbsp;</td>
@@ -34,21 +34,21 @@
 		
 		 $lb=$_POST['lb'];
 		if($jdcz!=""){
-	     $sql=mysql_query("select * from tb_shangpin where mingcheng like '%".$name."%' order by addtime desc",$conn);
+	     $sql=mysql_query("select * from tb_product where mingcheng like '%".$name."%' order by addtime desc",$conn);
 		}
 		else
 		{
 		   if($mh=="1"){
-			  $sql=mysql_query("select * from tb_shangpin where huiyuanjia $dx".$jg." and typeid='".$lb."' and mingcheng like '%".$name."%'",$conn);
+			  $sql=mysql_query("select * from tb_product where huiyuanjia $dx".$jg." and typeid='".$lb."' and mingcheng like '%".$name."%'",$conn);
 			
 			}
 		    else{
-			  $sql=mysql_query("select * from tb_shangpin where huiyuanjia $dx".$jg." and typeid='".$lb."' and mingcheng = '".$name."'",$conn);
+			  $sql=mysql_query("select * from tb_product where huiyuanjia $dx".$jg." and typeid='".$lb."' and mingcheng = '".$name."'",$conn);
 			}
 		} 
 		 $info=mysql_fetch_array($sql);
 		 if($info==false){
-		   echo "<script language='javascript'>alert('Our Site Temperarily No Category ËÆ Product !');history.go(-1);</script>";
+		   echo "<script language='javascript'>alert('Item Not Found!');history.go(-1);</script>";
 		  } 
 		 else{
 	?>
@@ -72,7 +72,7 @@
           <td height="25"><div align="center"><?php echo $info['huiyuanjia'];?></div></td>
           <td height="25"><div align="center"><?php echo $info['addtime'];?></div></td>
           <td height="25"><div align="center"><a href="lookinfo.php?id=<?php echo $info['id'];?>">View </a></div></td>
-          <td height="25"><div align="center"><a href="addgouwuche.php?id=<?php echo $info['id'];?>">¹ºÎï</a></div></td>
+          <td height="25"><div align="center"><a href="additemtocollection.php?id=<?php echo $info['id'];?>">add Item to Collection</a></div></td>
         </tr>
         <?php
 		   }while($info=mysql_fetch_array($sql));

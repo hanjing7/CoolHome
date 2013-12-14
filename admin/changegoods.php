@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>¸ü¸ÄCreationÐÅÏ¢</title>
+<title>ï¿½ï¿½ï¿½Creationï¿½ï¿½Ï¢</title>
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <style type="text/css">
 <!--
@@ -12,13 +12,13 @@
 </head>
 <?php 
   include("conn/conn.php");
-  $sql1=mysql_query("select * from tb_shangpin where id=".$_GET['id']."",$conn);
+  $sql1=mysql_query("select * from tb_product where id=".$_GET['id']."",$conn);
   $info1=mysql_fetch_array($sql1);
 ?>
 <body topmargin="0" leftmargin="0" bottommargin="0">
 <table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td height="20" bgcolor="#FFCF60"><div align="center" class="style1">¸ü¸ÄCreationÐÅÏ¢</div></td>
+    <td height="20" bgcolor="#FFCF60"><div align="center" class="style1">ï¿½ï¿½ï¿½Creationï¿½ï¿½Ï¢</div></td>
   </tr>
   <tr>
     <td height="253" bgcolor="#666666"><table width="750" border="0" cellpadding="0" cellspacing="1">
@@ -45,7 +45,7 @@
 	
 	  if(form.shichangjia.value=="")
 	   {
-	     alert(" Please    type in   CreationÊÐ³¡ Price  !");
+	     alert(" Please    type in   Creationï¿½Ð³ï¿½ Price  !");
 		 form.shichangjia.select();
 		 return(false);
 	   }
@@ -93,7 +93,7 @@
             </div></td>
           </tr>
           <tr>
-            <td height="25" bgcolor="#FFFFFF"><div align="center"> Market Ê±¼ä:</div></td>
+            <td height="25" bgcolor="#FFFFFF"><div align="center"> Market Time:</div></td>
             <td height="25" bgcolor="#FFFFFF"><div align="left">
                 <select name="nian" class="inputcss">
                   <?php 
@@ -105,7 +105,7 @@
   }
  ?>
                 </select>
-                Äê
+                ï¿½ï¿½
                 <select name="yue" class="inputcss">
                   <?php 
             for($i=1;$i<=12;$i++)
@@ -116,7 +116,7 @@
              }
              ?>
                 </select>
-                ÔÂ
+                ï¿½ï¿½
                 <select name="ri" class="inputcss">
                   <?php 
             for($i=1;$i<=31;$i++)
@@ -127,25 +127,25 @@
              }
              ?>
                 </select>
-                ÈÕ</div></td>
+                ï¿½ï¿½</div></td>
           </tr>
           <tr>
             <td height="25" bgcolor="#FFFFFF"><div align="center"> Price  :</div></td>
-            <td height="25" bgcolor="#FFFFFF"><div align="left">ÊÐ³¡ Price  :
+            <td height="25" bgcolor="#FFFFFF"><div align="left">ï¿½Ð³ï¿½ Price  :
                     <input type="text" name="shichangjia" size="10" class="inputcss" value="<?php echo $info1['shichangjia'];?>">
                 Dollar&nbsp;&nbsp; Premium  Price  :
                 <input type="text" name="huiyuanjia" size="10" class="inputcss" value="<?php echo $info1['huiyuanjia'];?>">
                 Dollar</div></td>
           </tr>
           <tr>
-            <td height="25" bgcolor="#FFFFFF"><div align="center">Creation Category ÐÍ:</div></td>
+            <td height="25" bgcolor="#FFFFFF"><div align="center">Creation Category ï¿½ï¿½:</div></td>
             <td height="25" bgcolor="#FFFFFF"><div align="left">
                 <?php
 			$sql=mysql_query("select * from tb_type order by id desc",$conn);
 			$info=mysql_fetch_array($sql);
 			if($info==false)
 			{
-			  echo " Please   ÏÈAdd Creation Category ÐÍ!";
+			  echo " Please   ï¿½ï¿½Add Creation Category ï¿½ï¿½!";
 			}
 			else
 			{
@@ -170,10 +170,10 @@
             <td height="25" bgcolor="#FFFFFF"><div align="center">Creation Level :</div></td>
             <td height="25" bgcolor="#FFFFFF"><div align="left">
                 <select name="dengji" class="inputcss">
-                  <option value="¾«Æ·" <?php if(trim($info1['dengji'])=="¾«Æ·"){echo "selected";}?>>¾«Æ·</option>
-                  <option value="Ò»°ã" <?php if(trim($info1['dengji'])=="Ò»°ã"){echo "selected";}?>>Ò»°ã</option>
-                  <option value="¶þÊÖ" <?php if(trim($info1['dengji'])=="¶þÊÖ"){echo "selected";}?>>¶þÊÖ</option>
-                  <option value="ÌÔÌ­" <?php if(trim($info1['dengji'])=="ÌÔÌ­"){echo "selected";}?>>ÌÔÌ­</option>
+                  <option value="ï¿½ï¿½Æ·" <?php if(trim($info1['dengji'])=="ï¿½ï¿½Æ·"){echo "selected";}?>>ï¿½ï¿½Æ·</option>
+                  <option value="Ò»ï¿½ï¿½" <?php if(trim($info1['dengji'])=="Ò»ï¿½ï¿½"){echo "selected";}?>>Ò»ï¿½ï¿½</option>
+                  <option value="ï¿½ï¿½ï¿½ï¿½" <?php if(trim($info1['dengji'])=="ï¿½ï¿½ï¿½ï¿½"){echo "selected";}?>>ï¿½ï¿½ï¿½ï¿½</option>
+                  <option value="ï¿½ï¿½Ì­" <?php if(trim($info1['dengji'])=="ï¿½ï¿½Ì­"){echo "selected";}?>>ï¿½ï¿½Ì­</option>
                 </select>
             </div></td>
           </tr>
@@ -190,11 +190,11 @@
             </div></td>
           </tr>
           <tr>
-            <td height="25" bgcolor="#FFFFFF"><div align="center">ÊÇ·ñRecommended :</div></td>
+            <td height="25" bgcolor="#FFFFFF"><div align="center">ï¿½Ç·ï¿½Recommended :</div></td>
             <td height="25" bgcolor="#FFFFFF"><div align="left">
                 <select name="tuijian" class="inputcss" >
-                  <option value=1 <?php if($info1['tuijian']==1) {echo "selected";}?>>ÊÇ</option>
-                  <option value=0 <?php if($info1['tuijian']==0) {echo "selected";}?>>·ñ</option>
+                  <option value=1 <?php if($info1['tuijian']==1) {echo "selected";}?>>ï¿½ï¿½</option>
+                  <option value=0 <?php if($info1['tuijian']==0) {echo "selected";}?>>ï¿½ï¿½</option>
                 </select>
             </div></td>
           </tr>
@@ -219,9 +219,9 @@
           </tr>
           <tr>
             <td height="25" colspan="2" bgcolor="#FFFFFF"><div align="center">
-              <input type="submit" class="buttoncss" value="¸ü¸Ä">
+              <input type="submit" class="buttoncss" value="ï¿½ï¿½ï¿½">
               &nbsp;&nbsp;
-                <input type="reset" value="È¡Ïû¸ü¸Ä" class="buttoncss">
+                <input type="reset" value="È¡ï¿½ï¿½ï¿½ï¿½" class="buttoncss">
             </div></td>
           </tr>
         </form>

@@ -22,8 +22,8 @@ if(trim($_POST['ly'])==""){
  }
  $xiadanren=$_SESSION['username'];
  $time=date("Y-m-j H:i:s");
- $zt="未作任何处理";
+ $zt="Ready to be shipped";
  $total=$_SESSION['total'];
- mysql_query("insert into tb_dingdan(dingdanhao,spc,slc,shouhuoren,sex,dizhi,youbian,tel,email,shff,zfff,leaveword,time,xiadanren,zt,total) values ('$dingdanhao','$spc','$slc','$shouhuoren','$sex','$dizhi','$youbian','$tel','$email','$shff','$zfff','$leaveword','$time','$xiadanren','$zt','$total')",$conn); 
- header("location:gouwu2.php?dingdanhao=$dingdanhao");
+ mysql_query("insert into tb_order(dingdanhao,spc,slc,shouhuoren,sex,dizhi,youbian,tel,email,shff,zfff,leaveword,time,xiadanren,zt,total) values ('$dingdanhao','$spc','$slc','$shouhuoren','$sex','$dizhi','$youbian','$tel','$email','$shff','$zfff','$leaveword','$time','$xiadanren','$zt','$total')",$conn);
+ header("location:receiverinfo.php?dingdanhao=$dingdanhao");
 ?>

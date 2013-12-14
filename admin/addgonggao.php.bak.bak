@@ -37,11 +37,11 @@
     <td height="175" bgcolor="#666666"><table width="750" height="175" border="0" align="center" cellpadding="0" cellspacing="1">
       <form name="form1" method="post" action="savenewgonggao.php" onSubmit="return chkinput(this)">
 	  <tr>
-        <td width="80" height="25" bgcolor="#FFFFFF"><div align="center">Announcement 主题：</div></td>
+        <td width="80" height="25" bgcolor="#FFFFFF"><div align="center">Announcement 主题:</div></td>
         <td width="667" bgcolor="#FFFFFF"><div align="left"><input type="text" name="title" size="50" class="inputcss"></div></td>
       </tr>
       <tr>
-        <td height="125" bgcolor="#FFFFFF"><div align="center">Announcement 内容：</div></td>
+        <td height="125" bgcolor="#FFFFFF"><div align="center">Announcement 内容:</div></td>
         <td height="125" bgcolor="#FFFFFF"><div align="left"><textarea name="content" rows="8" cols="70"></textarea>
         </div></td>
       </tr>

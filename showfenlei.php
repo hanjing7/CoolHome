@@ -40,7 +40,7 @@
 	   $sql1=mysql_query("select * from tb_type where id=".$id."",$conn);
 	   $info1=mysql_fetch_array($sql1);
 	   
-       $sql=mysql_query("select count(*) as total from tb_shangpin where typeid='".$id."' order by addtime desc ",$conn);
+       $sql=mysql_query("select count(*) as total from tb_product where typeid='".$id."' order by addtime desc ",$conn);
 	   $info=mysql_fetch_array($sql);
 	   $total=$info['total'];
 	   if($total==0)
@@ -81,7 +81,7 @@
 			
 			}
 			 
-             $sql1=mysql_query("select * from tb_shangpin where typeid=".$id." order by addtime desc limit ".($page-1)*$pagesize.",$pagesize ",$conn);
+             $sql1=mysql_query("select * from tb_product where typeid=".$id." order by addtime desc limit ".($page-1)*$pagesize.",$pagesize ",$conn);
              while($info1=mysql_fetch_array($sql1))
 		     {
 		  ?>
@@ -130,7 +130,7 @@
           <td height="20"><div align="left"><?php echo (ceil(($info1['huiyuanjia']/$info1['shichangjia'])*100))."%";?></div></td>
         </tr>
         <tr>
-          <td height="20" colspan="6" width="461"><div align="center">&nbsp;&nbsp;&nbsp;&nbsp;<a href="addgouwuche.php?id=<?php echo $info1['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0" style=" cursor:hand"></a></div></td>
+          <td height="20" colspan="6" width="461"><div align="center">&nbsp;&nbsp;&nbsp;&nbsp;<a href="additemtocollection.php?id=<?php echo $info1['id'];?>"><img src="images/buy.jpg" width="60" height="18" border="0" style=" cursor:hand"></a></div></td>
         </tr>
         <tr>
           <td height="10" colspan="7" background="images/line1.gif"></td>

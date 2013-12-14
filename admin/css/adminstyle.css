@@ -112,18 +112,18 @@ h1 {
 	position:relative;
 	float:left;
 }
-#page1 h1 {padding:77px 0 0 10px; }
+#page1 h1 {padding:17px 0 0 0px; }
 	h1 a {
 		display:block; 
-		width:340px;
-		height:49px;
+		width:640px;
+		height:59px;
 		text-indent:-9999em;
 		background:url(../images/admin/logo.png) 0 0 no-repeat;
 	}
 	
 /***** menu *****/
 .menu {
-	padding:70px 10px 0 0; 
+	padding:30px 10px 0 0; 
 	float:right;
 }
 #page1 .menu {padding:102px 10px 0 0;}
