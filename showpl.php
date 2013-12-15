@@ -15,8 +15,8 @@ $id=$_GET['id'];
       </tr>
     </table>
       <table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr bgcolor="#FDE9C9">
-          <td height="25" colspan="4"><div align="center" style="color: #990000">CreationComment </div></td>
+        <tr bgcolor="#00b9f7">
+          <td height="25" colspan="4"><div align="center" style="color: black">CreationComment </div></td>
         </tr>
         <?php
        $sql=mysql_query("select count(*) as total from tb_comment where spid='".$_GET['id']."'",$conn);
@@ -24,7 +24,7 @@ $id=$_GET['id'];
 	   $total=$info['total'];
 	   if($total==0)
 	   {
-	     echo " This CreationTemperarily NoComment  INFO!";
+	     //echo " This CreationTemperarily NoComment  INFO!";
 	   }
 	   else
 	   {
@@ -93,17 +93,17 @@ $id=$_GET['id'];
       </table>
       <table width="550" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
-          <td><div align="right"> &nbsp;Our Site  Totally     This CreationComment &nbsp;
+          <td><div align="right"> &nbsp;Total Comments: &nbsp;
                   <?php
 		   echo $total;
 		  ?>
-&nbsp;&nbsp; Each    Page  Show &nbsp;<?php echo $pagesize;?>&nbsp;&nbsp; The &nbsp;<?php echo $page;?>&nbsp; Page  /Total&nbsp;<?php echo $pagecount; ?>&nbsp; Page  
+&nbsp;&nbsp; Page &nbsp;<?php echo $page;?>&nbsp; /Total&nbsp;<?php echo $pagecount; ?>&nbsp; Page
         <?php
 		  if($page>=2)
 		  {
-		  ?>
-        <a href="showpl.php?page=1" title="Home Page  "><font face="webdings"> 9 </font></a> <a href="showpl.php?id=<?php echo $id;?>&page=<?php echo $page-1;?>&spid=<?php echo $spid;?>&id=<?php echo $id;?>" title="Prev Page  "><font face="webdings"> 7 </font></a>
-        <?php
+//		  ?>
+<!--        <a href="showpl.php?page=1" title="Home Page  "><font face="webdings"> 9 </font></a> <a href="showpl.php?id=--><?php //echo $id;?><!--&page=--><?php //echo $page-1;?><!--&spid=--><?php //echo $spid;?><!--&id=--><?php //echo $id;?><!--" title="Prev Page  "><font face="webdings"> 7 </font></a>-->
+<!--        --><?php
 		  }
 		   if($pagecount<=4){
 		    for($i=1;$i<=$pagecount;$i++){

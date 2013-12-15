@@ -1,9 +1,9 @@
 <?php
  include("top.php");
 ?>
-<table width="766" height="438" border="0" align="center" cellpadding="0" cellspacing="0">
+<table width="566" height="438" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="209" height="438" valign="top" bgcolor="#F4F4F4"><div align="center">
+    <td width="209" height="438" valign="top" bgcolor="#FFFFFF"><div align="center">
 
       </div></td>
     <td width="557" align="center" valign="top" bgcolor="#FFFFFF">       <script language="javascript">
@@ -49,7 +49,7 @@
       </table>
       <table width="530" border="0" align="center" cellpadding="1" cellspacing="0" bordercolor="#FFFFFF" bgcolor="#FCC223">
       <tr>
-        <td height="25" bgcolor="#FEDD9A"><div align="center" style="color: #720206">Receiver  INFO</div></td>
+        <td height="25" bgcolor="#00b9f7"><div align="center" style="color: #00000">Receiver  INFO</div></td>
       </tr>
       <tr>
         <td height="295"><table width="530" height="293" border="0" align="center" cellpadding="0" cellspacing="1">

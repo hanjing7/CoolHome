@@ -2,12 +2,10 @@
 
 
 <div class = "bottom">
-<table width="766" border="0" align="center" cellpadding="0" cellspacing="0">
+<table width=80% border="0" align="center" cellpadding="0" cellspacing="0">
+
   <tr>
-    <td height="4" background="images/line.gif"></td>
-  </tr>
-  <tr>
-    <td id="bottom" height="44" background="images/bt.png"><table width="1200" height="75" border="0" cellpadding="0" cellspacing="0">
+    <td id="bottom" height="44"><table width="1200" height="75" border="0" cellpadding="0" cellspacing="0">
       <tr>
         <td height="75" align="center"><table  width="1200" border="0" cellspacing="0" cellpadding="0">
           <tr>

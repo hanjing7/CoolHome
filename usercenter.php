@@ -13,7 +13,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <table width="766" height="438" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-<!--    <td width="209" height="438" valign="top" bgcolor="#F0F0F0">--><?php //include("left.php");?><!--</td>-->
+
 
     <td width="537" align="center" valign="top" bgcolor="#FFFFFF"><table width="500" height="10" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
@@ -31,10 +31,11 @@
       </table>
       <table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
-          <td height="20" bgcolor="#8A87CC"><div align="center" style="color: #660206"><?php echo $_SESSION['username'];?> User Info</div></td>
+          <td height="20" bgcolor="#00b9f7" ><div align="center" style="color: #000000; font-size: 14pt;"><?php echo $_SESSION['username'];?>   User Info</div></td>
         </tr>
         <tr>
-          <td height="160" bgcolor="#8A87CC"><table width="500" height="160" border="0" align="center" cellpadding="0" cellspacing="1">
+          <td height="160" bgcolor="#00b9f7">
+              <table width="500" height="160" border="0" align="center" cellpadding="0" cellspacing="1">
               <script language="javascript">
 		     function chkinput1(form)
 			  {
@@ -56,12 +57,7 @@
 				  form.truename.select();
 				  return(false);
 				}
-//				if(form.sfzh.value=="")
-//				{
-//				  alert("IdentificationNumber can't be empty!");
-//				  form.sfzh.select();
-//				  return(false);
-//				}
+
 				if(form.tel.value=="")
 				{
 				  alert("Contact number can't be empty!");
@@ -91,45 +87,28 @@
                 <tr>
                   <td height="20" bgcolor="#FFFFFF"><div align="center">Full Name :</div></td>
                   <td height="20" bgcolor="#FFFFFF"><div align="left">
-                      <input type="text" name="truename" size="25" class="inputcssnull" value="<?php echo $info['truename'];?>">
+                      <input type="text" name="truename" size="25" class="inputcss" value="<?php echo $info['truename'];?>">
                   </div></td>
                 </tr>
                 <tr>
                   <td height="20" bgcolor="#FFFFFF"><div align="center">E-mail:</div></td>
                   <td height="20" bgcolor="#FFFFFF"><div align="left">
-                      <input type="text" name="email" size="25" class="inputcssnull" value="<?php echo $info['email'];?>">
+                      <input type="text" name="email" size="25" class="inputcss" value="<?php echo $info['email'];?>">
                   </div></td>
                 </tr>
-<!--                <tr>-->
-<!--                  <td height="20" bgcolor="#FFFFFF"><div align="center">QQNumber:</div></td>-->
-<!--                  <td height="20" bgcolor="#FFFFFF"><div align="left">-->
-<!--                      <input type="text" name="qq" size="25" class="inputcssnull" value="--><?php //echo $info['qq'];?><!--">-->
-<!--                  </div></td>-->
-<!--                </tr>-->
+
                 <tr>
                   <td height="20" bgcolor="#FFFFFF"><div align="center">Contact No.:</div></td>
                   <td height="20" bgcolor="#FFFFFF"><div align="left">
-                      <input type="text" name="tel" size="25" class="inputcssnull" value="<?php echo $info['tel'];?>">
+                      <input type="text" name="tel" size="25" class="inputcss" value="<?php echo $info['tel'];?>">
                   </div></td>
                 </tr>
                 <tr>
                   <td height="20" bgcolor="#FFFFFF"><div align="center">Address :</div></td>
                   <td height="20" bgcolor="#FFFFFF"><div align="left">
-                      <input type="text" name="dizhi" size="25" class="inputcssnull" value="<?php echo $info['dizhi'];?>">
+                      <input type="text" name="dizhi" size="25" class="inputcss" value="<?php echo $info['dizhi'];?>">
                   </div></td>
                 </tr>
-                <tr>
-<!--                  <td height="20" bgcolor="#FFFFFF"><div align="center">ZIP:</div></td>-->
-<!--                  <td height="20" bgcolor="#FFFFFF"><div align="left">-->
-<!--                      <input type="text" name="youbian" size="25" class="inputcssnull" value="--><?php //echo $info['youbian'];?><!--">-->
-<!--                  </div></td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                  <td height="20" bgcolor="#FFFFFF"><div align="center">ID Number :</div></td>-->
-<!--                  <td height="20" bgcolor="#FFFFFF"><div align="left">-->
-<!--                      <input type="text" name="sfzh" size="25" class="inputcssnull" value="--><?php //echo $info['sfzh'];?><!--">-->
-<!--                  </div></td>-->
-<!--                </tr>-->
                 <tr>
                   <td height="20" colspan="2" bgcolor="#FFFFFF"><div align="center">
                       <input name="submit2" type="submit" class="buttoncss" value="Edit ">

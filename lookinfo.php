@@ -16,7 +16,7 @@
      
       <table width="800" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
-          <td height="25" bgcolor="#8A87CC">&nbsp;&nbsp;Creation INFO</td>
+          <td height="25" bgcolor="#00b9f7">&nbsp;&nbsp;Creation INFO</td>
         </tr>
       </table>
         <table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -86,7 +86,7 @@
   <form name="form1" method="post" action="savepj.php?id=<?php echo $info->id;?>" onSubmit="return chkinput(this)">
   <table width="530" border="0" align="center" cellpadding="0" cellspacing="0">
             <tr>
-              <td height="25" bgcolor="#8A87CC"><div align="center" style="color: #FFFFFF">
+              <td height="25" bgcolor="#00b9f7"><div align="center" style="color: #FFFFFF">
                   <div align="left">&nbsp;&nbsp;<span style="color: #000000">Comment </span></div>
               </div></td>
             </tr>

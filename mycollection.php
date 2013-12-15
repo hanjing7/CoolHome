@@ -32,14 +32,13 @@
 
 			   $s=0;
 			   for($i=0;$i<count($arraygwc);$i++){
-                   //echo intval($arraygwc['$i']);
 			       $s = $arraygwc[$i];
                    if(is_numeric($s)) break;
 			   }
-                //echo $s;
 			  if($s==0 ){
 				   echo "<tr>";
-                   echo" <td height='25' colspan='6' bgcolor='#FFFFFF' align='center'>Empty Collection!</td>";
+                   //echo" <td height='25' colspan='6' bgcolor='#FFFFFF' align='center'>Empty Collection!</td>";
+                   echo" <td width='100%' height='25' bgcolor='#00b9f7'><div align=center'><span style='margin-left: 40%;'><b>Empty Collection!</div></td>";
                    echo"</tr>";
 				}
 			  else{ 
@@ -65,9 +64,7 @@
 					}
 				}
 			    $_SESSION['quatity']=implode("@",$arrayquatity);
-				//echo $_SESSION['quatity'];
-                //echo "array";
-                  //echo $array[0];
+
 				for($i=0;$i<count($array)-1;$i++){
                     //echo $array[$i];
 				   $id=$array[$i];
@@ -89,10 +86,10 @@
                   <td height="25" bgcolor="#FFFFFF"><div align="center">
                   <input type="text" name="<?php echo $info['id'];?>" size="2" class="inputcss" value=<?php echo $num;?>>
                   </div></td>
-                  <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo $info['shichangjia'];?>Dollar</div></td>
-                  <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo $info['huiyuanjia'];?>Dollar</div></td>
+                  <td height="25" bgcolor="#FFFFFF"><div align="center">$<?php echo $info['shichangjia'];?></div></td>
+                  <td height="25" bgcolor="#FFFFFF"><div align="center">$<?php echo $info['huiyuanjia'];?></div></td>
                   <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo @(ceil(($info['huiyuanjia']/$info['shichangjia'])*100))."%";?></div></td>
-                  <td height="25" bgcolor="#FFFFFF"><div align="center"><?php echo $info['huiyuanjia']*$num."Dollar";?></div></td>
+                  <td height="25" bgcolor="#FFFFFF"><div align="center">$<?php echo $info['huiyuanjia']*$num."";?></div></td>
                   <td height="25" bgcolor="#FFFFFF"><div align="center"><a href="removegwc.php?id=<?php echo $info['id']?>">Remove</a></div></td>
                 </tr>
                 <?php

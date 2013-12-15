@@ -3,18 +3,27 @@
    include("conn/conn.php");
 ?>
 <html>
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>CoolHome:Customized Furniture Design</title>
 <link rel="stylesheet" type="text/css" href="css/font.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </head>
-<body>
-<table width="1200" border="0" align="center" cellpadding="0" cellspacing="0">
+<body bgcolor="#E6E6FA">
+<table width=100%>
   <tr bgcolor="#023BA6">
-    <td colspan="3" valign="bottom"><table width="1200" border="0" align="left" cellpadding="0" cellspacing="0">
+    <td colspan="3" valign="bottom"><table width="1334" border="0" align="left" cellpadding="0" cellspacing="0">
       <tr>
         <td width="450" height="240" background="images/banner.png">&nbsp;</td>
-        <td align="right" bgcolor="#023BA6">
+        <td align="right" style="padding-right: 40px;" bgcolor="#023BA6">
 		<table border="0" cellspacing="0" cellpadding="0">
             <tr>
               <td id="username" style="color:white"><h4><?php
@@ -42,11 +51,12 @@
                 </tr>
               </form>
 			</table>
+
             <table height="120" align = "center"><tr>
-    <td  height="32" align="right"><h3><a href="login.php">Login </a> | <a href="index.php">Home</a>
+    <td  height="22" align="right" style="padding-right: 0px;"><h4><a href="login.php">Login </a> | <a href="index.php">Home</a>
 	| <a href="shownew.php"> Latest Creation</a> | <a href="showrecommendation.php">Recommended Creation</a> | <a href="showhot.php">
-	Popular Creation</a>&nbsp;|&nbsp;<!--<a href="showfenlei.php">Creation Category </a>&nbsp;|--><br/><br/>&nbsp;<a href="usercenter.php">User Center </a>
-	&nbsp;|&nbsp;<a href="finddd.php">Order Query </a>&nbsp;|&nbsp;<a href="mycollection.php">My Collection &nbsp;</a> | <a href="logout.php">Logout </a> </h3></td>
+	Popular Creation</a>&nbsp;|&nbsp;<a href="showcategory.php">Creation Category </a>&nbsp;|<br/><br/>&nbsp;<a href="usercenter.php">User Center </a>
+	&nbsp;|&nbsp;<a href="finddd.php">Order Query </a>&nbsp;|&nbsp;<a href="mycollection.php">My Collection &nbsp;</a> | <a href="logout.php">Logout </a> </h4></td>
             </tr></table>
 </td>
       </tr>

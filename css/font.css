@@ -1,19 +1,22 @@
 A:link {
-	COLOR: #E8F4FF; TEXT-DECORATION: none
+	COLOR: #0058a6; TEXT-DECORATION: none
 }
 A:visited {
-	COLOR: #006699; TEXT-DECORATION: none
+	COLOR: #0091e6; TEXT-DECORATION: none
 }
 A:active {
-	COLOR: #006699; TEXT-DECORATION: none
+	COLOR: #00b9f7; TEXT-DECORATION: none
 }
 A:hover {
 	COLOR: #ffffff
 }
 .shortcut {color: E8F4FF}
 BODY {
-	background-image: url(../images/bg.gif);
-	margin-top: 0px;
+    /*background-color: #023BA6;*/
+    /*bgcolor:"#E6E6FA";*/
+	/*background-image: url(../images/bg.gif);*/
+	margin:0px;
+    /*background-color: #023BA6;*/
 }
 TD,TH {
 	FONT-SIZE:12px; COLOR: #000;
@@ -69,8 +72,8 @@ TD,TH {
 
  }
  
-.bottom a {color:#fff}
+.bottom a {color:#fff;}
 .bottom .indent {padding:37px 60px}
-
+#top{display: hidden;}
 #list{margin-left:auto;font-family: "Arial"; font-size:14px;font-weight: bold;}
-#content{margin-left:auto;font-family: "Times New Roman"; font-size:12px;font-weight: normal; color:#000}
+#content{margin-left:auto;font-family: "Arial"; font-size:12px;font-weight: normal; color:#000}

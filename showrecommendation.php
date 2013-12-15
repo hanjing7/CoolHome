@@ -57,7 +57,7 @@
               <?php
 			 if($info1['tupian']=="")
 			 {
-			   echo "Temperarily No Picture !";
+			   echo "Temporarily No Picture !";
 			 }
 			 else
 			 {
@@ -110,7 +110,7 @@
       </table>
       <table width="550" height="25" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
-          <td><div align="right">Our site recommends these total number of products:&nbsp;
+          <td><div align="right">Total number of products:&nbsp;
                   <?php
 		   echo $total;
 		  ?>

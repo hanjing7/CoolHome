@@ -2,16 +2,16 @@
    session_start();
 ?>
 <link href="css/font.css" rel="stylesheet">
-<table width="1200" border="0" align="center" cellpadding="0" cellspacing="0">
+<!--<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">-->
   <tr>
     <td><?php
  include("top.php");
 ?></td>
   </tr>
   <tr>
-    <td bgcolor="#F5F5F5"><table width="1200" border="0" align="center" cellpadding="0" cellspacing="0">
+    <td bgcolor="white"><table width="1200" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
-        <td width="800" height="438" align="center" valign="top" bgcolor="#F5F5F5"><table width="557"  border="0" cellspacing="0" cellpadding="0">
+        <td width="800" height="438" align="center" valign="top" bgcolor="white"><table width="557"  border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td width="553" bgcolor="#FFFFFF"><table width="548" border="0" align="center" cellpadding="0" cellspacing="0">
                 <tr>
@@ -412,12 +412,12 @@
   </tr>
 </table>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<map name="Map2">
-  <area shape="rect" coords="504,27,543,43" href="showrecommendation.php">
-</map>
-<map name="Map3">
-  <area shape="rect" coords="503,24,545,42" href="shownew.php">
-</map>
-<map name="Map4">
-  <area shape="rect" coords="506,24,543,39" href="showhot.php">
-</map>
+<!--<map name="Map2">-->
+<!--  <area shape="rect" coords="504,27,543,43" href="showrecommendation.php">-->
+<!--</map>-->
+<!--<map name="Map3">-->
+<!--  <area shape="rect" coords="503,24,545,42" href="shownew.php">-->
+<!--</map>-->
+<!--<map name="Map4">-->
+<!--  <area shape="rect" coords="506,24,543,39" href="showhot.php">-->
+<!--</map>-->
