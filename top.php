@@ -7,6 +7,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>CoolHome:Customized Furniture Design</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/font.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
@@ -53,10 +55,10 @@
 			</table>
 
             <table height="120" align = "center"><tr>
-    <td  height="22" align="right" style="padding-right: 0px;"><h4><a href="login.php">Login </a> | <a href="index.php">Home</a>
-	| <a href="shownew.php"> Latest Creation</a> | <a href="showrecommendation.php">Recommended Creation</a> | <a href="showhot.php">
-	Popular Creation</a>&nbsp;|&nbsp;<a href="showcategory.php">Creation Category </a>&nbsp;|<br/><br/>&nbsp;<a href="usercenter.php">User Center </a>
-	&nbsp;|&nbsp;<a href="finddd.php">Order Query </a>&nbsp;|&nbsp;<a href="mycollection.php">My Collection &nbsp;</a> | <a href="logout.php">Logout </a> </h4></td>
+    <td  height="22" align="right" style="padding-right: 0px;"><h4><span class="label label-default"><a style="color:white;"href="login.php">Login </a></span>&nbsp;<span class="label label-default"> <a style="color:black;"href="index.php">Home</a>
+	</span>&nbsp;<span class="label label-default"> <a style="color: #000000;" href="shownew.php"> Latest Creation</a></span> &nbsp;<span class="label label-default"> <a style="color:black;" href="showrecommendation.php">Recommended Creation</a> </span>&nbsp;<span class="label label-default"> <a style="color:black;" href="showhot.php">
+	Popular Creation</a></span>&nbsp;<span class="label label-default"> <a style="color:black;" href="showcategory.php">Creation Category </a></span>&nbsp;&nbsp;<br/><br/>&nbsp;<span class="label label-default"> <a style="color:black;" href="usercenter.php">User Center </a></span>
+	&nbsp;<span class="label label-default"> <a style="color:black;" href="finddd.php">Order Query </a></span>&nbsp;<span class="label label-default"> <a style="color:black;" href="mycollection.php">My Collection &nbsp;</a></span> &nbsp; <span class="label label-default"> <a style="color:white" href="logout.php">Logout </a> </h4></td>
             </tr></table>
 </td>
       </tr>

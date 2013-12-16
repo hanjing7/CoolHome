@@ -11,7 +11,7 @@
     </table>
       <table width="730" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
-          <td height="25" bgcolor="#00b9f7"><div align="center" id="list">Order Query </div></td>
+          <td height="25" align="center" style="font-size: 24pt;"><span class="label label-primary">Order Query</span></td>
         </tr>
         <tr>
           <td height="50" bgcolor="#555555"><table width="550" height="50" border="0" align="center" cellpadding="0" cellspacing="1">

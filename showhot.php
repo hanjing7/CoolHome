@@ -5,7 +5,7 @@
   <tr>
     <td width="781" align="center" valign="top" bgcolor="#FFFFFF"><table width="550" height="25" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
-        <td height="46" background="images/hot1.gif">&nbsp;</td>
+          <td height="46" style="font-size: 24pt;" align="center"><span class="label label-primary">Popular Creation</span></td>
       </tr>
     </table>
       <table width="750" height="10" border="0" align="center" cellpadding="0" cellspacing="0">

@@ -16,25 +16,22 @@
 
 
     <td width="537" align="center" valign="top" bgcolor="#FFFFFF"><table width="500" height="10" border="0" align="center" cellpadding="0" cellspacing="0">
-      <tr>
-        <td></td>
-      </tr>
+
     </table>
       <table width="550" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
         </tr>
       </table>
       <table width="500" height="10" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <td></td>
-        </tr>
+
       </table>
       <table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
-          <td height="20" bgcolor="#00b9f7" ><div align="center" style="color: #000000; font-size: 14pt;"><?php echo $_SESSION['username'];?>   User Info</div></td>
+          <td height="20" ><div align="center" style= "font-size: 14pt;"><span class="label label-primary"><?php echo $_SESSION['username'];?>&nbsp;User Info</span> </div></td>
+
         </tr>
         <tr>
-          <td height="160" bgcolor="#00b9f7">
+          <td height="160" >
               <table width="500" height="160" border="0" align="center" cellpadding="0" cellspacing="1">
               <script language="javascript">
 		     function chkinput1(form)

@@ -6,7 +6,8 @@
     
     <td width="1200" align="center" valign="top" bgcolor="#FFFFFF"><table width="550" height="25" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
-        <td height="50" background="images/new1.gif">&nbsp;</td>
+          <td height="50" style="font-size: 24pt;" align="center"><span class="label label-primary">Latest Creation</span></td>
+
       </tr>
     </table>
       <table width="726" height="10" border="0" align="center" cellpadding="0" cellspacing="0">

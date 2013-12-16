@@ -2,7 +2,6 @@
    session_start();
 ?>
 <link href="css/font.css" rel="stylesheet">
-<!--<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">-->
   <tr>
     <td><?php
  include("top.php");
@@ -15,11 +14,11 @@
           <tr>
             <td width="553" bgcolor="#FFFFFF"><table width="548" border="0" align="center" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td width="557"  height="50"><img src="images/tuijian.gif" width="557" height="50" border="0" usemap="#Map2"></td>
+<!--                  <td width="557" bgcolor="#00b9f7" height="50"  align="center">Example heading <span class="label label-default">New</span></td>-->
+                    <td align="center"><h3><span class="label label-info">Recommended Creation</span></h3></td>
                 </tr>
               </table>
             <td><?php
-                //include("left.php");
                 ?></td>
 
                 <table width="550" border="00" align="center" cellpadding="0" cellspacing="0">
@@ -31,7 +30,7 @@
 			  $sql=mysql_query("select * from tb_product where tuijian=1 order by addtime desc limit 0,1");
 			  $info=mysql_fetch_array($sql);
 			  if($info==false){
-			   echo "Our Site Temperarily No Recommended Creation!";
+			   echo "Our Site is Temporarily out of Recommendations!";
 			  }
 			  else{
 			  ?>
@@ -40,7 +39,7 @@
                                 <td width="130" rowspan="5"><div align="center">
                                     <?php
 				    if(trim($info['tupian']=="")){
-					  echo "Temperarily No Picture ";
+					  echo "Temporarily No Picture ";
 					}
 					else{
 				  ?>
@@ -94,7 +93,7 @@
                                 <td width="130" rowspan="5"><div align="center">
                                     <?php
 				    if(trim($info['tupian']=="")){
-					  echo "Temperarily No Picture ";
+					  echo "Temporarily No Picture ";
 					}
 					else{
 				  ?>
@@ -146,7 +145,9 @@
                 </table>
                 <table width="548" border="0" align="center" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td height="46"><img src="images/new.gif" width="557" height="46" border="0" usemap="#Map3"> </td>
+<!--                      <td bgcolor="#00b9f7" height="50" style="font-size: 14pt;" align="center">Latest Creation</td>-->
+                      <td align="center"><h3><span class="label label-info">Latest Creation</span></h3></td>
+
                   </tr>
                 </table>
                 <table width="543" border="00" align="center" cellpadding="0" cellspacing="0">
@@ -158,7 +159,7 @@
 			  $sql=mysql_query("select * from tb_product order by addtime desc limit 0,1");
 			  $info=mysql_fetch_array($sql);
 			  if($info==false){
-			   echo "Our Site Temporarily NoRecommended  Product !";
+			   echo "Our Site Temporarily Has No Recommended  Products!";
 			  }
 			  else{
 			  ?>
@@ -167,7 +168,7 @@
                                 <td width="130" rowspan="5"><div align="center">
                                     <?php
 				    if(trim($info['tupian']=="")){
-					  echo "Temperarily No Picture ";
+					  echo "Temporarily No Picture ";
 					}
 					else{
 				  ?>
@@ -223,7 +224,7 @@
                                 <td width="130" rowspan="5"><div align="center">
                                     <?php
 				    if(trim($info['tupian']=="")){
-					  echo "Temperarily No Picture ";
+					  echo "Temporarily No Picture ";
 					}
 					else{
 				  ?>
@@ -275,7 +276,10 @@
                 </table>
                 <table width="548" border="0" align="center" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td height="46"><img src="images/hot.gif" width="557" height="46" border="0" usemap="#Map4"> </td>
+
+<!--                      <td bgcolor="#00b9f7" height="46" style="font-size: 14pt;" align="center">Popular Creation</td>-->
+                      <td align="center"><h3><span class="label label-info">Popular Creation</span></h3></td>
+
                   </tr>
                 </table>
                 <table width="553" border="00" align="center" cellpadding="0" cellspacing="0">
@@ -287,7 +291,7 @@
 			  $sql=mysql_query("select * from tb_product order by cishu desc limit 0,1");
 			  $info=mysql_fetch_array($sql);
 			  if($info==false){
-			   echo "Our Site Temperarily NoRecommended  Product !";
+			   echo "Our Site Temporarily Has No Recommended  Product !";
 			  }
 			  else {
 			  ?>
@@ -296,7 +300,7 @@
                                 <td width="130" rowspan="5"><div align="center">
                                     <?php
 				    if(trim($info['tupian']=="")){
-					  echo "Temperarily No Picture ";
+					  echo "Temporarily No Picture ";
 					}
 					else{
 				  ?>
@@ -350,7 +354,7 @@
                                 <td width="130" rowspan="5"><div align="center">
                                     <?php
 				    if(trim($info['tupian']=="")){
-					  echo "Temperarily No Picture ";
+					  echo "Temporarily No Picture ";
 					}
 					else{
 				  ?>
@@ -412,12 +416,4 @@
   </tr>
 </table>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!--<map name="Map2">-->
-<!--  <area shape="rect" coords="504,27,543,43" href="showrecommendation.php">-->
-<!--</map>-->
-<!--<map name="Map3">-->
-<!--  <area shape="rect" coords="503,24,545,42" href="shownew.php">-->
-<!--</map>-->
-<!--<map name="Map4">-->
-<!--  <area shape="rect" coords="506,24,543,39" href="showhot.php">-->
-<!--</map>-->
+

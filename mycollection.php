@@ -17,7 +17,8 @@
       <table width="557" border="0" align="center" cellpadding="0" cellspacing="0">
         <form name="form1" method="post" action="mycollection.php">
           <tr>
-            <td height="46" background="images/cart.gif"></td>
+              <td height="46" style="font-size: 24pt;" align="center"><span class="label label-primary">Shopping Cart</span></td>
+
           </tr>
           <tr>
             <td  bgcolor="#FFFFFF"><table width="500" border="0" align="center" cellpadding="0" cellspacing="1">
@@ -38,7 +39,7 @@
 			  if($s==0 ){
 				   echo "<tr>";
                    //echo" <td height='25' colspan='6' bgcolor='#FFFFFF' align='center'>Empty Collection!</td>";
-                   echo" <td width='100%' height='25' bgcolor='#00b9f7'><div align=center'><span style='margin-left: 40%;'><b>Empty Collection!</div></td>";
+                   echo" <td width='100%' height='25' bgcolor='#0058a6'><div align=center'><span style='margin-left: 40%;'><b>Empty Collection!</div></td>";
                    echo"</tr>";
 				}
 			  else{ 
